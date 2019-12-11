@@ -7,7 +7,7 @@ import csv
 def mainDex():
     data = []
     # add header
-    data.append(['Dex Num', 'Name', 'Abilities', 'HP', 'ATTACK', 'DEFENSE', 'S. ATTACK', 'S. DEFENSE', 'SPEED'])
+    data.append(['Dex Num', 'Name','Types', 'Abilities', 'HP', 'ATTACK', 'DEFENSE', 'S. ATTACK', 'S. DEFENSE', 'SPEED'])
 
     try:
         html = urlopen("https://www.serebii.net/pokemon/all.shtml")
@@ -31,6 +31,49 @@ def mainDex():
                 if stats != []:
                     dexnum = stats[0].getText().replace("\n", "").replace("\t", "")
                     name = stats[2].getText().replace("\n", "").replace("\t", "")
+                    types = []
+                    imgs = stats[3].findAll("img")
+                    for image in imgs:
+                        img = str(image)
+                        if "normal" in img:
+                            types.append("normal")
+                        elif "fighting" in img:
+                            types.append("fighting")
+                        elif "flying" in img:
+                            types.append("flying")
+                        elif "poison" in img:
+                            types.append("poison")
+                        elif "ground" in img:
+                            types.append("ground")
+                        elif "rock" in img:
+                            types.append("rock")
+                        elif "bug" in img:
+                            types.append("bug")
+                        elif "ghost" in img:
+                            types.append("ghost")
+                        elif "steel" in img:
+                            types.append("steel")
+                        elif "fire" in img:
+                            types.append("fire")
+                        elif "water" in img:
+                            types.append("water")
+                        elif "grass" in img:
+                            types.append("grass")
+                        elif "electric" in img:
+                            types.append("electric")
+                        elif "psychic" in img:
+                            types.append("psychic")
+                        elif "ice" in img:
+                            types.append("ice ")
+                        elif "dragon" in img:
+                            types.append("dragon")
+                        elif "dark" in img:
+                            types.append("dark")
+                        elif "fairy" in img:
+                            types.append("fairy")
+                        else:
+                            print("error")
+
                     ability = stats[4].getText().replace("\n", "").replace("\t", "")
                     health = stats[5].getText().replace("\n", "")
                     attack = stats[6].getText().replace("\n", "")
@@ -43,6 +86,7 @@ def mainDex():
                     data_item = []
                     data_item.append(dexnum)
                     data_item.append(name)
+                    data_item.append(str(types))
                     data_item.append(ability)
                     data_item.append(health)
                     data_item.append(attack)
