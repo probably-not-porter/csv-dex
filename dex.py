@@ -4,11 +4,11 @@ from urllib.error import URLError
 from bs4 import BeautifulSoup
 import csv
 
-def mainDex():
+def baseDex():
     data = []
     # add header
     data.append(['Dex Num', 'Name','Types', 'Abilities', 'HP', 'ATTACK', 'DEFENSE', 'S. ATTACK', 'S. DEFENSE', 'SPEED'])
-
+    count = 0
     try:
         html = urlopen("https://www.serebii.net/pokemon/all.shtml")
     except HTTPError as e:
@@ -29,6 +29,7 @@ def mainDex():
             for i in range(2, len(inf)): # This step is iterating over the length of the pokedex, basically. (call this pokemon N)
                 stats = inf[i].findAll("td", {"class": "fooinfo"})
                 if stats != []:
+                    count = count + 1 # the element is a pokedex entry
                     # pokedex N dex number (string)
                     dexnum = stats[0].getText().replace("\n", "").replace("\t", "")
 
@@ -71,7 +72,7 @@ def mainDex():
     print("Done!")
     print("creating CSV...")
     # create datafile
-    myFile = open('all.csv', 'w')
+    myFile = open('base_dex_'+ str(count) +'.csv', 'w')
     with myFile:
         writer = csv.writer(myFile)
         writer.writerows(data)
@@ -126,9 +127,9 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
 
 
 def main():
-    print("Dex Scraping tool v0.1\n")
+    print("Dex Data tool v0.1\n")
 
-    print("------- CREATE MAIN DEX -------")
-    mainDex()
+    print("------- CREATE BASE DEX -------")
+    baseDex()
 
 main()
