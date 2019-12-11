@@ -2,6 +2,8 @@ from urllib.request import urlopen
 from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
+
+import numpy as np
 import csv
 
 import wr_chart
@@ -84,11 +86,39 @@ def baseDex():
     print('Done!')
     return data
 
-def extraDex(data):
+def combatDex(data):
     new_data = []
-    for item in data:
-        dexnum = item[0]
-        print(dexnum)
+     # add header
+    new_data.append(['Dex Num', 'Super Effective (attacking)', 'Not Very Effective (attacking)'])
+    count = 0
+    for item in range(1, len(data)):
+        new_data_line = []
+        count = count + 1
+
+        # Pokemon N dex number for reference
+        dexnum = data[item][0]
+        new_data_line.append(dexnum)
+
+        # Pokemon N name for reference
+        name = data[item][1]
+        new_data_line.append(name)
+
+        # pokemon N attacking modifiers
+        types = data[item][2]
+        attk_matchups = genWeaknessResistance(types)
+        new_data_line.append(attk_matchups[0])
+        new_data_line.append(attk_matchups[1])
+
+
+        new_data.append(new_data_line)
+        
+    # create datafile
+    myFile = open('combat_dex_'+ str(count) +'.csv', 'w')
+    with myFile:
+        writer = csv.writer(myFile)
+        writer.writerows(new_data)
+
+    print('Done!')
 
 ### UTIL
 def genTypeArray(imgs): # create an array of types out of the type data from dex info
@@ -135,9 +165,97 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
             print("error")
     return types
 
-def genMatrix(types):
-    print(wr_chart.matrix)
+def genWeaknessResistance(types_string):
+    types = types_string.strip("][").replace("'","").split(', ') 
+    if len(types) == 0:
+        print("ERR: found 0 types")
+    elif len(types) == 1:
+        typenum = typeToNum(types[0])
+        se_chart = wr_chart.matrix[typenum] # pokemon N is super effective against these things
+        se_against = []
+        nve_against = []
+        for matchup_ind in range(len(se_chart)):
+            if se_chart[matchup_ind] < 1:
+                nve_against.append(numToType(matchup_ind))
+            elif se_chart[matchup_ind] > 1:
+                se_against.append(numToType(matchup_ind))
+        return [se_against, nve_against]
+    elif len(types) == 2:
+        typenum_1 = typeToNum(types[0])
+        typenum_2 = typeToNum(types[1])
+        se_chart = getComposite(wr_chart.matrix[typenum_1], wr_chart.matrix[typenum_2])
+        se_against = []
+        nve_against = []
+        for matchup_ind in range(len(se_chart)):
+            if se_chart[matchup_ind] < 1:
+                nve_against.append(numToType(matchup_ind))
+            elif se_chart[matchup_ind] > 1:
+                se_against.append(numToType(matchup_ind))
+        return [se_against, nve_against]
+    else:
+        print("ERR: invalid type array")
 
+def getComposite(arr_1, arr_2):
+    if len(arr_1) == len(arr_2):
+        new_arr = []
+        for x in range(len(arr_1)):
+            if arr_1[x] == arr_2[x]:
+                new_arr.append(arr_1[x])
+            else:
+                new_arr.append(arr_1[x] * arr_2[x])
+        return new_arr
+
+    else:
+        print("ERR: Types are not same length")
+
+def typeToNum(typestring):
+    typestring = typestring.replace(" ", "")
+    if typestring == "normal":
+        return 0
+    elif typestring == "fire":
+        return 1
+    elif typestring == "water":
+        return 2
+    elif typestring == "electric":
+        return 3
+    elif typestring == "grass":
+        return 4
+    elif typestring == "ice":
+        return 5
+    elif typestring == "fighting":
+        return 6
+    elif typestring == "poison":
+        return 7
+    elif typestring == "ground":
+        return 8
+    elif typestring == "flying":
+        return 9
+    elif typestring == "psychic":
+        return 10
+    elif typestring == "bug":
+        return 11
+    elif typestring == "rock":
+        return 12
+    elif typestring == "ghost":
+        return 13
+    elif typestring == "dragon":
+        return 14
+    elif typestring == "dark":
+        return 15
+    elif typestring == "steel":
+        return 16
+    elif typestring == "fairy":
+        return 17
+    else:
+        print('ERR: invalid type in typeToNum conversion')
+
+def numToType (num):
+    types = ["normal", "fire", "water", "electric",
+    "grass", "ice", "fighting", "poison", "ground",
+    "flying", "psychic", "bug", "rock", "ghost",
+    "dragon", "dark", "steel", "fairy"]
+    return types[num]
+ 
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
     print("Dex Data tool v0.1\n")
@@ -145,11 +263,7 @@ def main(): # do all the things in the order
     base_data = baseDex() # generate base dex and return data
 
     print("------- CREATE ADDITIONAL INFO DEX --------")
-    extraDex(base_data)
-
-    genMatrix(["water"])
-
-
+    combatDex(base_data)
 
 
 main() #run when file is run
