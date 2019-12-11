@@ -4,6 +4,10 @@ from urllib.error import URLError
 from bs4 import BeautifulSoup
 import csv
 
+import wr_chart
+
+
+### DEX CSV BUILDERS
 def baseDex():
     data = []
     # add header
@@ -78,9 +82,15 @@ def baseDex():
         writer.writerows(data)
 
     print('Done!')
-    return 0
+    return data
 
+def extraDex(data):
+    new_data = []
+    for item in data:
+        dexnum = item[0]
+        print(dexnum)
 
+### UTIL
 def genTypeArray(imgs): # create an array of types out of the type data from dex info
     types = []
     for image in imgs:
@@ -125,11 +135,21 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
             print("error")
     return types
 
+def genMatrix(types):
+    print(wr_chart.matrix)
 
-def main():
+### MAIN PROGRAM 
+def main(): # do all the things in the order
     print("Dex Data tool v0.1\n")
-
     print("------- CREATE BASE DEX -------")
-    baseDex()
+    base_data = baseDex() # generate base dex and return data
 
-main()
+    print("------- CREATE ADDITIONAL INFO DEX --------")
+    extraDex(base_data)
+
+    genMatrix(["water"])
+
+
+
+
+main() #run when file is run
