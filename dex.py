@@ -89,7 +89,7 @@ def baseDex():
 def combatDex(data):
     new_data = []
      # add header
-    new_data.append(['Dex Num', 'Super Effective (attacking)', 'Not Very Effective (attacking)'])
+    new_data.append(['Dex Num', 'Name', 'Super Effective (attacking)', 'Not Very Effective (attacking)'])
     count = 0
     for item in range(1, len(data)):
         new_data_line = []

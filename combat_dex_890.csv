@@ -1,4 +1,4 @@
-Dex Num,Super Effective (attacking),Not Very Effective (attacking)
+Dex Num,Name,Super Effective (attacking),Not Very Effective (attacking)
 #001,Bulbasaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']"
 #002,Ivysaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']"
 #003,Venusaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']"
