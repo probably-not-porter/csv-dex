@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import numpy as np
 import csv
 
-import wr_chart
+import util.wr_chart as wr_chart
 
 
 ### DEX CSV BUILDERS
@@ -78,7 +78,7 @@ def baseDex():
     print("Done!")
     print("creating CSV...")
     # create datafile
-    myFile = open('base_dex_'+ str(count) +'.csv', 'w')
+    myFile = open('data/base_dex_'+ str(count) +'.csv', 'w')
     with myFile:
         writer = csv.writer(myFile)
         writer.writerows(data)
@@ -113,7 +113,7 @@ def combatDex(data):
         new_data.append(new_data_line)
         
     # create datafile
-    myFile = open('combat_dex_'+ str(count) +'.csv', 'w')
+    myFile = open('data/combat_dex_'+ str(count) +'.csv', 'w')
     with myFile:
         writer = csv.writer(myFile)
         writer.writerows(new_data)
