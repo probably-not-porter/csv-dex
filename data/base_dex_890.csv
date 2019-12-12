@@ -1,4 +1,4 @@
-Dex Num,Name,Types,Abilities,HP,ATTACK,DEFENSE,S. ATTACK,S. DEFENSE,SPEED
+Dex,Name,Type,Abilities,HP,A,D,SA,SD,SP
 #001,Bulbasaur,"['grass', 'poison']","['Overgrow', 'Chlorophyll']",45,49,49,65,65,45
 #002,Ivysaur,"['grass', 'poison']","['Overgrow', 'Chlorophyll']",60,62,63,80,80,60
 #003,Venusaur,"['grass', 'poison']","['Overgrow', 'Chlorophyll']",80,82,83,100,100,80

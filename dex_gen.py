@@ -13,7 +13,7 @@ import util.wr_chart as wr_chart
 def baseDex():
     data = []
     # add header
-    data.append(['Dex Num', 'Name','Types', 'Abilities', 'HP', 'ATTACK', 'DEFENSE', 'S. ATTACK', 'S. DEFENSE', 'SPEED'])
+    data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP'])
     count = 0
     try:
         html = urlopen("https://www.serebii.net/pokemon/all.shtml")

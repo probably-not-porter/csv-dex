@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+        <style>
+            #t{
+                width: 100%;
+                margin: 0;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                background: #555;
+                color: white;
+                border: 1px solid black;
+            }
+            td{
+                border: 1px solid black;
+                margin: 0px;
+            }
+        </style>
     </head>
     <body>
-        <table class="pure-table">
+        <table id='t'>
         {% for item in data %}
             {% if loop.index == 1 %}
                 <thead>
             {% endif %}
             <tr>
                 <td>{{ item[0] }}</td>
-                <td>{{ item[1] }}</td>
-                <td>{{ item[2] }}</td>
+                <td>
+                    {% if loop.index != 1 %}
+                        <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
+                        <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                    {% endif %}
+                    {{ item[1] }}
+                </td>
+                <td>
+                    {% if loop.index != 1 %}
+                        {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                            <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                        {% endfor %}
+                    {%else%}
+                        {{ item[2] }}
+                    {%endif%}
+
+                </td>
                 <td>{{ item[3] }}</td>
                 <td>{{ item[4] }}</td>
                 <td>{{ item[5] }}</td>

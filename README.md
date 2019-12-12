@@ -22,3 +22,6 @@ Using the information from serebii to create a generalized CSV of pokemon data. 
 
 
 ## Information
+
+## References
+https://github.com/msikma/pokesprite
