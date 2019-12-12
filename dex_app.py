@@ -1,20 +1,21 @@
-from flask import Flask, render_template
-import tablib
 import os
- 
-app = Flask (__name__)
+from flask import Flask, render_template
+import csv
 
-dataset1 = tablib.Dataset()
-with open(os.path.join(os.path.dirname(__file__),'data/base_dex_890.csv')) as f:
-    dataset1.csv = f.read()
+app = Flask(__name__)
 
-dataset2 = tablib.Dataset()
-with open(os.path.join(os.path.dirname(__file__),'data/combat_dex_890.csv')) as f:
-    dataset2.csv = f.read()
- 
+
+results = []
+with open("data/base_dex_890.csv") as csvfile:
+    reader = csv.reader(csvfile) # change contents to floats
+    for row in reader: # each row is a list
+        results.append(row)
+
+
 @app.route("/")
-def index():    
-    return dataset1.html
- 
+def index():
+    return render_template("index.html", message="Hello Flask!", data=results);   
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=8000, debug=True)
