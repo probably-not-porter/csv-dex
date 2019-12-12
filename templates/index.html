@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     </head>
     <body>
-        <table>
+        <table class="pure-table">
         {% for item in data %}
+            {% if loop.index == 1 %}
+                <thead>
+            {% endif %}
             <tr>
                 <td>{{ item[0] }}</td>
                 <td>{{ item[1] }}</td>
@@ -18,6 +21,9 @@
                 <td>{{ item[8] }}</td>
                 <td>{{ item[9] }}</td>
             </tr>
+            {% if loop.index == 1 %}
+                </thead>
+            {% endif %}
         {% endfor %}
         </table>
     </body>
