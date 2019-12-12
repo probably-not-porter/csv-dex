@@ -1,4 +1,5 @@
-# Dex
+# Dex 
+![img](static/shiny/raichu.png)![img](static/shiny/swampert.png)![img](static/shiny/crobat.png)![img](static/shiny/shiftry.png)![img](static/shiny/banette.png)![img](static/shiny/swellow.png)</br>
 Using the information from serebii to create a generalized CSV of pokemon data. I wanted a better way to see combat related stats quickly while playing Pokemon so I made this set of tools, including an automated data collector with a web scraper to fetch states of pokemon, and generate additional reference data.
 
 # Usage
