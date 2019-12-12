@@ -89,7 +89,7 @@ def baseDex():
 def combatDex(data):
     new_data = []
      # add header
-    new_data.append(['Dex Num', 'Name', 'Super Effective (attacking)', 'Not Very Effective (attacking)'])
+    new_data.append(['Dex Num', 'Name', 'Good against (att)', 'Not good against (att)', 'SE damage from', 'NVE damage from'])
     count = 0
     for item in range(1, len(data)):
         new_data_line = []
@@ -108,7 +108,8 @@ def combatDex(data):
         attk_matchups = genWeaknessResistance(types)
         new_data_line.append(attk_matchups[0])
         new_data_line.append(attk_matchups[1])
-
+        new_data_line.append(attk_matchups[2])
+        new_data_line.append(attk_matchups[3])
 
         new_data.append(new_data_line)
         
@@ -174,24 +175,59 @@ def genWeaknessResistance(types_string):
         se_chart = wr_chart.matrix[typenum] # pokemon N is super effective against these things
         se_against = []
         nve_against = []
+
+        se_chart2 = []
+        for x in range(18):
+            se_chart2.append(wr_chart.matrix[x][typenum])
+        se_from = []
+        nve_from = []
+        
+
         for matchup_ind in range(len(se_chart)):
             if se_chart[matchup_ind] < 1:
                 nve_against.append(numToType(matchup_ind))
             elif se_chart[matchup_ind] > 1:
                 se_against.append(numToType(matchup_ind))
-        return [se_against, nve_against]
+
+        for matchup_ind in range(len(se_chart2)):
+            if se_chart[matchup_ind] < 1:
+                nve_from.append(numToType(matchup_ind))
+            elif se_chart[matchup_ind] > 1:
+                se_from.append(numToType(matchup_ind))
+
+        return [se_against, nve_against, se_from, nve_from]
     elif len(types) == 2:
         typenum_1 = typeToNum(types[0])
         typenum_2 = typeToNum(types[1])
         se_chart = getComposite(wr_chart.matrix[typenum_1], wr_chart.matrix[typenum_2])
         se_against = []
         nve_against = []
+
+        chart_1 = []
+        chart_2 = []
+        for x in range(18):
+            chart_1.append(wr_chart.matrix[x][typenum_1])
+            chart_2.append(wr_chart.matrix[x][typenum_2])
+
+        se_chart2 = getComposite(chart_1, chart_2)
+        se_from = []
+        nve_from = []
+
+
         for matchup_ind in range(len(se_chart)):
             if se_chart[matchup_ind] < 1:
                 nve_against.append(numToType(matchup_ind))
             elif se_chart[matchup_ind] > 1:
                 se_against.append(numToType(matchup_ind))
-        return [se_against, nve_against]
+
+        for matchup_ind in range(len(se_chart2)):
+            if se_chart2[matchup_ind] < 1:
+                nve_from.append(numToType(matchup_ind))
+            elif se_chart2[matchup_ind] > 1:
+                se_from.append(numToType(matchup_ind))
+
+
+        return [se_against, nve_against, se_from, nve_from]
     else:
         print("ERR: invalid type array")
 

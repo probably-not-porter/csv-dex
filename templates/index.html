@@ -12,49 +12,112 @@
                 color: white;
                 border: 1px solid black;
             }
+            #t_h{
+                font-size: 20px;
+                text-align: center;
+            }
             td{
                 border: 1px solid black;
                 margin: 0px;
             }
+            .attack{
+                background: #694242
+            }
+            .defense{
+                background: #424269
+            }
         </style>
+        
     </head>
     <body>
-        <table id='t'>
-        {% for item in data %}
-            {% if loop.index == 1 %}
-                <thead>
-            {% endif %}
-            <tr>
-                <td>{{ item[0] }}</td>
-                <td>
-                    {% if loop.index != 1 %}
-                        <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
-                        <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+        <div class="container">
+            <div class="component">
+                <table id='t'>
+                {% for item in data %}
+                    {% if loop.index == 1 %}
+                        <thead id='t_h'>
                     {% endif %}
-                    {{ item[1] }}
-                </td>
-                <td>
-                    {% if loop.index != 1 %}
-                        {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
-                            <img src='{{"/static/" + type.capitalize() + ".png"}}'>
-                        {% endfor %}
-                    {%else%}
-                        {{ item[2] }}
-                    {%endif%}
+                    <tr>
+                        <td>{{ item[0] }}</td>
+                        <td>
+                            {% if loop.index != 1 %}
+                                <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
+                                <img style='width: 80px;image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                            {% endif %}
+                            {{ item[1] }}
+                        </td>
+                        <td>
+                            {% if loop.index != 1 %}
+                                {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                    {% if type != "" %}
+                                        <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                    {% endif %}
+                                {% endfor %}
+                            {%else%}
+                                {{ item[2] }}
+                            {%endif%}
 
-                </td>
-                <td>{{ item[3] }}</td>
-                <td>{{ item[4] }}</td>
-                <td>{{ item[5] }}</td>
-                <td>{{ item[6] }}</td>
-                <td>{{ item[7] }}</td>
-                <td>{{ item[8] }}</td>
-                <td>{{ item[9] }}</td>
-            </tr>
-            {% if loop.index == 1 %}
-                </thead>
-            {% endif %}
-        {% endfor %}
-        </table>
+                        </td>
+                        
+                        <td class='attack'>
+                            {% if loop.index != 1 %}
+                                {% for type in data2[ loop.index - 1 ][2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                    {% if type != "" %}
+                                        <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                    {% endif %}
+                                {% endfor %}
+                            {%else%}
+                                {{ data2[ loop.index - 1 ][2] }}
+                            {%endif%}
+                        </td>
+                        <td class='attack'>
+                                {% if loop.index != 1 %}
+                                {% for type in data2[ loop.index - 1 ][3].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% if type != "" %}
+                                <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                            {% endif %}
+                                {% endfor %}
+                            {%else%}
+                                {{ data2[ loop.index - 1 ][3] }}
+                            {%endif%}
+                        </td>
+
+                        <td class='defense'>
+                            {% if loop.index != 1 %}
+                                {% for type in data2[ loop.index - 1 ][4].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                    {% if type != "" %}
+                                        <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                    {% endif %}
+                                {% endfor %}
+                            {%else%}
+                                {{ data2[ loop.index - 1 ][4] }}
+                            {%endif%}
+                        </td>
+                        <td class='defense'>
+                                {% if loop.index != 1 %}
+                                {% for type in data2[ loop.index - 1 ][5].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% if type != "" %}
+                                <img src='{{"/static/" + type.capitalize() + ".png"}}'>
+                            {% endif %}
+                                {% endfor %}
+                            {%else%}
+                                {{ data2[ loop.index - 1 ][5] }}
+                            {%endif%}
+                        </td>
+
+                        <td>{{ item[4] }}</td>
+                        <td>{{ item[5] }}</td>
+                        <td>{{ item[6] }}</td>
+                        <td>{{ item[7] }}</td>
+                        <td>{{ item[8] }}</td>
+                        <td>{{ item[9] }}</td>
+                    </tr>
+                    {% if loop.index == 1 %}
+                        </thead>
+                    {% endif %}
+                {% endfor %}
+                </table>
+            </div>
+        </div>
     </body>
 </html>
