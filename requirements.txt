@@ -3,7 +3,6 @@ astroid==2.2.5
 backports.csv==1.0.7
 beautifulsoup4==4.8.1
 blinker==1.4
-Brlapi==0.6.6
 bs4==0.0.1
 certifi==2018.1.18
 cffi==1.13.2
