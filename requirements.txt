@@ -67,7 +67,6 @@ pycrypto==2.6.1
 pycups==1.9.73
 pygame==1.9.6
 pygeoif==0.7
-pygobject==3.26.1
 pyinotify==0.9.6
 pylint==2.3.1
 pymacaroons==0.13.0
