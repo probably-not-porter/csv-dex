@@ -60,7 +60,6 @@ pexpect==4.2.1
 Pillow==6.2.0
 protobuf==3.0.0
 psycopg2-binary==2.8.2
-PyAudio==0.2.11
 pycairo==1.16.2
 pycparser==2.19
 pycrypto==2.6.1
