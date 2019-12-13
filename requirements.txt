@@ -5,7 +5,7 @@ bs4==0.0.1
 chardet==3.0.4
 cliapp==1.0.9
 Click==7.0
-cmdtest==0.32
+cmdtest==0.1.1
 cryptography==2.1.4
 Django==1.11.25
 enum34==1.1.6
