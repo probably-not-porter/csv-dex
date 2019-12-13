@@ -75,9 +75,18 @@
                                 {% if item[1] == "Farfetch'd" %} 
                                     <img style='width: 160px;' src='{{"/static/regular/farfetchd.png"}}'>
                                     <img style='width: 160px;' src='{{"/static/shiny/farfetchd.png"}}'>
+                                {% elif item[1] == "Type: Null" %}
+                                    <img style='width: 160px;' src='{{"/static/regular/type-null.png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/type-null.png"}}'>
                                 {% elif item[1] == "Mr. Mime" %}
                                     <img style='width: 160px;' src='{{"/static/regular/mr-mime.png"}}'>
                                     <img style='width: 160px;' src='{{"/static/shiny/mr-mime.png"}}'>
+                                {% elif item[1] == "Flabébé" %}
+                                    <img style='width: 160px;' src='{{"/static/regular/flabebe.png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/flabebe.png"}}'>
+                                {% elif item[1] == "Mime Jr." %}
+                                    <img style='width: 160px;' src='{{"/static/regular/mime-jr.png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/mime-jr.png"}}'>
                                 {% elif item[1] == "Nidoran♀" %}
                                     <img style='width: 160px;' src='{{"/static/regular/nidoran-f.png"}}'>
                                     <img style='width: 160px;' src='{{"/static/shiny/nidoran-f.png"}}'>
@@ -85,8 +94,8 @@
                                     <img style='width: 160px;' src='{{"/static/regular/nidoran-m.png"}}'>
                                     <img style='width: 160px;' src='{{"/static/shiny/nidoran-m.png"}}'>
                                 {% else %}
-                                    <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
                                 {% endif %}
                             {% endif %}
 
