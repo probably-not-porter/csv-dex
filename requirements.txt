@@ -108,7 +108,6 @@ wadllib==1.3.2
 webencodings==0.5.1
 Werkzeug==0.15.4
 wrapt==1.11.1
-xkit==0.0.0
 xlrd==1.2.0
 xlwt==1.3.0
 zope.interface==4.3.2
