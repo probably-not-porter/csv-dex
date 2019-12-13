@@ -7,13 +7,17 @@ Here is a table of contents for the data I compiled:
 
 ![img](static/shiny/blaziken.png)[Internaltional Dex [combat] (csv)](data/combat_dex_890.csv)
 
-![img](static/shiny/lugia.png)[Galar Dex [main] (csv)](data/base_dex_galar.csv)
+![img](static/shiny/ho-oh.png)[ GEN8 Galar Dex [main] (csv)](data/base_dex_galar.csv)
 
-![img](static/shiny/blaziken.png)[Galar Dex [combat] (csv)](data/combat_dex_galar.csv)
+![img](static/shiny/meganium.png)[ GEN8 Galar Dex [combat] (csv)](data/combat_dex_galar.csv)
 
-![img](static/shiny/lugia.png)[Kanto Dex [main] (csv)](data/base_dex_kanto.csv)
+![img](static/shiny/bulbasaur.png)[ GEN1 Kanto Dex [main] (csv)](data/base_dex_kanto.csv)
 
-![img](static/shiny/blaziken.png)[Kanto Dex [combat] (csv)](data/combat_dex_kanto.csv)
+![img](static/shiny/wartortle.png)[GEN1 Kanto Dex [combat] (csv)](data/combat_dex_kanto.csv)
+
+![img](static/shiny/typhlosion.png)[GEN2 Johto Dex [main] (csv)](data/base_dex_johto.csv)
+
+![img](static/shiny/umbreon.png)[GEN2 Johto Dex [combat] (csv)](data/combat_dex_johto.csv)
 
 ![img](static/regular/charizard.png)[Regular Sprites](dex_images.md#regular-sprites)
 
