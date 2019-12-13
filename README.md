@@ -1,9 +1,19 @@
 # Dex 
 ![img](static/shiny/raichu.png)![img](static/shiny/swampert.png)![img](static/shiny/crobat.png)![img](static/shiny/shiftry.png)![img](static/shiny/banette.png)![img](static/shiny/swellow.png)</br>
+
+## Data
+Here is a table of contents for the data I compiled:
+  - [Full Dex main info (csv)](data/base_dex_890.csv)
+  - [Full Dex combat info (csv)](data/combat_dex_890.csv)
+  - [Regular Sprites](dex_images.md#regular-sprites)
+  - [Shiny Sprites](dex_images.md#shiny-sprites)
+  - [Type Badges](dex_images.md#type-badges)
+
+
 Using the information from serebii to create a generalized CSV of pokemon data. I wanted a better way to see combat related stats quickly while playing Pokemon so I made this set of tools, including an automated data collector with a web scraper to fetch states of pokemon, and generate additional reference data.
 
 # Usage
-## Installation
+## Installation 
 1. Use `pip` to install the project dependencies. Make sure you are using the `python3` environment.
 2. Clone this project to your local machine
 
@@ -25,7 +35,7 @@ Using the information from serebii to create a generalized CSV of pokemon data. 
 
 ## Information
 
-## References
+## References/Sources
 - https://github.com/msikma/pokesprite
 - https://www.serebii.net/
 
