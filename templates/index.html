@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+            body{
+                background-color:#333;
+            }
             #t{
                 width: 100%;
                 margin: 0;
@@ -30,7 +33,21 @@
                 width: 250px;
             }
             .stat{
-                width: 20px;
+                width: 200px;
+                text-align: left;
+                padding-left: 10px;
+            }
+            .stat li{
+                margin-bottom:5px;
+            }
+            #myInput{
+                position:fixed;
+                z-index: 10;
+                right: 20px;
+                top: 20px;
+                width: 400px;
+                height: 40px;
+                font-size:20px;
             }
         </style>
         
@@ -38,17 +55,22 @@
     <body>
         <div class="container">
             <div class="component">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
                 <table id='t'>
                 {% for item in data %}
                     {% if loop.index == 1 %}
                         <thead id='t_h'>
                     {% endif %}
                     <tr>
-                        <td>{{ item[0] }}</td>
+                        <td {% if loop.index != 1 %} style='font-size: 30px;' {% endif %}>{{ item[0] }}</td>
                         <td style='width: 340px'>
                             {% if loop.index != 1 %}
-                                <img style='width: 160px;image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
-                                <img style='width: 160px;image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                                <img style='width: 160px;image-rendering: pixelated;
+                                image-rendering: -moz-crisp-edges;
+                                image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
+                                <img style='width: 160px;image-rendering: pixelated;
+                                image-rendering: -moz-crisp-edges;
+                                image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
                             {% endif %}
                             {{ item[1] }}
                         </td>
@@ -56,7 +78,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 40px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -69,7 +91,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 40px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -80,7 +102,7 @@
                                 {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][3].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                 {% if type != "" %}
-                                <img style='width: 40px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
                             {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -92,7 +114,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][4].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 40px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -103,7 +125,7 @@
                                 {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][5].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                 {% if type != "" %}
-                                <img style='width: 40px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
                             {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -111,12 +133,20 @@
                             {%endif%}
                         </td>
 
-                        <td class='stat'>{{ item[4] }}</td>
-                        <td class='stat' style='background: #694242;'>{{ item[5] }}</td>
-                        <td class='stat' style='background: #424269;'>{{ item[6] }}</td>
-                        <td class='stat' style='background: #694242;'>{{ item[7] }}</td>
-                        <td class='stat' style='background: #424269;'>{{ item[8] }}</td>
-                        <td class='stat'>{{ item[9] }}</td>
+                        <td class='stat'>
+                            {% if loop.index != 1 %}
+                                <ul style="list-style-type:none">
+                                    <li><strong>HP:</strong> {{ item[4] }}</li>
+                                    <li><strong>Attack:</strong> {{ item[5] }}</li>
+                                    <li><strong>Defense:</strong> {{ item[6] }}</li>
+                                    <li><strong>S. Attack:</strong> {{ item[7] }}</li>
+                                    <li><strong>S. Defense:</strong> {{ item[8] }}</li>
+                                    <li><strong>Speed:</strong> {{ item[9] }}</li>
+                                </ul>
+                            {% else %}
+                                Stats
+                            {% endif %}
+                        </td>
                     </tr>
                     {% if loop.index == 1 %}
                         </thead>
@@ -125,5 +155,30 @@
                 </table>
             </div>
         </div>
+        <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+
+            filter = input.value.toUpperCase();
+            table = document.getElementById("t");
+
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 1; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }       
+            }
+        }
+        </script>
     </body>
 </html>
