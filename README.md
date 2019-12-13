@@ -20,9 +20,15 @@ Using the information from serebii to create a generalized CSV of pokemon data. 
 - tablib
 - csv
 - flask
+- numpy
 
 
 ## Information
 
 ## References
 https://github.com/msikma/pokesprite
+
+## Liscenses
+The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
+
+Everything else, and usage of the programming code, is governed by the MIT license.
