@@ -6,7 +6,7 @@ chardet==3.0.4
 cliapp==1.20170827
 Click==7.0
 cmdtest==0.32
-cryptography==2.3
+cryptography==2.1.4
 Django==1.11.25
 enum34==1.1.6
 Flask==1.0.3
@@ -37,8 +37,8 @@ pygame==1.9.6
 Pygments==2.2.0
 pygobject==3.26.1
 pytz==2019.3
-pyxdg==0.26
-PyYAML==5.1
+pyxdg==0.25
+PyYAML==3.12
 scipy==1.2.2
 SecretStorage==2.3.1
 six==1.11.0
