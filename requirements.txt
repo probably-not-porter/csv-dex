@@ -10,7 +10,6 @@ chardet==3.0.4
 Click==7.0
 colorama==0.3.7
 cryptography==2.1.4
-cupshelpers==1.0
 cycler==0.10.0
 decorator==4.4.0
 defer==1.0.6
