@@ -9,7 +9,6 @@ cffi==1.13.2
 chardet==3.0.4
 Click==7.0
 colorama==0.3.7
-command-not-found==0.3
 cryptography==2.1.4
 cupshelpers==1.0
 cycler==0.10.0
