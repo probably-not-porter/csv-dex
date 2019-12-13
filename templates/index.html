@@ -72,9 +72,15 @@
                         <td {% if loop.index != 1 %} style='font-size: 30px;' {% endif %}>{{ item[0] }}</td>
                         <td style='width: 340px'>
                             {% if loop.index != 1 %}
-                                <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
-                                <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                                {% if item[1] == "Farfetch'd" %} 
+                                    <img style='width: 160px;' src='{{"/static/regular/farfetchd.png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/farfetchd.png"}}'>
+                                {% else %}
+                                    <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
+                                    <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                                {% endif %}
                             {% endif %}
+
                             {{ item[1] }}
                         </td>
                         <td>
