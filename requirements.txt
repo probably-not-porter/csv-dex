@@ -91,7 +91,7 @@ pytz==2019.3
 PyWavelets==1.0.3
 pyxdg==0.25
 pyxel==1.0.2
-PyYAML==5.1
+PyYAML==5.2
 records==0.5.3
 reportlab==3.4.0
 requests==2.18.4
