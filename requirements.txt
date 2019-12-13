@@ -3,7 +3,7 @@ backports.functools-lru-cache==1.6.1
 beautifulsoup4==4.8.1
 bs4==0.0.1
 chardet==3.0.4
-cliapp==1.20170827
+cliapp==1.0.9
 Click==7.0
 cmdtest==0.32
 cryptography==2.1.4
