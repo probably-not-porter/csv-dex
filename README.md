@@ -3,9 +3,11 @@
 ## Data
 Here is a table of contents for the data I compiled:
 
-![img](static/shiny/lugia.png)[International Dex [main] (csv)](data/base_dex_890.csv) && [Internaltional Dex [combat] (csv)](data/combat_dex_890.csv)
+![img](static/shiny/lugia.png) All Gens: [International Dex [main] (csv)](data/base_dex_890.csv) && [Internaltional Dex [combat] (csv)](data/combat_dex_890.csv)
 
 ![img](static/shiny/ditto.png) Gen 8: [ Galar Dex [main] (csv)](data/base_dex_galar.csv) && [ Galar Dex [combat] (csv)](data/combat_dex_galar.csv) (no sprites)
+
+![img](static/shiny/empoleon.png) Gen 4: [Sinnoh Dex [main] (csv)](data/base_dex_sinnoh.csv) && [Sinnoh Dex [combat] (csv)](data/combat_dex_sinnoh.csv)
 
 ![img](static/shiny/sceptile.png) Gen 3: [Hoenn Dex [main] (csv)](data/base_dex_hoenn.csv) && [Hoenn Dex [combat] (csv)](data/combat_dex_hoenn.csv)
 
