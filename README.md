@@ -26,7 +26,8 @@ Using the information from serebii to create a generalized CSV of pokemon data. 
 ## Information
 
 ## References
-https://github.com/msikma/pokesprite
+- https://github.com/msikma/pokesprite
+- https://www.serebii.net/
 
 ## Liscenses
 The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.

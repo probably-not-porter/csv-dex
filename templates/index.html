@@ -5,6 +5,11 @@
             body{
                 background-color:#333;
             }
+            img{
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: crisp-edges;
+            }
             #t{
                 width: 100%;
                 margin: 0;
@@ -65,12 +70,8 @@
                         <td {% if loop.index != 1 %} style='font-size: 30px;' {% endif %}>{{ item[0] }}</td>
                         <td style='width: 340px'>
                             {% if loop.index != 1 %}
-                                <img style='width: 160px;image-rendering: pixelated;
-                                image-rendering: -moz-crisp-edges;
-                                image-rendering: crisp-edges;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
-                                <img style='width: 160px;image-rendering: pixelated;
-                                image-rendering: -moz-crisp-edges;
-                                image-rendering: crisp-edges;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
+                                <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower() + ".png"}}'>
+                                <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower() + ".png"}}'>
                             {% endif %}
                             {{ item[1] }}
                         </td>
@@ -78,7 +79,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -91,7 +92,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -102,7 +103,7 @@
                                 {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][3].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                 {% if type != "" %}
-                                <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                             {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -114,7 +115,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][4].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -125,7 +126,7 @@
                                 {% if loop.index != 1 %}
                                 {% for type in data2[ loop.index - 1 ][5].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                 {% if type != "" %}
-                                <img style='width: 25px;' src='{{"/static/" + type.capitalize() + ".png"}}'>
+                                <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                             {% endif %}
                                 {% endfor %}
                             {%else%}
