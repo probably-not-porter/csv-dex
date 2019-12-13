@@ -1,0 +1,101 @@
+Dex,Name,Type,Abilities,HP,A,D,SA,SD,SP
+#152,Chikorita,['grass'],"['Overgrow', 'Leaf Guard']",45,49,65,49,65,45
+#153,Bayleef,['grass'],"['Overgrow', 'Leaf Guard']",60,62,80,63,80,60
+#154,Meganium,['grass'],"['Overgrow', 'Leaf Guard']",80,82,100,83,100,80
+#155,Cyndaquil,['fire'],"['Blaze', 'Flash Fire']",39,52,43,60,50,65
+#156,Quilava,['fire'],"['Blaze', 'Flash Fire']",58,64,58,80,65,80
+#157,Typhlosion,['fire'],"['Blaze', 'Flash Fire']",78,84,78,109,85,100
+#158,Totodile,['water'],"['Torrent', 'Sheer Force']",50,65,64,44,48,43
+#159,Croconaw,['water'],"['Torrent', 'Sheer Force']",65,80,80,59,63,58
+#160,Feraligatr,['water'],"['Torrent', 'Sheer Force']",85,105,100,79,83,78
+#161,Sentret,['normal'],"['Run Away', 'Keen Eye', 'Frisk']",35,46,34,35,45,20
+#162,Furret,['normal'],"['Run Away', 'Keen Eye', 'Frisk']",85,76,64,45,55,90
+#163,Hoothoot,"['normal', 'flying']","['Insomnia', 'Keen Eye', 'Tinted Lens']",60,30,30,36,56,50
+#164,Noctowl,"['normal', 'flying']","['Insomnia', 'Keen Eye', 'Tinted Lens']",100,50,50,86,96,70
+#165,Ledyba,"['bug', 'flying']","['Swarm', 'Early Bird', 'Rattled']",40,20,30,40,80,55
+#166,Ledian,"['bug', 'flying']","['Swarm', 'Early Bird', 'Iron Fist']",55,35,50,55,110,85
+#167,Spinarak,"['bug', 'poison']","['Swarm', 'Insomnia', 'Sniper']",40,60,40,40,40,30
+#168,Ariados,"['bug', 'poison']","['Swarm', 'Insomnia', 'Sniper']",70,90,70,60,70,40
+#169,Crobat,"['poison', 'flying']","['Inner Focus', 'Infiltrator']",85,90,80,70,80,130
+#170,Chinchou,"['water', 'electric']","['Volt Absorb', 'Illuminate', 'Water Absorb']",75,38,38,56,56,67
+#171,Lanturn,"['water', 'electric']","['Volt Absorb', 'Illuminate', 'Water Absorb']",125,58,58,76,76,67
+#172,Pichu,['electric'],"['Static', 'Lightning Rod']",20,40,15,35,35,60
+#173,Cleffa,['fairy'],"['Cute Charm', 'Magic Guard', 'Friend Guard']",50,25,28,45,55,15
+#174,Igglybuff,"['normal', 'fairy']","['Cute Charm', 'Competitive', 'Friend Guard']",90,30,15,40,20,15
+#175,Togepi,['fairy'],"['Hustle', 'Serene Grace', 'Super Luck']",35,20,65,40,65,20
+#176,Togetic,"['fairy', 'flying']","['Hustle', 'Serene Grace', 'Super Luck']",55,40,85,80,105,40
+#177,Natu,"['psychic', 'flying']","['Synchronize', 'Early Bird', 'Magic Bounce']",40,50,45,70,45,70
+#178,Xatu,"['psychic', 'flying']","['Synchronize', 'Early Bird', 'Magic Bounce']",65,75,70,95,70,95
+#179,Mareep,['electric'],"['Static', 'Plus']",55,40,40,65,45,35
+#180,Flaaffy,['electric'],"['Static', 'Plus']",70,55,55,80,60,45
+#181,Ampharos,['electric'],"['Static', 'Plus']",90,75,85,115,90,55
+#182,Bellossom,['grass'],"['Chlorophyll', 'Healer']",75,80,95,90,100,50
+#183,Marill,"['water', 'fairy']","['Thick Fat', 'Huge Power', 'Sap Sipper']",70,20,50,20,50,40
+#184,Azumarill,"['water', 'fairy']","['Thick Fat', 'Huge Power', 'Sap Sipper']",100,50,80,60,80,50
+#185,Sudowoodo,['rock'],"['Sturdy', 'Rock Head', 'Rattled']",70,100,115,30,65,30
+#186,Politoed,['water'],"['Water Absorb', 'Damp', 'Drizzle']",90,75,75,90,100,70
+#187,Hoppip,"['grass', 'flying']","['Chlorophyll', 'Leaf Guard', 'Infiltrator']",35,35,40,35,55,50
+#188,Skiploom,"['grass', 'flying']","['Chlorophyll', 'Leaf Guard', 'Infiltrator']",55,45,50,45,65,80
+#189,Jumpluff,"['grass', 'flying']","['Chlorophyll', 'Leaf Guard', 'Infiltrator']",75,55,70,55,95,110
+#190,Aipom,['normal'],"['Run Away', 'Pickup', 'Skill Link']",55,70,55,40,55,85
+#191,Sunkern,['grass'],"['Chlorophyll', 'Solar Power', 'Early Bird']",30,30,30,30,30,30
+#192,Sunflora,['grass'],"['Chlorophyll', 'Solar Power', 'Early Bird']",75,75,55,105,85,30
+#193,Yanma,"['bug', 'flying']","['Speed Boost', 'Compoundeyes', 'Frisk']",65,65,45,75,45,95
+#194,Wooper,"['water', 'ground']","['Damp', 'Water Absorb', 'Unaware']",55,45,45,25,25,15
+#195,Quagsire,"['water', 'ground']","['Damp', 'Water Absorb', 'Unaware']",95,85,85,65,65,35
+#196,Espeon,['psychic'],"['Synchronize', 'Magic Bounce']",65,65,60,130,95,110
+#197,Umbreon,['dark'],"['Synchronize', 'Inner Focus']",95,65,110,60,130,65
+#198,Murkrow,"['dark', 'flying']","['Insomnia', 'Super Luck', 'Prankster']",60,85,42,85,42,91
+#199,Slowking,"['water', 'psychic']","['Oblivious', 'Own Tempo', 'Regenerator']",95,75,80,100,110,30
+#200,Misdreavus,['ghost'],['Levitate'],60,60,60,85,85,85
+#201,Unown,['psychic'],['Levitate'],48,72,48,72,48,48
+#202,Wobbuffet,['psychic'],"['Shadow Tag', 'Telepathy']",190,33,58,33,58,33
+#203,Girafarig,"['normal', 'psychic']","['Inner Focus', 'Early Bird', 'Sap Sipper']",70,80,65,90,65,85
+#204,Pineco,['bug'],"['Sturdy', 'Overcoat']",50,65,90,35,35,15
+#205,Forretress,"['bug', 'steel']","['Sturdy', 'Overcoat']",75,90,140,60,60,40
+#206,Dunsparce,['normal'],"['Serene Grace', 'Run Away', 'Rattled']",100,70,70,65,65,45
+#207,Gligar,"['ground', 'flying']","['Hyper Cutter', 'Sand Veil', 'Immunity']",65,75,105,35,65,85
+#208,Steelix,"['steel', 'ground']","['Rock Head', 'Sturdy', 'Sheer Force']",75,85,200,55,65,30
+#209,Snubbull,['fairy'],"['Intimidate', 'Run Away', 'Rattled']",60,80,50,40,40,30
+#210,Granbull,['fairy'],"['Intimidate', 'Quick Feet', 'Rattled']",90,120,75,60,60,45
+#211,Qwilfish,"['water', 'poison']","['Poison Point', 'Swift Swim', 'Intimidate']",65,95,85,55,55,85
+#212,Scizor,"['bug', 'steel']","['Swarm', 'Technician', 'Light Metal']",70,130,100,55,80,65
+#213,Shuckle,"['bug', 'rock']","['Sturdy', 'Gluttony', 'Contrary']",20,10,230,10,230,5
+#214,Heracross,"['bug', 'fighting']","['Swarm', 'Guts', 'Moxie']",80,125,75,40,95,85
+#215,Sneasel,"['dark', 'ice ']","['Inner Focus', 'Keen Eye', 'Pickpocket']",55,95,55,35,75,115
+#216,Teddiursa,['normal'],"['Pickup', 'Quick Feet', 'Honey Gather']",60,80,50,50,50,40
+#217,Ursaring,['normal'],"['Guts', 'Quick Feet', 'Unnerve']",90,130,75,75,75,55
+#218,Slugma,['fire'],"['Magma Armor', 'Flame Body', 'Weak Armor']",40,40,40,70,40,20
+#219,Magcargo,"['fire', 'rock']","['Magma Armor', 'Flame Body', 'Weak Armor']",60,50,120,90,80,30
+#220,Swinub,"['ice ', 'ground']","['Oblivious', 'Snow Cloak', 'Thick Fat']",50,50,40,30,30,50
+#221,Piloswine,"['ice ', 'ground']","['Oblivious', 'Snow Cloak', 'Thick Fat']",100,100,80,60,60,50
+#222,Corsola,"['water', 'rock']","['Hustle', 'Natural Cure', 'Regenerator']",65,55,95,65,95,35
+#223,Remoraid,['water'],"['Hustle', 'Sniper', 'Moody']",35,65,35,65,35,65
+#224,Octillery,['water'],"['Suction Cups', 'Sniper', 'Moody']",75,105,75,105,75,45
+#225,Delibird,"['ice ', 'flying']","['Vital Spirit', 'Hustle', 'Insomnia']",45,55,45,65,45,75
+#226,Mantine,"['water', 'flying']","['Swift Swim', 'Water Absorb', 'Water Veil']",85,40,70,80,140,70
+#227,Skarmory,"['steel', 'flying']","['Keen Eye', 'Sturdy', 'Weak Armor']",65,80,140,40,70,70
+#228,Houndour,"['dark', 'fire']","['Early Bird', 'Flash Fire', 'Unnerve']",45,60,30,80,50,65
+#229,Houndoom,"['dark', 'fire']","['Early Bird', 'Flash Fire', 'Unnerve']",75,90,50,110,80,95
+#230,Kingdra,"['water', 'dragon']","['Swift Swim', 'Sniper', 'Damp']",75,95,95,95,95,85
+#231,Phanpy,['ground'],"['Pickup', 'Sand Veil']",90,60,60,40,40,40
+#232,Donphan,['ground'],"['Sturdy', 'Sand Veil']",90,120,120,60,60,50
+#233,Porygon2,['normal'],"['Trace', 'Download', 'Analytic']",85,80,90,105,95,60
+#234,Stantler,['normal'],"['Intimidate', 'Frisk', 'Sap Sipper']",73,95,62,85,65,85
+#235,Smeargle,['normal'],"['Own Tempo', 'Technician', 'Moody']",55,20,35,20,45,75
+#236,Tyrogue,['fighting'],"['Guts', 'Steadfast', 'Vital Spirit']",35,35,35,35,35,35
+#237,Hitmontop,['fighting'],"['Intimidate', 'Technician', 'Steadfast']",50,95,95,35,110,70
+#238,Smoochum,"['ice ', 'psychic']","['Oblivious', 'Forewarn', 'Hydration']",45,30,15,85,65,65
+#239,Elekid,['electric'],"['Static', 'Vital Spirit']",45,63,37,65,55,95
+#240,Magby,['fire'],"['Flame Body', 'Vital Spirit']",45,75,37,70,55,83
+#241,Miltank,['normal'],"['Thick Fat', 'Scrappy', 'Sap Sipper']",95,80,105,40,70,100
+#242,Blissey,['normal'],"['Natural Cure', 'Serene Grace', 'Healer']",255,10,10,75,135,55
+#243,Raikou,['electric'],"['Pressure', 'Inner Focus']",90,85,75,115,100,115
+#244,Entei,['fire'],"['Pressure', 'Inner Focus']",115,115,85,90,75,100
+#245,Suicune,['water'],"['Pressure', 'Inner Focus']",100,75,115,90,115,85
+#246,Larvitar,"['rock', 'ground']","['Guts', 'Sand Veil']",50,64,50,45,50,41
+#247,Pupitar,"['rock', 'ground']",['Shed Skin'],70,84,70,65,70,51
+#248,Tyranitar,"['rock', 'dark']","['Sand Stream', 'Unnerve']",100,134,110,95,100,61
+#249,Lugia,"['psychic', 'flying']","['Pressure', 'Multiscale']",106,90,130,90,154,110
+#250,Ho-Oh,"['fire', 'flying']","['Pressure', 'Regenerator']",106,130,90,110,154,90
+#251,Celebi,"['psychic', 'grass']",['Natural Cure'],100,100,100,100,100,100

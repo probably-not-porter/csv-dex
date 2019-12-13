@@ -3,9 +3,17 @@
 ## Data
 Here is a table of contents for the data I compiled:
 
-![img](static/shiny/lugia.png)[Full Dex main info (csv)](data/base_dex_890.csv)
+![img](static/shiny/lugia.png)[International Dex [main] (csv)](data/base_dex_890.csv)
 
-![img](static/shiny/blaziken.png)[Full Dex combat info (csv)](data/combat_dex_890.csv)
+![img](static/shiny/blaziken.png)[Internaltional Dex [combat] (csv)](data/combat_dex_890.csv)
+
+![img](static/shiny/lugia.png)[Galar Dex [main] (csv)](data/base_dex_galar.csv)
+
+![img](static/shiny/blaziken.png)[Galar Dex [combat] (csv)](data/combat_dex_galar.csv)
+
+![img](static/shiny/lugia.png)[Kanto Dex [main] (csv)](data/base_dex_kanto.csv)
+
+![img](static/shiny/blaziken.png)[Kanto Dex [combat] (csv)](data/combat_dex_kanto.csv)
 
 ![img](static/regular/charizard.png)[Regular Sprites](dex_images.md#regular-sprites)
 

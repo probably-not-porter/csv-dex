@@ -16,7 +16,7 @@ def baseDex():
     data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP'])
     count = 0
     try:
-        html = urlopen("https://www.serebii.net/pokemon/all.shtml")
+        html = urlopen("https://www.serebii.net/pokemon/gen8pokemon.shtml")
     except HTTPError as e:
         print(e)
     except URLError:
