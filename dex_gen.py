@@ -16,7 +16,7 @@ def baseDex():
     data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP'])
     count = 0
     try:
-        html = urlopen("https://www.serebii.net/pokemon/gen4pokemon.shtml")
+        html = urlopen("https://www.serebii.net/pokemon/all.shtml")
     except HTTPError as e:
         print(e)
     except URLError:
@@ -89,7 +89,7 @@ def baseDex():
 def combatDex(data):
     new_data = []
      # add header
-    new_data.append(['Dex Num', 'Name', 'Good against (att)', 'Not good against (att)', 'SE damage from', 'NVE damage from'])
+    new_data.append(['Dex Num', 'Name', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from'])
     count = 0
     for item in range(1, len(data)):
         new_data_line = []

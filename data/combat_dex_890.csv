@@ -1,4 +1,4 @@
-Dex Num,Name,Good against (att),Not good against (att),SE damage from,NVE damage from
+Dex Num,Name,SE damage to,NVE damage to,SE damage from,NVE damage from
 #001,Bulbasaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']","['fire', 'ice', 'flying', 'psychic']","['water', 'electric', 'grass', 'fighting', 'fairy']"
 #002,Ivysaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']","['fire', 'ice', 'flying', 'psychic']","['water', 'electric', 'grass', 'fighting', 'fairy']"
 #003,Venusaur,"['water', 'fairy']","['fire', 'poison', 'flying', 'bug', 'ghost', 'dragon', 'steel']","['fire', 'ice', 'flying', 'psychic']","['water', 'electric', 'grass', 'fighting', 'fairy']"
