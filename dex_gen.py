@@ -89,7 +89,7 @@ def baseDex():
 def combatDex(data):
     new_data = []
      # add header
-    new_data.append(['Dex Num', 'Name', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from'])
+    new_data.append(['Dex Num', 'Name', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from', 'base stat total', 'base stat avg'])
     count = 0
     for item in range(1, len(data)):
         new_data_line = []
@@ -110,6 +110,12 @@ def combatDex(data):
         new_data_line.append(attk_matchups[1])
         new_data_line.append(attk_matchups[2])
         new_data_line.append(attk_matchups[3])
+
+        # pokemon N stat total and avg
+        total = int(data[item][4]) + int(data[item][5]) + int(data[item][6]) + int(data[item][7]) + int(data[item][8]) + int(data[item][9])
+        avg = total // 6
+        new_data_line.append(total)
+        new_data_line.append(avg)
 
         new_data.append(new_data_line)
         
