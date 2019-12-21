@@ -22,9 +22,9 @@ Porter Libby, 2019
 
 ### Sprites
 
-![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](data/normal_sprites.md) 
+![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](normal_sprites.md) 
 
-![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](data/shiny_sprites.md) 
+![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](shiny_sprites.md) 
 
 
 # Usage
