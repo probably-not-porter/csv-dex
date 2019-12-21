@@ -1,26 +1,31 @@
 # Dex: CSV Pokemon Data
-Using webscraping and algorithmic content generation, I have created the following datasets. If they are of use to you, please feel free to use them (under the terms of the MIT open source license)
+Porter Libby, 2019
+## Table of Data
+### CSV Data
+![img](static/regular/darkrai.png) [Full International Dex (890) (CSV)](data/all.csv)
 
-![img](static/shiny/lugia.png) All Gens: [International Dex [main] (csv)](data/base_dex_890.csv) && [Internaltional Dex [combat] (csv)](data/combat_dex_890.csv)
+![img](static/regular/charizard.png) [Generation 1 Dex (151) (CSV)](data/gen1.csv)
 
-![img](static/shiny/ditto.png) Gen 8: [ Galar Dex [main] (csv)](data/base_dex_galar.csv) && [ Galar Dex [combat] (csv)](data/combat_dex_galar.csv)
+![img](static/regular/typhlosion.png) [Generation 2 Dex (100) (CSV)](data/gen2.csv)
 
-![img](static/shiny/empoleon.png) Gen 4: [Sinnoh Dex [main] (csv)](data/base_dex_sinnoh.csv) && [Sinnoh Dex [combat] (csv)](data/combat_dex_sinnoh.csv)
+![img](static/regular/blaziken.png) [Generation 3 Dex (136) (CSV)](data/gen3.csv)
 
-![img](static/shiny/sceptile.png) Gen 3: [Hoenn Dex [main] (csv)](data/base_dex_hoenn.csv) && [Hoenn Dex [combat] (csv)](data/combat_dex_hoenn.csv)
+![img](static/regular/infernape.png) [Generation 4 Dex (107) (CSV)](data/gen4.csv)
 
-![img](static/shiny/typhlosion.png) Gen 2: [Johto Dex [main] (csv)](data/base_dex_johto.csv) && [Johto Dex [combat] (csv)](data/combat_dex_johto.csv)
+![img](static/regular/emboar.png) [Generation 5 Dex (156) (CSV)](data/gen5.csv)
 
-![img](static/shiny/blastoise.png) Gen 1: [ Kanto Dex [main] (csv)](data/base_dex_kanto.csv) && [Kanto Dex [combat] (csv)](data/combat_dex_kanto.csv)
+![img](static/regular/delphox.png) [Generation 6 Dex (72) (CSV)](data/gen6.csv)
 
-![img](static/regular/rayquaza.png)[Regular Sprites](dex_images.md#regular-sprites) (no Galar sprites)
+![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
 
-![img](static/shiny/rayquaza.png)[Shiny Sprites](dex_images.md#shiny-sprites) (no Galar sprites)
+![img](static/shiny/ditto.png) [Generation 8 Dex (81) (CSV)](data/gen8.csv)
 
-![img](static/shiny/regigigas.png)[Type Badges](dex_images.md#type-badges) 
+### Sprites
 
+![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](data/normal_sprites.md) 
 
-Using the information from serebii to create a generalized CSV of pokemon data. I wanted a better way to see combat related stats quickly while playing Pokemon so I made this set of tools, including an automated data collector with a web scraper to fetch states of pokemon, and generate additional reference data.
+![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](data/shiny_sprites.md) 
+
 
 # Usage
 ## Installation 
