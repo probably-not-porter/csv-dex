@@ -15,7 +15,7 @@ for x in range(808,890+1):
     print(name)
     url = "https://www.serebii.net/pokedex-swsh/icon/"+ str(x) +".png"
 
-    with open('static/regular/' + name + '.png', 'wb') as handle:
+    with open('../static/regular/' + name + '.png', 'wb') as handle:
         response = requests.get(url, stream=True)
 
         if not response.ok:
