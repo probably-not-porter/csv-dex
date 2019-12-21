@@ -25,4 +25,4 @@ for x in range(808,890+1):
             if not block:
                 break
             handle.write(block)
-    time.sleep(1)
+    time.sleep(1) # without delay page reqests max out
