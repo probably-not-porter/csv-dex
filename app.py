@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 results = []
-with open("data/base_dex_890.csv") as csvfile:
+with open("data/all.csv") as csvfile:
     reader = csv.reader(csvfile) # change contents to floats
     for row in reader: # each row is a list
         results.append(row)
