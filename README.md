@@ -1,31 +1,31 @@
-# Dex: CSV Pokemon Data
+# Dex
 Porter Libby, 2019
-## Table of Data
-### CSV Data
+## CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (890) (CSV)](data/all.csv)
-
 ![img](static/regular/charizard.png) [Generation 1 Dex (151) (CSV)](data/gen1.csv)
 
 ![img](static/regular/typhlosion.png) [Generation 2 Dex (100) (CSV)](data/gen2.csv)
-
 ![img](static/regular/blaziken.png) [Generation 3 Dex (136) (CSV)](data/gen3.csv)
 
 ![img](static/regular/infernape.png) [Generation 4 Dex (107) (CSV)](data/gen4.csv)
-
 ![img](static/regular/emboar.png) [Generation 5 Dex (156) (CSV)](data/gen5.csv)
 
 ![img](static/regular/delphox.png) [Generation 6 Dex (72) (CSV)](data/gen6.csv)
-
 ![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
 
 ![img](static/shiny/ditto.png) [Generation 8 Dex (81) (CSV)](data/gen8.csv)
 
-### Sprites
-
+## Sprite Catalogues
 ![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](normal_sprites.md) 
-
 ![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](shiny_sprites.md) 
 
+## Tools
+![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
+![img](static/regular/ho-oh.png) [Dex Data Visualizer (py)](tools/vis_dex_data.py)
+
+![img](static/regular/articuno.png) [Gen8 Image Tool (py)](tools/scrape_gen8_img.py)
+![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/scrape_gen8_img.py)
+![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/scrape_gen8_img.py)
 
 # Usage
 ## Installation 
