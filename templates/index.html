@@ -118,50 +118,50 @@
                         <td class='attack'>
                             {% if loop.index != 1 %}
                                 SE damage to<br>
-                                {% for type in data2[ loop.index - 1 ][2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% for type in item[10].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
-                                {{ data2[ loop.index - 1 ][2] }}
+                                {{ item[10] }}
                             {%endif%}
                         </td>
                         <td class='attack'>
                             {% if loop.index != 1 %}
                                 NVE damage to<br>
-                                {% for type in data2[ loop.index - 1 ][3].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% for type in item[11].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
-                                {{ data2[ loop.index - 1 ][3] }}
+                                {{ item[11] }}
                             {%endif%}
                         </td>
 
                         <td class='defense'>
                             {% if loop.index != 1 %}
                                 SE damage from<br>
-                                {% for type in data2[ loop.index - 1 ][4].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% for type in item[12].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
-                                {{ data2[ loop.index - 1 ][4] }}
+                                {{ item[12] }}
                             {%endif%}
                         </td>
                         <td class='defense'>
                             {% if loop.index != 1 %}
                                 NVE damage to<br>
-                                {% for type in data2[ loop.index - 1 ][5].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
+                                {% for type in item[13].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
-                                {{ data2[ loop.index - 1 ][5] }}
+                                {{ item[13] }}
                             {%endif%}
                         </td>
 

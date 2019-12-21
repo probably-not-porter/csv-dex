@@ -10,26 +10,26 @@ import util.wr_chart as wr_chart
 
 
 ### DEX CSV BUILDERS
-def baseDex():
+def buildDex():
+    url = "https://www.serebii.net/pokemon/gen8pokemon.shtml"
     data = []
     # add header
-    data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP'])
+    data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from', 'base stat total', 'base stat avg'])
     count = 0
     try:
-        html = urlopen("https://www.serebii.net/pokemon/all.shtml")
+        html = urlopen(url)
     except HTTPError as e:
         print(e)
     except URLError:
-        print("Server down or incorrect domain")
+        print("ERR: Server down or incorrect domain")
     else:
-        print("Server connected!")
-        print("Copying HTML...")
+        print("--> Server connected!")
+        print("--> Copying HTML from " + url)
 
         res = BeautifulSoup(html.read(),"html5lib")
         tags = res.findAll("table", {"class": "dextable"})
-        print("Done!")
-        print("Filtering...")
-
+        print("--> Done!")
+        print("--> Filtering...")
         for tag in tags:
             inf = tag.findAll("tr")
             for i in range(2, len(inf)): # This step is iterating over the length of the pokedex, basically. (call this pokemon N)
@@ -62,6 +62,15 @@ def baseDex():
                     sdefense = stats[9].getText().replace("\n", "")
                     speed = stats[10].getText().replace("\n", "")
 
+                    # pokemon N attacking modifiers
+                    attk_matchups = genWeaknessResistance(str(types))
+                    
+
+                    # pokemon N stat total and avg
+                    total = int(health) + int(attack) + int(defense) + int(sattack) + int(sdefense) + int(speed)
+                    avg = total // 6
+                    
+
                     # create row
                     data_item = []
                     data_item.append(dexnum)
@@ -74,9 +83,17 @@ def baseDex():
                     data_item.append(sattack)
                     data_item.append(sdefense)
                     data_item.append(speed)
+                    data_item.append(attk_matchups[0])
+                    data_item.append(attk_matchups[1])
+                    data_item.append(attk_matchups[2])
+                    data_item.append(attk_matchups[3])
+                    data_item.append(total)
+                    data_item.append(avg)
+
+                    # append row
                     data.append(data_item)
-    print("Done!")
-    print("creating CSV...")
+    print("--> Done!")
+    print("--> creating CSV...")
     # create datafile
     myFile = open('data/base_dex_'+ str(count) +'.csv', 'w')
     with myFile:
@@ -85,47 +102,6 @@ def baseDex():
 
     print('Done!')
     return data
-
-def combatDex(data):
-    new_data = []
-     # add header
-    new_data.append(['Dex Num', 'Name', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from', 'base stat total', 'base stat avg'])
-    count = 0
-    for item in range(1, len(data)):
-        new_data_line = []
-        count = count + 1
-
-        # Pokemon N dex number for reference
-        dexnum = data[item][0]
-        new_data_line.append(dexnum)
-
-        # Pokemon N name for reference
-        name = data[item][1]
-        new_data_line.append(name)
-
-        # pokemon N attacking modifiers
-        types = data[item][2]
-        attk_matchups = genWeaknessResistance(types)
-        new_data_line.append(attk_matchups[0])
-        new_data_line.append(attk_matchups[1])
-        new_data_line.append(attk_matchups[2])
-        new_data_line.append(attk_matchups[3])
-
-        # pokemon N stat total and avg
-        total = int(data[item][4]) + int(data[item][5]) + int(data[item][6]) + int(data[item][7]) + int(data[item][8]) + int(data[item][9])
-        avg = total // 6
-        new_data_line.append(total)
-        new_data_line.append(avg)
-
-        new_data.append(new_data_line)
-        
-    # create datafile
-    myFile = open('data/combat_dex_'+ str(count) +'.csv', 'w')
-    with myFile:
-        writer = csv.writer(myFile)
-        writer.writerows(new_data)
-
-    print('Done!')
 
 ### UTIL
 def genTypeArray(imgs): # create an array of types out of the type data from dex info
@@ -300,12 +276,9 @@ def numToType (num):
  
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
-    print("Dex Data tool v0.1\n")
-    print("------- CREATE BASE DEX -------")
-    base_data = baseDex() # generate base dex and return data
-
-    print("------- CREATE ADDITIONAL INFO DEX --------")
-    combatDex(base_data)
+    print("Dex Data Scraping tool v0.2\n")
+    print("--> Starting Web Scraper...")
+    base_data = buildDex() # generate base dex and return data
 
 
 main() #run when file is run
