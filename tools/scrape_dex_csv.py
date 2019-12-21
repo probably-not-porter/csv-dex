@@ -6,12 +6,11 @@ from bs4 import BeautifulSoup
 import numpy as np
 import csv
 
-import util.wr_chart as wr_chart
+import wr_chart as wr_chart
 
 
 ### DEX CSV BUILDERS
-def buildDex():
-    url = "https://www.serebii.net/pokemon/gen8pokemon.shtml"
+def buildDex(url):
     data = []
     # add header
     data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from', 'base stat total', 'base stat avg'])
@@ -95,7 +94,7 @@ def buildDex():
     print("--> Done!")
     print("--> creating CSV...")
     # create datafile
-    myFile = open('data/base_dex_'+ str(count) +'.csv', 'w')
+    myFile = open('raw_dex_output'+ str(count) +'.csv', 'w')
     with myFile:
         writer = csv.writer(myFile)
         writer.writerows(data)
@@ -276,9 +275,10 @@ def numToType (num):
  
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
+    url = "https://www.serebii.net/pokemon/gen8pokemon.shtml"
     print("Dex Data Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")
-    base_data = buildDex() # generate base dex and return data
+    base_data = buildDex(url) # generate base dex and return data
 
 
 main() #run when file is run
