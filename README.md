@@ -24,8 +24,8 @@ Porter Libby, 2019
 ![img](static/regular/ho-oh.png) [Dex Data Visualizer (py)](tools/vis_dex_data.py)
 
 ![img](static/regular/articuno.png) [Gen8 Image Tool (py)](tools/scrape_gen8_img.py)
-![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/scrape_gen8_img.py)
-![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/scrape_gen8_img.py)
+![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
+![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
 
 # Usage
 ## Installation 
