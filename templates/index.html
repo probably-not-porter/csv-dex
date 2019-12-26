@@ -13,6 +13,10 @@
                 image-rendering: -moz-crisp-edges;
                 image-rendering: crisp-edges;
             }
+            .sprite{
+                width: 160px;
+                height: 120px;
+            }
             #t{
                 width: 100%;
                 margin: 0;
@@ -74,29 +78,29 @@
                         <td style='width: 340px'>
                             {% if loop.index != 1 %}
                                 {% if item[1] == "Farfetch'd" %} 
-                                    <img style='width: 160px;' src='{{"/static/regular/farfetchd.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/farfetchd.png"}}'>
+                                    <img  class='sprite' src='{{"/static/regular/farfetchd.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/farfetchd.png"}}'>
                                 {% elif item[1] == "Type: Null" %}
-                                    <img style='width: 160px;' src='{{"/static/regular/type-null.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/type-null.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/type-null.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/type-null.png"}}'>
                                 {% elif item[1] == "Mr. Mime" %}
-                                    <img style='width: 160px;' src='{{"/static/regular/mr-mime.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/mr-mime.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/mr-mime.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/mr-mime.png"}}'>
                                 {% elif item[1] == "Flabébé" %}
-                                    <img style='width: 160px;' src='{{"/static/regular/flabebe.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/flabebe.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/flabebe.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/flabebe.png"}}'>
                                 {% elif item[1] == "Mime Jr." %}
-                                    <img style='width: 160px;' src='{{"/static/regular/mime-jr.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/mime-jr.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/mime-jr.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/mime-jr.png"}}'>
                                 {% elif item[1] == "Nidoran♀" %}
-                                    <img style='width: 160px;' src='{{"/static/regular/nidoran-f.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/nidoran-f.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/nidoran-f.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/nidoran-f.png"}}'>
                                 {% elif item[1] == "Nidoran♂" %}
-                                    <img style='width: 160px;' src='{{"/static/regular/nidoran-m.png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/nidoran-m.png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/nidoran-m.png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/nidoran-m.png"}}'>
                                 {% else %}
-                                    <img style='width: 160px;' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
-                                    <img style='width: 160px;' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img class='sprite' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img class='sprite' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
                                 {% endif %}
                             {% endif %}
 
@@ -168,15 +172,20 @@
                         <td class='stat'>
                             {% if loop.index != 1 %}
                                 <ul style="list-style-type:none">
-                                    <li><strong>HP:</strong> {{ item[4] }}</li>
-                                    <li><strong>AT:</strong> {{ item[5] }}</li>
-                                    <li><strong>DE:</strong> {{ item[6] }}</li>
-                                    <li><strong>SA:</strong> {{ item[7] }}</li>
-                                    <li><strong>SD:</strong> {{ item[8] }}</li>
-                                    <li><strong>SP:</strong> {{ item[9] }}</li>
+                                    <li style='color:#cfc'><strong>HP:</strong> {{ item[4] }}</li>
+
+                                    <li style='color:#fcc'><strong>ATT:</strong> {{ item[5] }}</li>
+                                    <li style='color:#ccf'><strong>DEF:</strong> {{ item[6] }}</li>
+
+                                    <li style='color:#fcc'><strong>S.A:</strong> {{ item[7] }}</li>
+                                    <li style='color:#ccf'><strong>S.D:</strong> {{ item[8] }}</li>
+
+                                    <li><strong>SPE:</strong> {{ item[9] }}</li>
+
+                                    <li><strong>TTL:</strong> {{ item[14] }}</li>
                                 </ul>
                             {% else %}
-                                Stats
+                                Base Stats
                             {% endif %}
                         </td>
                     </tr>
