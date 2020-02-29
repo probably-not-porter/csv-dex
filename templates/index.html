@@ -78,29 +78,29 @@
                         <td style='width: 340px'>
                             {% if loop.index != 1 %}
                                 {% if item[1] == "Farfetch'd" %} 
-                                    <img  class='sprite' src='{{"/static/regular/farfetchd.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/farfetchd.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/farfetchd.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/farfetchd.png"}}'>
                                 {% elif item[1] == "Type: Null" %}
-                                    <img class='sprite' src='{{"/static/regular/type-null.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/type-null.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/type-null.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/type-null.png"}}'>
                                 {% elif item[1] == "Mr. Mime" %}
-                                    <img class='sprite' src='{{"/static/regular/mr-mime.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/mr-mime.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/mr-mime.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/mr-mime.png"}}'>
                                 {% elif item[1] == "Flabébé" %}
-                                    <img class='sprite' src='{{"/static/regular/flabebe.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/flabebe.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/flabebe.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/flabebe.png"}}'>
                                 {% elif item[1] == "Mime Jr." %}
-                                    <img class='sprite' src='{{"/static/regular/mime-jr.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/mime-jr.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/mime-jr.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/mime-jr.png"}}'>
                                 {% elif item[1] == "Nidoran♀" %}
-                                    <img class='sprite' src='{{"/static/regular/nidoran-f.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/nidoran-f.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/nidoran-f.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/nidoran-f.png"}}'>
                                 {% elif item[1] == "Nidoran♂" %}
-                                    <img class='sprite' src='{{"/static/regular/nidoran-m.png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/nidoran-m.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/nidoran-m.png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/nidoran-m.png"}}'>
                                 {% else %}
-                                    <img class='sprite' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
-                                    <img class='sprite' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
                                 {% endif %}
                             {% endif %}
 
@@ -110,7 +110,7 @@
                             {% if loop.index != 1 %}
                                 {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
+                                        <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -124,7 +124,7 @@
                                 SE damage to<br>
                                 {% for type in item[10].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
+                                        <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -136,7 +136,7 @@
                                 NVE damage to<br>
                                 {% for type in item[11].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
+                                        <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -149,7 +149,7 @@
                                 SE damage from<br>
                                 {% for type in item[12].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
+                                        <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
@@ -158,10 +158,10 @@
                         </td>
                         <td class='defense'>
                             {% if loop.index != 1 %}
-                                NVE damage to<br>
+                                NVE damage from<br>
                                 {% for type in item[13].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
-                                        <img style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
+                                        <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
                                     {% endif %}
                                 {% endfor %}
                             {%else%}
