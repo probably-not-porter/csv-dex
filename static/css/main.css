@@ -1,0 +1,140 @@
+/* GENERAL */
+body{
+    background-color:#333;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+img{
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* TABLE */
+#t{
+    margin: 0 auto;
+    background: #333;
+    color: white;
+    border: none;
+    border: 1px solid black;
+    top:0;
+    position: absolute;
+}
+#t_h{
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    margin-bottom: 100px;
+    background: black !important;
+}
+td{
+    
+    margin: 0px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+thead{
+    background: black !important;
+}
+tbody{
+    padding-top:40px;
+    float: left;
+    border-top: 1px solid black;    
+}
+
+/* SPRITE */
+.sprite{
+    width: 160px;
+    height: 120px;
+}
+.sprite-s{
+    width: 160px;
+    height: 120px;
+    display: none;
+}
+
+
+/* COLUMNS */
+.pkmn-sprite{
+    width: 160px;
+}
+.pkmn-sprite:hover{
+    background: #292929;
+}
+.pkmn-sprite:hover .sprite{
+    display: none;
+}
+.pkmn-sprite:hover .sprite-s{
+    display: inline;
+}
+.pkmn-type{
+    width: 100px;
+    padding-right:8px;
+}
+.pkmn-a{
+    background: #694242;
+    width: 250px;
+}
+.pkmn-a2{
+    background: #694242;
+    width: 250px;
+}
+.pkmn-d{
+    background: #424269;
+    width: 250px;
+}
+.pkmn-d2{
+    background: #424269;
+    width: 250px;
+}
+.pkmn-stats{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+.pkmn-stats li{
+    margin-bottom:5px;
+    width: 100%;
+    text-overflow: initial;
+    margin-left:-24px;
+}
+.pkmn-stats div{
+    background:rgba(255,255,255,0.1);
+    widows: 10px;
+    height: 1.1rem;
+    margin-top: -1.1rem;
+    border-bottom: 1px solid white;
+}
+.pkmn-stats span{
+}
+
+
+/* SETTINGS */
+#header{
+    position:fixed;
+    z-index: 10;
+    right: 20px;
+    top: 20px;
+    text-align: right;
+    color: white;
+}
+@media only screen and (max-width: 1300px) {
+    #header{
+        display: none;
+    }
+}
+#settings{
+    position:fixed;
+    z-index: 10;
+    right: 20px;
+    bottom: 20px;
+}
+#search{
+    width: 200px;
+    height: 40px;
+    font-size:20px;
+}
+#info-mode{
+    height: 40px;
+    font-size:20px;
+}

@@ -3,110 +3,61 @@
     <head>
         <title>.dex</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='regular/blastoise.png') }}">
-        <style>
-            body{
-                background-color:#333;
-                font-family: "Lucida Console", Monaco, monospace;
-            }
-            img{
-                image-rendering: pixelated;
-                image-rendering: -moz-crisp-edges;
-                image-rendering: crisp-edges;
-            }
-            .sprite{
-                width: 160px;
-                height: 120px;
-            }
-            #t{
-                width: 100%;
-                margin: 0;
-                top: 0px;
-                left: 0px;
-                position: absolute;
-                background: #333;
-                color: white;
-                border: 1px solid black;
-            }
-            #t_h{
-                font-size: 20px;
-                text-align: center;
-            }
-            td{
-                border: 1px solid black;
-                margin: 0px;
-                text-align: center;
-            }
-            .attack{
-                background: #694242;
-                width: 250px;
-            }
-            .defense{
-                background: #424269;
-                width: 250px;
-            }
-            .stat{
-                width: 200px;
-                text-align: left;
-                padding-left: 10px;
-            }
-            .stat li{
-                margin-bottom:5px;
-            }
-            #myInput{
-                position:fixed;
-                z-index: 10;
-                right: 20px;
-                bottom: 20px;
-                width: 400px;
-                height: 40px;
-                font-size:20px;
-            }
-        </style>
-        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </head>
     <body>
         <div class="container">
             <div class="component">
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-                <table id='t'>
+                <div id='header'>
+                    <h1>Dex</h1>
+                    <h2>Stats Simplified</h2>
+                    <p1>Created by Porter</p1>
+                </div>
+                <div id='settings'>
+                    <input type="text" id="search" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                    <button id='info-mode'>Attacking</button>
+                </div>
+                <table id='t' cellspacing="0" cellpadding="0">
                 {% for item in data %}
                     {% if loop.index == 1 %}
                         <thead id='t_h'>
                     {% endif %}
                     <tr>
-                        <td {% if loop.index != 1 %} style='font-size: 30px;' {% endif %}>{{ item[0] }}</td>
-                        <td style='width: 340px'>
+                        <td class='pkmn-sprite'>
                             {% if loop.index != 1 %}
                                 {% if item[1] == "Farfetch'd" %} 
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/farfetchd.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/farfetchd.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/farfetchd.png"}}'>
                                 {% elif item[1] == "Type: Null" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/type-null.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/type-null.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/type-null.png"}}'>
                                 {% elif item[1] == "Mr. Mime" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/mr-mime.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/mr-mime.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/mr-mime.png"}}'>
                                 {% elif item[1] == "Flabébé" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/flabebe.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/flabebe.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/flabebe.png"}}'>
                                 {% elif item[1] == "Mime Jr." %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/mime-jr.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/mime-jr.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/mime-jr.png"}}'>
                                 {% elif item[1] == "Nidoran♀" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/nidoran-f.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/nidoran-f.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/nidoran-f.png"}}'>
                                 {% elif item[1] == "Nidoran♂" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/nidoran-m.png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/nidoran-m.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/nidoran-m.png"}}'>
                                 {% else %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/" + item[1].lower().replace(" ", "-") + ".png"}}'>
-                                    <img loading="lazy" class='sprite' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/" + item[1].lower().replace(" ", "-") + ".png"}}'>
                                 {% endif %}
                             {% endif %}
 
-                            {{ item[1] }}
+                            {% if loop.index != 1 %}{{ item[0] }}: {{ item[1] }} {% else %} PKMN {% endif %} 
                         </td>
-                        <td>
+                        <td class='pkmn-type'>
                             {% if loop.index != 1 %}
                                 {% for type in item[2].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
@@ -119,9 +70,8 @@
 
                         </td>
                         
-                        <td class='attack'>
+                        <td class='pkmn-a'>
                             {% if loop.index != 1 %}
-                                SE damage to<br>
                                 {% for type in item[10].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
@@ -131,9 +81,8 @@
                                 {{ item[10] }}
                             {%endif%}
                         </td>
-                        <td class='attack'>
+                        <td class='pkmn-a2'>
                             {% if loop.index != 1 %}
-                                NVE damage to<br>
                                 {% for type in item[11].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
@@ -144,9 +93,8 @@
                             {%endif%}
                         </td>
 
-                        <td class='defense'>
+                        <td class='pkmn-d'>
                             {% if loop.index != 1 %}
-                                SE damage from<br>
                                 {% for type in item[12].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
@@ -156,9 +104,8 @@
                                 {{ item[12] }}
                             {%endif%}
                         </td>
-                        <td class='defense'>
+                        <td class='pkmn-d2'>
                             {% if loop.index != 1 %}
-                                NVE damage from<br>
                                 {% for type in item[13].replace("[", "").replace("]", "").replace("'","").replace(" ","").split(",") %}
                                     {% if type != "" %}
                                         <img loading="lazy" style='width: 64px;' src='{{"/static/types/" + type.lower() + ".gif"}}'>
@@ -169,20 +116,20 @@
                             {%endif%}
                         </td>
 
-                        <td class='stat'>
+                        <td class='pkmn-stats'>
                             {% if loop.index != 1 %}
                                 <ul style="list-style-type:none">
-                                    <li style='color:#cfc'><strong>HP:</strong> {{ item[4] }}</li>
+                                    <li style='color:#cfc'><span><strong>HP:</strong> {{ item[4] }}</span><div style='width: {{ 160 * ((item[4] | int) / 255) }}px'></div></li>
 
-                                    <li style='color:#fcc'><strong>ATT:</strong> {{ item[5] }}</li>
-                                    <li style='color:#ccf'><strong>DEF:</strong> {{ item[6] }}</li>
+                                    <li style='color:#fcc'><span><strong>ATT:</strong> {{ item[5] }}</span><div style='width: {{ 160 * ((item[5] | int) / 180) }}px'></div></li>
+                                    <li style='color:#ccf'><span><strong>DEF:</strong> {{ item[6] }}</span><div style='width: {{ 160 * ((item[6] | int) / 230) }}px'></div></li>
 
-                                    <li style='color:#fcc'><strong>S.A:</strong> {{ item[7] }}</li>
-                                    <li style='color:#ccf'><strong>S.D:</strong> {{ item[8] }}</li>
+                                    <li style='color:#fcc'><span><strong>S.A:</strong> {{ item[7] }}</span><div style='width: {{ 160 * ((item[7] | int) / 180) }}px'></div></li>
+                                    <li style='color:#ccf'><span><strong>S.D:</strong> {{ item[8] }}</span><div style='width: {{ 160 * ((item[8] | int) / 230) }}px'></div></li>
 
-                                    <li><strong>SPE:</strong> {{ item[9] }}</li>
+                                    <li><span><strong>SPE:</strong> {{ item[9] }}</span><div style='width: {{ 160 * ((item[9] | int) / 180) }}px'></div></li>
 
-                                    <li><strong>TTL:</strong> {{ item[14] }}</li>
+                                    <li><span><strong>TTL:</strong> {{ item[14] }}</span><div style='width: {{ 160 * ((item[14] | int) / 720) }}px'></div></li>
                                 </ul>
                             {% else %}
                                 Base Stats
@@ -199,7 +146,7 @@
         <script>
         function myFunction() {
             var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
+            input = document.getElementById("search");
 
             filter = input.value.toUpperCase();
             table = document.getElementById("t");
@@ -207,7 +154,7 @@
             tr = table.getElementsByTagName("tr");
 
             for (i = 1; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];
+                td = tr[i].getElementsByTagName("td")[0];
 
                 if (td) {
                     txtValue = td.textContent || td.innerText;

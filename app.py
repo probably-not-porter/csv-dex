@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template
 import csv
+import codecs
+
 
 app = Flask(__name__)
 
@@ -8,6 +10,7 @@ app = Flask(__name__)
 results = []
 with open("data/all.csv") as csvfile:
     reader = csv.reader(csvfile) # change contents to floats
+    print(reader)
     for row in reader: # each row is a list
         results.append(row)
 
