@@ -170,7 +170,7 @@ def genWeaknessResistance(types):
         'poison': [
             ['grass', 'fairy'],
             ['poison', 'ground', 'rock', 'steel', 'ghost'],
-            ['fighting', 'poison', 'grass', 'fairy'],
+            ['fighting', 'poison', 'grass', 'fairy', 'bug'],
             ['ground', 'psychic']
         ],
         'ground': [
