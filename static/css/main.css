@@ -8,6 +8,9 @@ img{
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
+button{
+    cursor: pointer;
+}
 
 /* TABLE */
 #t{
@@ -50,22 +53,13 @@ tbody{
 .sprite-s{
     width: 160px;
     height: 120px;
-    display: none;
+    
 }
 
 
 /* COLUMNS */
 .pkmn-sprite{
     width: 160px;
-}
-.pkmn-sprite:hover{
-    background: #292929;
-}
-.pkmn-sprite:hover .sprite{
-    display: none;
-}
-.pkmn-sprite:hover .sprite-s{
-    display: inline;
 }
 .pkmn-type{
     width: 100px;
@@ -102,10 +96,11 @@ tbody{
     background:rgba(255,255,255,0.1);
     widows: 10px;
     height: 1.1rem;
-    margin-top: -1.1rem;
-    border-bottom: 1px solid white;
+    margin-top: -1.2rem;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 .pkmn-stats span{
+    padding-left:2px;
 }
 
 
@@ -128,6 +123,7 @@ tbody{
     z-index: 10;
     right: 20px;
     bottom: 20px;
+    text-align: right;
 }
 #search{
     width: 200px;
@@ -135,6 +131,10 @@ tbody{
     font-size:20px;
 }
 #info-mode{
+    height: 40px;
+    font-size:20px;
+}
+#img-mode{
     height: 40px;
     font-size:20px;
 }

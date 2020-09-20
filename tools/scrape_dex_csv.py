@@ -13,7 +13,7 @@ import wr_chart as wr_chart
 def buildDex(url):
     data = []
     # add header
-    data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP', 'SE damage to', 'NVE damage to', 'SE damage from', 'NVE damage from', 'base stat total', 'base stat avg'])
+    data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP', 'Strong Against', 'Weak Against', 'Resistant To', 'Vulnerable To', 'base stat total', 'base stat avg'])
     count = 0
     try:
         html = urlopen(url)
@@ -62,7 +62,7 @@ def buildDex(url):
                     speed = stats[10].getText().replace("\n", "")
 
                     # pokemon N attacking modifiers
-                    attk_matchups = genWeaknessResistance(str(types))
+                    attk_matchups = genWeaknessResistance(types)
                     
 
                     # pokemon N stat total and avg
@@ -136,7 +136,7 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
         elif "psychic" in img:
             types.append("psychic")
         elif "ice" in img:
-            types.append("ice ")
+            types.append("ice")
         elif "dragon" in img:
             types.append("dragon")
         elif "dark" in img:
@@ -147,68 +147,138 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
             print("error")
     return types
 
-def genWeaknessResistance(types_string):
-    types = types_string.strip("][").replace("'","").split(', ') 
-    if len(types) == 0:
-        print("ERR: found 0 types")
-    elif len(types) == 1:
-        typenum = typeToNum(types[0])
-        se_chart = wr_chart.matrix[typenum] # pokemon N is super effective against these things
-        se_against = []
-        nve_against = []
-
-        se_chart2 = []
-        for x in range(18):
-            se_chart2.append(wr_chart.matrix[x][typenum])
-        se_from = []
-        nve_from = []
-        
-
-        for matchup_ind in range(len(se_chart)):
-            if se_chart[matchup_ind] < 1:
-                nve_against.append(numToType(matchup_ind))
-            elif se_chart[matchup_ind] > 1:
-                se_against.append(numToType(matchup_ind))
-
-        for matchup_ind in range(len(se_chart2)):
-            if se_chart[matchup_ind] < 1:
-                nve_from.append(numToType(matchup_ind))
-            elif se_chart[matchup_ind] > 1:
-                se_from.append(numToType(matchup_ind))
-
-        return [se_against, nve_against, se_from, nve_from]
+def genWeaknessResistance(types):
+    matchup_dictionary = {
+        'normal': [
+            [],
+            ['rock','ghost','steel'],
+            ['ghost'],
+            ['fighting']
+        ],
+        'fighting': [
+            ['normal', 'rock', 'steel', 'ice', 'dark'],
+            ['flying', 'poison', 'psychic', 'bug', 'ghost', 'fairy'],
+            ['rock', 'bug', 'ghost'],
+            ['flying', 'psychic', 'fairy']
+        ],
+        'flying': [
+            ['fighting', 'bug', 'grass'],
+            ['rock', 'steel', 'electric'],
+            ['fighting', 'ground','bug','grass'],
+            ['rock', 'electric', 'ice']
+        ],
+        'poison': [
+            ['grass', 'fairy'],
+            ['poison', 'ground', 'rock', 'steel', 'ghost'],
+            ['fighting', 'poison', 'grass', 'fairy'],
+            ['ground', 'psychic']
+        ],
+        'ground': [
+            ['poison', 'rock', 'steel', 'fire', 'electric'],
+            ['flying', 'bug', 'grass'],
+            ['poison', 'rock', 'electric'],
+            ['water', 'ice', 'grass']
+        ],
+        'rock': [
+            ['flying', 'bug', 'fire', 'ice'],
+            ['fighting', 'ground', 'steel'],
+            ['normal', 'flying', 'poison', 'fire'],
+            ['fighting', 'ground', 'steel', 'water', 'grass']
+        ],
+        'bug': [
+            ['grass', 'psychic', 'dark'],
+            ['fighting', 'flying', 'poison', 'ghost', 'steel', 'fire', 'fairy'],
+            ['fighting', 'ground', 'grass'],
+            ['flying', 'rock', 'fire']
+        ],
+        'ghost': [
+            ['ghost', 'psychic'],
+            ['normal', 'dark'],
+            ['normal', 'fighting', 'poison', 'bug'],
+            ['ghost', 'dark']
+        ],
+        'steel': [
+            ['rock', 'ice', 'fairy'],
+            ['steel', 'fire', 'water', 'electric'],
+            ['normal', 'flying', 'poison', 'rock', 'bug', 'steel', 'grass', 'psychic', 'ice', 'dragon', 'fairy'],
+            ['fighting', 'ground', 'fire']
+        ],
+        'fire': [
+            ['bug', 'steel', 'grass', 'ice'],
+            ['rock', 'fire', 'water', 'dragon'],
+            ['bug', 'steel', 'fire', 'grass', 'ice'],
+            ['ground', 'rock', 'water']
+        ],
+        'water': [
+            ['ground', 'rock', 'fire'],
+            ['water', 'grass', 'dragon'],
+            ['steel', 'fire', 'water', 'ice'],
+            ['grass', 'electric']
+        ],
+        'grass': [
+            ['ground', 'rock', 'water'],
+            ['flying', 'poison', 'bug', 'steel', 'fire', 'grass', 'dragon'],
+            ['ground', 'water', 'grass', 'electric'],
+            ['flying', 'poison', 'bug', 'fire', 'ice']
+        ],
+        'electric': [
+            ['flying', 'water'],
+            ['ground', 'grass', 'electric', 'dragon'],
+            ['flying', 'steel', 'electric'],
+            ['ground']
+        ],
+        'psychic': [
+            ['fighting', 'poison'],
+            ['steel', 'dark', 'psychic'],
+            ['fighting', 'psychic'],
+            ['bug', 'ghost', 'dark']
+        ],
+        'ice': [
+            ['flying', 'ground', 'grass', 'dragon'],
+            ['steel', 'fire', 'water', 'ice'],
+            ['ice'],
+            ['fighting', 'rock', 'steel', 'fire']
+        ],
+        'dragon': [
+            ['dragon'],
+            ['steel', 'fairy'],
+            ['fire', 'water', 'grass', 'electric'],
+            ['ice', 'dragon', 'fairy']
+        ],
+        'fairy': [
+            ['fighting', 'dragon', 'dark'],
+            ['poison', 'steel', 'fire'],
+            ['fighting', 'bug', 'dragon', 'dark'],
+            ['poison', 'steel']
+        ],
+        'dark': [
+            ['ghost', 'psychic'],
+            ['fighting', 'dark', 'fairy'],
+            ['ghost', 'psychic', 'dark'],
+            ['fighting', 'bug', 'fairy']
+        ]
+    }
+    if len(types) == 1:
+        return matchup_dictionary[types[0]] # simple as dat
     elif len(types) == 2:
-        typenum_1 = typeToNum(types[0])
-        typenum_2 = typeToNum(types[1])
-        se_chart = getComposite(wr_chart.matrix[typenum_1], wr_chart.matrix[typenum_2])
-        se_against = []
-        nve_against = []
+        new_matchup = [
+            list(dict.fromkeys(matchup_dictionary[types[0]][0] + matchup_dictionary[types[1]][0])),
+            list(dict.fromkeys(matchup_dictionary[types[0]][1] + matchup_dictionary[types[1]][1])),
+            list(dict.fromkeys(matchup_dictionary[types[0]][2] + matchup_dictionary[types[1]][2])),
+            list(dict.fromkeys(matchup_dictionary[types[0]][3] + matchup_dictionary[types[1]][3])),
+        ]
 
-        chart_1 = []
-        chart_2 = []
-        for x in range(18):
-            chart_1.append(wr_chart.matrix[x][typenum_1])
-            chart_2.append(wr_chart.matrix[x][typenum_2])
+        for t in new_matchup[0]:
+            if t in new_matchup[1]:
+                new_matchup[0].remove(t)
+                new_matchup[1].remove(t)
 
-        se_chart2 = getComposite(chart_1, chart_2)
-        se_from = []
-        nve_from = []
+        for t in new_matchup[2]:
+            if t in new_matchup[3]:
+                new_matchup[2].remove(t)
+                new_matchup[3].remove(t)
 
-
-        for matchup_ind in range(len(se_chart)):
-            if se_chart[matchup_ind] < 1:
-                nve_against.append(numToType(matchup_ind))
-            elif se_chart[matchup_ind] > 1:
-                se_against.append(numToType(matchup_ind))
-
-        for matchup_ind in range(len(se_chart2)):
-            if se_chart2[matchup_ind] < 1:
-                nve_from.append(numToType(matchup_ind))
-            elif se_chart2[matchup_ind] > 1:
-                se_from.append(numToType(matchup_ind))
-
-
-        return [se_against, nve_against, se_from, nve_from]
+        return new_matchup
     else:
         print("ERR: invalid type array")
 
@@ -275,7 +345,7 @@ def numToType (num):
  
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
-    url = "https://www.serebii.net/pokemon/gen8pokemon.shtml"
+    url = "https://www.serebii.net/pokemon/nationalpokedex.shtml"
     print("Dex Data Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")
     base_data = buildDex(url) # generate base dex and return data

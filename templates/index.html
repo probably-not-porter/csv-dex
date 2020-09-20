@@ -17,8 +17,10 @@
                     <p1>Created by Porter</p1>
                 </div>
                 <div id='settings'>
-                    <input type="text" id="search" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-                    <button id='info-mode'>Attacking</button>
+                    
+                    <input type="text" id="search" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"><br><br>
+                    <button id='info-mode'>Attacking</button><br><br>
+                    <button id='img-mode'>Normal Sprites</button>
                 </div>
                 <table id='t' cellspacing="0" cellpadding="0">
                 {% for item in data %}
@@ -31,12 +33,18 @@
                                 {% if item[1] == "Farfetch'd" %} 
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/farfetchd.png"}}'>
                                     <img loading="lazy" class='sprite-s' src='{{"/static/shiny/farfetchd.png"}}'>
+                                {% elif item[1] == "Sirfetch'd" %}
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/sirfetchd.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/sirfetchd.png"}}'>
                                 {% elif item[1] == "Type: Null" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/type-null.png"}}'>
                                     <img loading="lazy" class='sprite-s' src='{{"/static/shiny/type-null.png"}}'>
                                 {% elif item[1] == "Mr. Mime" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/mr-mime.png"}}'>
                                     <img loading="lazy" class='sprite-s' src='{{"/static/shiny/mr-mime.png"}}'>
+                                {% elif item[1] == "Mr. Rime" %}
+                                    <img loading="lazy" class='sprite' src='{{"/static/regular/mr-rime.png"}}'>
+                                    <img loading="lazy" class='sprite-s' src='{{"/static/shiny/mr-rime.png"}}'>
                                 {% elif item[1] == "Flabébé" %}
                                     <img loading="lazy" class='sprite' src='{{"/static/regular/flabebe.png"}}'>
                                     <img loading="lazy" class='sprite-s' src='{{"/static/shiny/flabebe.png"}}'>
