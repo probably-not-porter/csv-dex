@@ -367,9 +367,9 @@ def numToType (num):
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
     url_ls = [
-        "https://www.serebii.net/pokemon/gen8pokemon.shtml"
+        "https://www.serebii.net/pokemon/nationalpokedex.shtml"
     ]
-    print("Dex Data Scraping tool v0.2\n")
+    print("Dex Data Scraping tool v0.3\n")
     print("--> Starting Web Scraper...")
     base_data = buildDex(url_ls) # generate base dex and return data
 

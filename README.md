@@ -1,4 +1,4 @@
-# Dex
+# Dex v0.3
 Porter Libby, 2020
 # CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (890) (CSV)](data/all.csv)
