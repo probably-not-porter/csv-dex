@@ -1,29 +1,40 @@
 # Dex
 Porter Libby, 2019
-## CSV Data
+# CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (890) (CSV)](data/all.csv)
+
+### Dex by Generation
+
 ![img](static/regular/charizard.png) [Generation 1 Dex (151) (CSV)](data/gen1.csv)
-
 ![img](static/regular/typhlosion.png) [Generation 2 Dex (100) (CSV)](data/gen2.csv)
+
 ![img](static/regular/blaziken.png) [Generation 3 Dex (136) (CSV)](data/gen3.csv)
-
 ![img](static/regular/infernape.png) [Generation 4 Dex (107) (CSV)](data/gen4.csv)
+
 ![img](static/regular/emboar.png) [Generation 5 Dex (156) (CSV)](data/gen5.csv)
-
 ![img](static/regular/delphox.png) [Generation 6 Dex (72) (CSV)](data/gen6.csv)
+
 ![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
+![img](static/shiny/cinderace.png) [Generation 8 Dex (81) (CSV)](data/gen8.csv)
 
-![img](static/shiny/ditto.png) [Generation 8 Dex (81) (CSV)](data/gen8.csv)
+### Dex by Game
+![img](static/regular/eternatus.png) [Sword / Shield (400) (CSV)](data/sword_shield.csv)
+![img](static/regular/zamazenta.png) [Isle of Armor (211) (CSV)](data/isle_of_armor.csv)
 
-## Sprite Catalogues
+![img](static/regular/zacian.png) [Crown Tundra (210) (CSV)](data/crown_tundra.csv)
+![img](static/regular/arceus.png) [Sw / Sh Non-Indexed (68) (CSV)](data/sword_shield_non_indexed.csv)
+
+# Sprite Catalogues
 ![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](normal_sprites.md) 
 ![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](shiny_sprites.md) 
 
-## Tools
+# Tools
 ![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
 ![img](static/regular/ho-oh.png) [Dex Data Visualizer (py)](tools/vis_dex_data.py)
 
+![img](static/regular/mew.png) [Stat Anylsis Tool (py)](tools/analysis.py)
 ![img](static/regular/articuno.png) [Gen8 Image Tool (py)](tools/scrape_gen8_img.py)
+
 ![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
 ![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
 

@@ -5,9 +5,13 @@ from bs4 import BeautifulSoup
 
 import numpy as np
 import csv
+import string
+import re
 
 import wr_chart as wr_chart
 
+
+ascii = set(string.printable)  
 
 ### DEX CSV BUILDERS
 def buildDex(url_ls):
@@ -53,7 +57,7 @@ def buildDex(url_ls):
                         dexnum = stats[0].getText().replace("\n", "").replace("\t", "")
 
                         # pokemon N name (string)
-                        name = stats[2].getText().replace("\n", "").replace("\t", "")
+                        name = (re.sub("([^\x00-\x7F])+"," ", stats[2].getText().replace("\n", "").replace("\t", "")).strip())
 
                         # pokemon N types (array of types)
                         imgs = stats[4].findAll("img")
@@ -296,6 +300,9 @@ def genWeaknessResistance(types):
     else:
         print("ERR: invalid type array")
 
+def remove_non_ascii(s):
+    return str(filter(lambda x: x in ascii, s))
+
 def getComposite(arr_1, arr_2):
     if len(arr_1) == len(arr_2):
         new_arr = []
@@ -360,14 +367,10 @@ def numToType (num):
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
     url_ls = [
-        "https://www.serebii.net/swordshield/galarpokedex.shtml",
-        "https://www.serebii.net/swordshield/isleofarmordex.shtml",
-        "https://www.serebii.net/swordshield/thecrowntundradex.shtml",
         "https://www.serebii.net/swordshield/pokemonnotindex.shtml"
     ]
     print("Dex Data Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")
     base_data = buildDex(url_ls) # generate base dex and return data
-
 
 main() #run when file is run
