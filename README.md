@@ -1,5 +1,5 @@
 # Dex
-Porter Libby, 2019
+Porter Libby, 2020
 # CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (890) (CSV)](data/all.csv)
 
