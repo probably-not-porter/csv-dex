@@ -60,12 +60,12 @@ def buildDex(url_ls):
                         name = (re.sub("([^\x00-\x7F])+"," ", stats[2].getText().replace("\n", "").replace("\t", "")).strip())
 
                         # pokemon N types (array of types)
-                        imgs = stats[4].findAll("img")
+                        imgs = stats[3].findAll("img")
                         types = genTypeArray(imgs)
 
                         # pokemon N ability (array of abilities)
                         ability = []
-                        ability_ = stats[3]
+                        ability_ = stats[4]
                         abil = ability_.findAll("a")
                         for ab in abil:
                             new_ability = ab.getText().replace("\n", "").replace("\t", "")
@@ -367,7 +367,7 @@ def numToType (num):
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
     url_ls = [
-        "https://www.serebii.net/swordshield/pokemonnotindex.shtml"
+        "https://www.serebii.net/pokemon/gen8pokemon.shtml"
     ]
     print("Dex Data Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")

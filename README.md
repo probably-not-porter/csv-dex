@@ -15,7 +15,7 @@ Porter Libby, 2019
 ![img](static/regular/delphox.png) [Generation 6 Dex (72) (CSV)](data/gen6.csv)
 
 ![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
-![img](static/shiny/cinderace.png) [Generation 8 Dex (81) (CSV)](data/gen8.csv)
+![img](static/shiny/cinderace.png) [Generation 8 Dex (89) (CSV)](data/gen8.csv)
 
 ### Dex by Game
 ![img](static/regular/eternatus.png) [Sword / Shield (400) (CSV)](data/sword_shield.csv)
