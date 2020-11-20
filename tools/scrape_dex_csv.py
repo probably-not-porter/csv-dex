@@ -10,87 +10,101 @@ import wr_chart as wr_chart
 
 
 ### DEX CSV BUILDERS
-def buildDex(url):
+def buildDex(url_ls):
     data = []
     # add header
     data.append(['Dex', 'Name','Type', 'Abilities', 'HP', 'A', 'D', 'SA', 'SD', 'SP', 'Strong Against', 'Weak Against', 'Resistant To', 'Vulnerable To', 'base stat total', 'base stat avg'])
     count = 0
-    try:
-        html = urlopen(url)
-    except HTTPError as e:
-        print(e)
-    except URLError:
-        print("ERR: Server down or incorrect domain")
-    else:
-        print("--> Server connected!")
-        print("--> Copying HTML from " + url)
 
-        res = BeautifulSoup(html.read(),"html5lib")
-        tags = res.findAll("table", {"class": "dextable"})
-        print("--> Done!")
-        print("--> Filtering...")
-        for tag in tags:
-            inf = tag.findAll("tr")
-            for i in range(2, len(inf)): # This step is iterating over the length of the pokedex, basically. (call this pokemon N)
-                stats = inf[i].findAll("td", {"class": "fooinfo"})
-                if stats != []:
-                    count = count + 1 # the element is a pokedex entry
-                    # pokedex N dex number (string)
-                    dexnum = stats[0].getText().replace("\n", "").replace("\t", "")
+    for url in url_ls:
+        try:
+            html = urlopen(url)
+        except HTTPError as e:
+            print(e)
+        except URLError:
+            print("ERR: Server down or incorrect domain")
+        else:
+            print("--> Server connected!")
+            print("--> Copying HTML from " + url)
 
-                    # pokemon N name (string)
-                    name = stats[2].getText().replace("\n", "").replace("\t", "")
+            res = BeautifulSoup(html.read(),"html5lib")
+            tags = res.findAll("table", {"class": "dextable"})
+            if (tags == []):
+                tags = res.findAll("table", {"class": "tab"})
+                
+            print("--> Done!")
+            print("--> Filtering...")
+            for tag in tags:
+                inf = tag.findAll("tr")
+                for i in range(2, len(inf)): # This step is iterating over the length of the pokedex, basically. (call this pokemon N)
+                    duplicate = False
+                    stats = inf[i].findAll("td", {"class": "fooinfo"})
 
-                    # pokemon N types (array of types)
-                    imgs = stats[3].findAll("img")
-                    types = genTypeArray(imgs)
+                    if stats != [] and len(url_ls) > 1: # check to make sure there arent any duplicates for multiple URLS
+                        for item in data:
+                            for attr in item:
+                                if attr == stats[2].getText().replace("\n", "").replace("\t", ""):
+                                    duplicate = True
 
-                    # pokemon N ability (array of abilities)
-                    ability = []
-                    ability_ = stats[4]
-                    abil = ability_.findAll("a")
-                    for ab in abil:
-                        new_ability = ab.getText().replace("\n", "").replace("\t", "")
-                        ability.append(new_ability)
 
-                    # pokemon N HP base stat (int)
-                    health = stats[5].getText().replace("\n", "")
-                    attack = stats[6].getText().replace("\n", "")
-                    defense = stats[7].getText().replace("\n", "")
-                    sattack = stats[8].getText().replace("\n", "")
-                    sdefense = stats[9].getText().replace("\n", "")
-                    speed = stats[10].getText().replace("\n", "")
+                    if stats != [] and duplicate == False:
+                        count = count + 1 # the element is a pokedex entry
+                        # pokedex N dex number (string)
+                        dexnum = stats[0].getText().replace("\n", "").replace("\t", "")
 
-                    # pokemon N attacking modifiers
-                    attk_matchups = genWeaknessResistance(types)
-                    
+                        # pokemon N name (string)
+                        name = stats[2].getText().replace("\n", "").replace("\t", "")
 
-                    # pokemon N stat total and avg
-                    total = int(health) + int(attack) + int(defense) + int(sattack) + int(sdefense) + int(speed)
-                    avg = total // 6
-                    
+                        # pokemon N types (array of types)
+                        imgs = stats[4].findAll("img")
+                        types = genTypeArray(imgs)
 
-                    # create row
-                    data_item = []
-                    data_item.append(dexnum)
-                    data_item.append(name)
-                    data_item.append(str(types))
-                    data_item.append(str(ability))
-                    data_item.append(health)
-                    data_item.append(attack)
-                    data_item.append(defense)
-                    data_item.append(sattack)
-                    data_item.append(sdefense)
-                    data_item.append(speed)
-                    data_item.append(attk_matchups[0])
-                    data_item.append(attk_matchups[1])
-                    data_item.append(attk_matchups[2])
-                    data_item.append(attk_matchups[3])
-                    data_item.append(total)
-                    data_item.append(avg)
+                        # pokemon N ability (array of abilities)
+                        ability = []
+                        ability_ = stats[3]
+                        abil = ability_.findAll("a")
+                        for ab in abil:
+                            new_ability = ab.getText().replace("\n", "").replace("\t", "")
+                            ability.append(new_ability)
 
-                    # append row
-                    data.append(data_item)
+                        # pokemon N HP base stat (int)
+                        health = stats[5].getText().replace("\n", "")
+                        attack = stats[6].getText().replace("\n", "")
+                        defense = stats[7].getText().replace("\n", "")
+                        sattack = stats[8].getText().replace("\n", "")
+                        sdefense = stats[9].getText().replace("\n", "")
+                        speed = stats[10].getText().replace("\n", "")
+
+                        # pokemon N attacking modifiers
+                        attk_matchups = genWeaknessResistance(types)
+                        
+
+                        # pokemon N stat total and avg
+                        total = int(health) + int(attack) + int(defense) + int(sattack) + int(sdefense) + int(speed)
+                        avg = total // 6
+                        
+
+                        # create row
+                        data_item = []
+                        data_item.append(dexnum)
+                        data_item.append(name)
+                        data_item.append(str(types))
+                        data_item.append(str(ability))
+                        data_item.append(health)
+                        data_item.append(attack)
+                        data_item.append(defense)
+                        data_item.append(sattack)
+                        data_item.append(sdefense)
+                        data_item.append(speed)
+                        data_item.append(attk_matchups[0])
+                        data_item.append(attk_matchups[1])
+                        data_item.append(attk_matchups[2])
+                        data_item.append(attk_matchups[3])
+                        data_item.append(total)
+                        data_item.append(avg)
+
+                        # append row
+                        data.append(data_item)
     print("--> Done!")
     print("--> creating CSV...")
     # create datafile
@@ -345,10 +359,15 @@ def numToType (num):
  
 ### MAIN PROGRAM 
 def main(): # do all the things in the order
-    url = "https://www.serebii.net/pokemon/nationalpokedex.shtml"
+    url_ls = [
+        "https://www.serebii.net/swordshield/galarpokedex.shtml",
+        "https://www.serebii.net/swordshield/isleofarmordex.shtml",
+        "https://www.serebii.net/swordshield/thecrowntundradex.shtml",
+        "https://www.serebii.net/swordshield/pokemonnotindex.shtml"
+    ]
     print("Dex Data Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")
-    base_data = buildDex(url) # generate base dex and return data
+    base_data = buildDex(url_ls) # generate base dex and return data
 
 
 main() #run when file is run
