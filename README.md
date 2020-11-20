@@ -19,9 +19,9 @@ Porter Libby, 2019
 
 ### Dex by Game
 ![img](static/regular/eternatus.png) [Sword / Shield (400) (CSV)](data/sword_shield.csv)
-![img](static/regular/zamazenta.png) [Isle of Armor (211) (CSV)](data/isle_of_armor.csv)
+![img](static/regular/urshifu.png) [Isle of Armor (211) (CSV)](data/isle_of_armor.csv)
 
-![img](static/regular/zacian.png) [Crown Tundra (210) (CSV)](data/crown_tundra.csv)
+![img](static/regular/calyrex.png) [Crown Tundra (210) (CSV)](data/crown_tundra.csv)
 ![img](static/regular/arceus.png) [Sw / Sh Non-Indexed (68) (CSV)](data/sword_shield_non_indexed.csv)
 
 # Sprite Catalogues
