@@ -43,7 +43,12 @@ Porter Libby, 2020
 1. Use `pip` to install the project dependencies. Make sure you are using the `python3` environment.
 2. Clone this project to your local machine
 
-## Creating Data
+# Web App 
+www.combat-dex.herokuapp.com/
+
+`python3 app.py` will start a Flask server running a web app version of the CSV data generated.
+
+# Creating Data
 `python3 dex_gen.py` will create a set of data CSV files, which are based on web scraped info from Serebii.
 
 `python3 util/create_dex_md.py` will create a readme of a directory full of sprites, effectively creating a markdown version of a sprite sheet. Used this to create the `dex_images.md` resource.
@@ -52,23 +57,18 @@ Porter Libby, 2020
 
 `util/vis.py` (coming soon) 
 
-## Using Data
-`python3 dex_app.py` will start a Flask server running a web app version of the CSV data generated.
-
-
-## Dependencies
+# Dependencies
 - BeautifulSoup4 (4.8.1)
 - Flask (1.0.3)
   
 (full dependencies can be found in `requirements.txt`)
 
-## Information
 
-## References/Sources
+# References/Sources
 - https://github.com/msikma/pokesprite
 - https://www.serebii.net/
 
-## Liscenses
+# Liscenses
 The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Everything else, and usage of the programming code, is governed by the MIT license.
