@@ -1,7 +1,7 @@
 import csv
 from matplotlib import pyplot as plt
 
-filename = 'data/base_dex_890.csv'
+filename = '../data/all.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)

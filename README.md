@@ -1,4 +1,4 @@
-# Dex v0.3
+# Dex v0.4
 Porter Libby, 2020
 # CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (898) (CSV)](data/all.csv)
@@ -25,15 +25,18 @@ Porter Libby, 2020
 ![img](static/regular/arceus.png) [Sw / Sh Non-Indexed (68) (CSV)](data/sword_shield_non_indexed.csv)
 
 # Sprite Catalogues
-![img](static/regular/rayquaza.png)[Regular Sprites (no Galar sprites)](normal_sprites.md) 
-![img](static/shiny/rayquaza.png)[Shiny Sprites (no Galar sprites)](shiny_sprites.md) 
+![img](static/regular/rayquaza.png)[Regular Sprites](data/normal_sprites.md) 
+![img](static/shiny/rayquaza.png)[Shiny Sprites](data/shiny_sprites.md) 
+![img](static/regular/kyogre.png)[Type Badges](data/type_badges.md) 
+
 
 # Tools
 ![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
-![img](static/regular/ho-oh.png) [Dex Data Visualizer (py)](tools/vis_dex_data.py)
+![img](static/regular/mewtwo.png) [CSV Move Scraping Tool (py)](tools/scrape_move_info.py)
 
-![img](static/regular/mew.png) [Stat Anylsis Tool (py)](tools/analysis.py)
-![img](static/regular/articuno.png) [Gen8 Image Tool (py)](tools/scrape_gen8_img.py)
+
+![img](static/regular/ho-oh.png) [Dex Data Visualizer (py) (WIP)](tools/vis_dex_data.py)
+![img](static/regular/mew.png) [Stat Anylsis Tool (py) (WIP)](tools/analysis.py)
 
 ![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
 ![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
@@ -48,15 +51,6 @@ www.combat-dex.herokuapp.com/
 
 `python3 app.py` will start a Flask server running a web app version of the CSV data generated.
 
-# Creating Data
-`python3 dex_gen.py` will create a set of data CSV files, which are based on web scraped info from Serebii.
-
-`python3 util/create_dex_md.py` will create a readme of a directory full of sprites, effectively creating a markdown version of a sprite sheet. Used this to create the `dex_images.md` resource.
-
-`util/wr_chart.py` contains a python version of nintendos weakness and resistance matrix, which is used to comput combat values in `dex_gen.py`.
-
-`util/vis.py` (coming soon) 
-
 # Dependencies
 - BeautifulSoup4 (4.8.1)
 - Flask (1.0.3)
@@ -67,6 +61,7 @@ www.combat-dex.herokuapp.com/
 # References/Sources
 - https://github.com/msikma/pokesprite
 - https://www.serebii.net/
+- https://marriland.com/
 
 # Liscenses
 The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
