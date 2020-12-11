@@ -15,6 +15,7 @@ from tempfile import NamedTemporaryFile
     This step will pull move information from bulbapedia
     and attempt to create a new column in each CSV entry.
 """
+
 def exceptions(name):
     if name.lower() == "mr. mime":
         return "mr-mime"
@@ -26,12 +27,16 @@ def exceptions(name):
         return "farfetchd"
     elif name.lower() == "sirfetch'd":
         return "sirfetchd"
+    elif name.lower() == "Type: Null":
+        return "type-null"
+    elif name.lower() == "Flabébé":
+        return "flabebe"
     else:
         return name
 
 def getMoves(poke_name):
     poke_name = exceptions(poke_name)
-    url = "https://marriland.com/pokedex/"+poke_name.lower()+"/"
+    url = "https://pokemondb.net/pokedex/"+poke_name.lower()
     req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     moves = []
 
@@ -39,14 +44,18 @@ def getMoves(poke_name):
         html = urlopen(req)
     except HTTPError as e:
         print(e)
+        print(poke_name)
     except URLError:
         print("ERR: " + poke_name + " didn't work right")
     else:
-        print("--> Server connected!")
         print("--> Copying HTML from " + url)
         res = BeautifulSoup(html.read(),"html5lib")
-        for node in res.findAll("div", attrs={"data-move-name":True}):
-            moves.append(node.findAll(text=True)[0])
+        for node in res.findAll("a", attrs={'href': re.compile("/move/")}):
+            move = node.findAll(text=True)[0]
+            if move in moves:
+                pass
+            else:
+                moves.append(move)
 
     return moves
 
@@ -78,4 +87,5 @@ def main(input_csv):
     else:
         print("File has already been run!")
 
+#print(getMoves("type-null"))
 main("all.csv")

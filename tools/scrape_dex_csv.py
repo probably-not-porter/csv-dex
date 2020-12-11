@@ -58,6 +58,13 @@ def buildDex(url_ls):
 
                         # pokemon N name (string)
                         name = (re.sub("([^\x00-\x7F])+"," ", stats[2].getText().replace("\n", "").replace("\t", "")).strip())
+                        
+                        if "♂" in stats[2].getText().replace("\n", ""): # specifically for the nidorans
+                            name += "-m"
+                        elif "♀" in stats[2].getText().replace("\n", ""):
+                            name += "-f"
+                        if "Flabébé" in stats[2].getText().replace("\n", ""): # for flabebe
+                            name = "Flabebe"
 
                         # pokemon N types (array of types)
                         imgs = stats[3].findAll("img")
