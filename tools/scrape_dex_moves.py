@@ -27,10 +27,18 @@ def exceptions(name):
         return "farfetchd"
     elif name.lower() == "sirfetch'd":
         return "sirfetchd"
-    elif name.lower() == "Type: Null":
+    elif name.lower() == "type: null":
         return "type-null"
-    elif name.lower() == "Flabébé":
+    elif name.lower() == "flabébé":
         return "flabebe"
+    elif name.lower() == "tapu koko":
+        return "tapu-koko"
+    elif name.lower() == "tapu lele":
+        return "tapu-lele"
+    elif name.lower() == "tapu bulu":
+        return "tapu-bulu"
+    elif name.lower() == "tapu fini":
+        return "tapu-fini"
     else:
         return name
 
@@ -60,7 +68,7 @@ def getMoves(poke_name):
     return moves
 
 
-def main(input_csv):
+def amend_file(input_csv):
     tempfile = NamedTemporaryFile('w+t', newline='', delete=False)
     with open(input_csv) as csvfile, tempfile:
 
@@ -87,5 +95,24 @@ def main(input_csv):
     else:
         print("File has already been run!")
 
-#print(getMoves("type-null"))
-main("all.csv")
+amend_file("all.csv")
+
+def main():
+    print("Dex Moves Scraping tool v0.1\n")
+    print("--> Starting Web Scraper...")
+
+    amend_file("../data/all.csv")
+    amend_file("../data/gen1.csv")
+    amend_file("../data/gen2.csv")
+    amend_file("../data/gen3.csv")
+    amend_file("../data/gen4.csv")
+    amend_file("../data/gen5.csv")
+    amend_file("../data/gen6.csv")
+    amend_file("../data/gen7.csv")
+    amend_file("../data/gen8.csv")
+    amend_file("../data/crown_tundra.csv")
+    amend_file("../data/isle_of_armor.csv")
+    amend_file("../data/sword_shield_non_indexed.csv")
+    amend_file("../data/sword_shield.csv")
+
+main() #run when file is run
