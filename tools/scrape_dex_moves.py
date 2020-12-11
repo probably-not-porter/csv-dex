@@ -95,8 +95,7 @@ def amend_file(input_csv):
     else:
         print("File has already been run!")
 
-amend_file("all.csv")
-
+### MAIN PROGRAM 
 def main():
     print("Dex Moves Scraping tool v0.1\n")
     print("--> Starting Web Scraper...")
