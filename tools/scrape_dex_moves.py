@@ -20,6 +20,8 @@ def exceptions(name):
         return "mr-mime"
     elif name.lower() == "mr. rime":
         return "mr-rime"
+    elif name.lower() == "mime jr.":
+        return "mime-jr"
     elif name.lower() == "farfetch'd":
         return "farfetchd"
     elif name.lower() == "sirfetch'd":

@@ -32,7 +32,7 @@ Porter Libby, 2020
 
 # Tools
 ![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
-![img](static/regular/mewtwo.png) [CSV Move Scraping Tool (py)](tools/scrape_move_info.py)
+![img](static/regular/mewtwo.png) [CSV Move Scraping Tool (py)](tools/scrape_dex_moves.py)
 
 
 ![img](static/regular/ho-oh.png) [Dex Data Visualizer (py) (WIP)](tools/vis_dex_data.py)
