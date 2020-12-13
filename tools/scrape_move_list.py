@@ -28,7 +28,7 @@ def main(filename):
         tags = res.findAll("table", {"id": "moves"})
         for tag in tags:
             inf = tag.findAll("tr")
-            for i in range(1, 2): #len(inf)
+            for i in range(1, len(inf)): 
                 stats = inf[i].findAll("td")
 
                 m_name = (stats[0].getText()) # name
@@ -45,11 +45,11 @@ def main(filename):
                     m_name, m_type, m_cat, m_power, m_acc, m_pp, m_tm, m_effect, m_prob
                 ]
                 for j in range(len(move_info)):
-                    print(move_info[j])
                     if move_info[j] == "" or move_info[j] == "—":
                         move_info[j] = "none"
 
                 data.append(move_info)
+                print(m_name)
 
     # create datafile
     myFile = open(filename, 'w')
@@ -61,4 +61,4 @@ def main(filename):
 
 
 # test version
-main("test.csv")
+main("../data/moves.csv")

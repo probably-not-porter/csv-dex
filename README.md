@@ -1,4 +1,4 @@
-# Dex v0.4.3
+# Dex v0.4.5
 Porter Libby, 2020
 # CSV Data
 ![img](static/regular/darkrai.png) [Full International Dex (898) (CSV)](data/all.csv)
@@ -32,8 +32,9 @@ Porter Libby, 2020
 
 # Tools
 ![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
-![img](static/regular/mewtwo.png) [CSV Move Scraping Tool (py)](tools/scrape_dex_moves.py)
+![img](static/regular/mewtwo.png) [CSV Dex Move Ammender (py)](tools/scrape_dex_moves.py)
 
+![img](static/regular/suicune.png) [CSV Move Scraping Tool (py)](tools/scrape_move_list.py)
 
 ![img](static/regular/ho-oh.png) [Dex Data Visualizer (py) (WIP)](tools/vis_dex_data.py)
 ![img](static/regular/mew.png) [Stat Anylsis Tool (py) (WIP)](tools/analysis.py)
