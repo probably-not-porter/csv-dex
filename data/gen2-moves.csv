@@ -1,87 +1,87 @@
 name,type,catagory,power,accuracy,pp,effect
-Aeroblast,Flying,special,100,95,5,High critical hit ratio.
-Ancient Power,Rock,special,60,100,5,May raise all user's stats at once.
-Attract,Normal,status,none,100,15,"If opponent is the opposite gender, it's less likely to attack."
-Baton Pass,Normal,status,none,none,40,User switches out and gives stat changes to the incoming Pokémon.
-Beat Up,Dark,physical,none,100,10,Each Pokémon in your party attacks.
-Belly Drum,Normal,status,none,none,10,"User loses 50% of its max HP, but Attack raises to maximum."
-Bone Rush,Ground,physical,25,90,10,Hits 2-5 times in one turn.
-Charm,Fairy,status,none,100,20,Sharply lowers opponent's Attack.
-Conversion 2,Normal,status,none,none,30,User changes type to become resistant to opponent's last move.
-Cotton Spore,Grass,status,none,100,40,Sharply lowers opponent's Speed.
-Cross Chop,Fighting,physical,100,80,5,High critical hit ratio.
-Crunch,Dark,physical,80,100,15,May lower opponent's Defense.
-Curse,Ghost,status,none,none,10,"Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed."
-Destiny Bond,Ghost,status,none,none,5,"If the user faints, the opponent also faints."
-Detect,Fighting,status,none,none,5,"Protects the user, but may fail if used consecutively."
-Dragon Breath,Dragon,special,60,100,20,May paralyze opponent.
-Dynamic Punch,Fighting,physical,100,50,5,Confuses opponent.
-Encore,Normal,status,none,100,5,Forces opponent to keep using its last move for 3 turns.
-Endure,Normal,status,none,none,10,"Always left with at least 1 HP, but may fail if used consecutively."
-Extreme Speed,Normal,physical,80,100,5,User attacks first.
-False Swipe,Normal,physical,40,100,40,Always leaves opponent with at least 1 HP.
-Feint Attack,Dark,physical,60,∞,20,Ignores Accuracy and Evasiveness.
-Flail,Normal,physical,none,100,15,"The lower the user's HP, the higher the power."
-Flame Wheel,Fire,physical,60,100,25,May burn opponent.
-Foresight,Normal,status,none,none,40,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
-Frustration,Normal,physical,none,100,20,Power decreases with higher Friendship.
-Fury Cutter,Bug,physical,40,95,20,Power increases each turn.
-Future Sight,Psychic,special,120,100,10,Damage occurs 2 turns later.
-Giga Drain,Grass,special,75,100,10,User recovers half the HP inflicted on opponent.
-Heal Bell,Normal,status,none,none,5,Heals the user's party's status conditions.
-Hidden Power,Normal,special,60,100,15,Type and power depends on user's IVs.
-Icy Wind,Ice,special,55,95,15,Lowers opponent's Speed.
-Iron Tail,Steel,physical,100,75,15,May lower opponent's Defense.
-Lock-On,Normal,status,none,none,5,User's next attack is guaranteed to hit.
-Mach Punch,Fighting,physical,40,100,30,User attacks first.
-Magnitude,Ground,physical,none,100,30,Hits with random power.
-Mean Look,Normal,status,none,none,5,Opponent cannot flee or switch.
-Megahorn,Bug,physical,120,85,10,none
-Metal Claw,Steel,physical,50,95,35,May raise user's Attack.
-Milk Drink,Normal,status,none,none,10,User recovers half its max HP.
-Mind Reader,Normal,status,none,none,5,User's next attack is guaranteed to hit.
-Mirror Coat,Psychic,special,none,100,20,"When hit by a Special Attack, user strikes back with 2x power."
-Moonlight,Fairy,status,none,none,5,User recovers HP. Amount varies with the weather.
-Morning Sun,Normal,status,none,none,5,User recovers HP. Amount varies with the weather.
-Mud-Slap,Ground,special,20,100,10,Lowers opponent's Accuracy.
-Nightmare,Ghost,status,none,100,15,The sleeping opponent loses 25% of its max HP each turn.
-Octazooka,Water,special,65,85,10,May lower opponent's Accuracy.
-Outrage,Dragon,physical,120,100,10,User attacks for 2-3 turns but then becomes confused.
-Pain Split,Normal,status,none,none,20,The user's and opponent's HP becomes the average of both.
-Perish Song,Normal,status,none,none,5,Any Pokémon in play when this attack is used faints in 3 turns.
-Powder Snow,Ice,special,40,100,25,May freeze opponent.
-Present,Normal,physical,none,90,15,Either deals damage or heals.
-Protect,Normal,status,none,none,10,"Protects the user, but may fail if used consecutively."
-Psych Up,Normal,status,none,none,10,Copies the opponent's stat changes.
-Pursuit,Dark,physical,40,100,20,Double power if the opponent is switching out.
-Rain Dance,Water,status,none,none,5,Makes it rain for 5 turns.
-Rapid Spin,Normal,physical,50,100,40,Raises user's Speed and removes entry hazards and trap move effects.
-Return,Normal,physical,none,100,20,Power increases with higher Friendship.
-Reversal,Fighting,physical,none,100,15,"The lower the user's HP, the higher the power."
-Rock Smash,Fighting,physical,40,100,15,May lower opponent's Defense.
-Rollout,Rock,physical,30,90,20,Doubles in power each turn for 5 turns.
-Sacred Fire,Fire,physical,100,95,5,May burn opponent.
-Safeguard,Normal,status,none,none,25,The user's party is protected from status conditions.
-Sandstorm,Rock,status,none,none,10,Creates a sandstorm for 5 turns.
-Scary Face,Normal,status,none,100,10,Sharply lowers opponent's Speed.
-Shadow Ball,Ghost,special,80,100,15,May lower opponent's Special Defense.
-Sketch,Normal,status,none,none,1,Permanently copies the opponent's last move.
-Sleep Talk,Normal,status,none,none,10,User performs one of its own moves while sleeping.
-Sludge Bomb,Poison,special,90,100,10,May poison opponent.
-Snore,Normal,special,50,100,15,Can only be used if asleep. May cause flinching.
-Spark,Electric,physical,65,100,20,May paralyze opponent.
-Spider Web,Bug,status,none,none,10,Opponent cannot escape/switch.
-Spikes,Ground,status,none,none,20,Hurts opponents when they switch into battle.
-Spite,Ghost,status,none,100,10,The opponent's last move loses 2-5 PP.
-Steel Wing,Steel,physical,70,90,25,May raise user's Defense.
-Sunny Day,Fire,status,none,none,5,Makes it sunny for 5 turns.
-Swagger,Normal,status,none,85,15,"Opponent becomes confused, but its Attack is sharply raised."
-Sweet Kiss,Fairy,status,none,75,10,Confuses opponent.
-Sweet Scent,Normal,status,none,100,20,Lowers opponent's Evasiveness.
-Synthesis,Grass,status,none,none,5,User recovers HP. Amount varies with the weather.
-Thief,Dark,physical,60,100,25,Also steals opponent's held item.
-Triple Kick,Fighting,physical,10,90,10,Hits thrice in one turn at increasing power.
-Twister,Dragon,special,40,100,20,May cause flinching. Hits Pokémon using Fly/Bounce with double power.
-Vital Throw,Fighting,physical,70,∞,10,"User attacks last, but ignores Accuracy and Evasiveness."
-Whirlpool,Water,special,35,85,15,"Traps opponent, damaging them for 4-5 turns."
-Zap Cannon,Electric,special,120,50,5,Paralyzes opponent.
+Aeroblast,flying,special,100,95,5,High critical hit ratio.
+Ancient Power,rock,special,60,100,5,May raise all user's stats at once.
+Attract,normal,status,none,100,15,"If opponent is the opposite gender, it's less likely to attack."
+Baton Pass,normal,status,none,none,40,User switches out and gives stat changes to the incoming Pokémon.
+Beat Up,dark,physical,none,100,10,Each Pokémon in your party attacks.
+Belly Drum,normal,status,none,none,10,"User loses 50% of its max HP, but Attack raises to maximum."
+Bone Rush,ground,physical,25,90,10,Hits 2-5 times in one turn.
+Charm,fairy,status,none,100,20,Sharply lowers opponent's Attack.
+Conversion 2,normal,status,none,none,30,User changes type to become resistant to opponent's last move.
+Cotton Spore,grass,status,none,100,40,Sharply lowers opponent's Speed.
+Cross Chop,fighting,physical,100,80,5,High critical hit ratio.
+Crunch,dark,physical,80,100,15,May lower opponent's Defense.
+Curse,ghost,status,none,none,10,"Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed."
+Destiny Bond,ghost,status,none,none,5,"If the user faints, the opponent also faints."
+Detect,fighting,status,none,none,5,"Protects the user, but may fail if used consecutively."
+Dragon Breath,dragon,special,60,100,20,May paralyze opponent.
+Dynamic Punch,fighting,physical,100,50,5,Confuses opponent.
+Encore,normal,status,none,100,5,Forces opponent to keep using its last move for 3 turns.
+Endure,normal,status,none,none,10,"Always left with at least 1 HP, but may fail if used consecutively."
+Extreme Speed,normal,physical,80,100,5,User attacks first.
+False Swipe,normal,physical,40,100,40,Always leaves opponent with at least 1 HP.
+Feint Attack,dark,physical,60,∞,20,Ignores Accuracy and Evasiveness.
+Flail,normal,physical,none,100,15,"The lower the user's HP, the higher the power."
+Flame Wheel,fire,physical,60,100,25,May burn opponent.
+Foresight,normal,status,none,none,40,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
+Frustration,normal,physical,none,100,20,Power decreases with higher Friendship.
+Fury Cutter,bug,physical,40,95,20,Power increases each turn.
+Future Sight,psychic,special,120,100,10,Damage occurs 2 turns later.
+Giga Drain,grass,special,75,100,10,User recovers half the HP inflicted on opponent.
+Heal Bell,normal,status,none,none,5,Heals the user's party's status conditions.
+Hidden Power,normal,special,60,100,15,Type and power depends on user's IVs.
+Icy Wind,ice,special,55,95,15,Lowers opponent's Speed.
+Iron Tail,steel,physical,100,75,15,May lower opponent's Defense.
+Lock-On,normal,status,none,none,5,User's next attack is guaranteed to hit.
+Mach Punch,fighting,physical,40,100,30,User attacks first.
+Magnitude,ground,physical,none,100,30,Hits with random power.
+Mean Look,normal,status,none,none,5,Opponent cannot flee or switch.
+Megahorn,bug,physical,120,85,10,none
+Metal Claw,steel,physical,50,95,35,May raise user's Attack.
+Milk Drink,normal,status,none,none,10,User recovers half its max HP.
+Mind Reader,normal,status,none,none,5,User's next attack is guaranteed to hit.
+Mirror Coat,psychic,special,none,100,20,"When hit by a Special Attack, user strikes back with 2x power."
+Moonlight,fairy,status,none,none,5,User recovers HP. Amount varies with the weather.
+Morning Sun,normal,status,none,none,5,User recovers HP. Amount varies with the weather.
+Mud-Slap,ground,special,20,100,10,Lowers opponent's Accuracy.
+Nightmare,ghost,status,none,100,15,The sleeping opponent loses 25% of its max HP each turn.
+Octazooka,water,special,65,85,10,May lower opponent's Accuracy.
+Outrage,dragon,physical,120,100,10,User attacks for 2-3 turns but then becomes confused.
+Pain Split,normal,status,none,none,20,The user's and opponent's HP becomes the average of both.
+Perish Song,normal,status,none,none,5,Any Pokémon in play when this attack is used faints in 3 turns.
+Powder Snow,ice,special,40,100,25,May freeze opponent.
+Present,normal,physical,none,90,15,Either deals damage or heals.
+Protect,normal,status,none,none,10,"Protects the user, but may fail if used consecutively."
+Psych Up,normal,status,none,none,10,Copies the opponent's stat changes.
+Pursuit,dark,physical,40,100,20,Double power if the opponent is switching out.
+Rain Dance,water,status,none,none,5,Makes it rain for 5 turns.
+Rapid Spin,normal,physical,50,100,40,Raises user's Speed and removes entry hazards and trap move effects.
+Return,normal,physical,none,100,20,Power increases with higher Friendship.
+Reversal,fighting,physical,none,100,15,"The lower the user's HP, the higher the power."
+Rock Smash,fighting,physical,40,100,15,May lower opponent's Defense.
+Rollout,rock,physical,30,90,20,Doubles in power each turn for 5 turns.
+Sacred Fire,fire,physical,100,95,5,May burn opponent.
+Safeguard,normal,status,none,none,25,The user's party is protected from status conditions.
+Sandstorm,rock,status,none,none,10,Creates a sandstorm for 5 turns.
+Scary Face,normal,status,none,100,10,Sharply lowers opponent's Speed.
+Shadow Ball,ghost,special,80,100,15,May lower opponent's Special Defense.
+Sketch,normal,status,none,none,1,Permanently copies the opponent's last move.
+Sleep Talk,normal,status,none,none,10,User performs one of its own moves while sleeping.
+Sludge Bomb,poison,special,90,100,10,May poison opponent.
+Snore,normal,special,50,100,15,Can only be used if asleep. May cause flinching.
+Spark,electric,physical,65,100,20,May paralyze opponent.
+Spider Web,bug,status,none,none,10,Opponent cannot escape/switch.
+Spikes,ground,status,none,none,20,Hurts opponents when they switch into battle.
+Spite,ghost,status,none,100,10,The opponent's last move loses 2-5 PP.
+Steel Wing,steel,physical,70,90,25,May raise user's Defense.
+Sunny Day,fire,status,none,none,5,Makes it sunny for 5 turns.
+Swagger,normal,status,none,85,15,"Opponent becomes confused, but its Attack is sharply raised."
+Sweet Kiss,fairy,status,none,75,10,Confuses opponent.
+Sweet Scent,normal,status,none,100,20,Lowers opponent's Evasiveness.
+Synthesis,grass,status,none,none,5,User recovers HP. Amount varies with the weather.
+Thief,dark,physical,60,100,25,Also steals opponent's held item.
+Triple Kick,fighting,physical,10,90,10,Hits thrice in one turn at increasing power.
+Twister,dragon,special,40,100,20,May cause flinching. Hits Pokémon using Fly/Bounce with double power.
+Vital Throw,fighting,physical,70,∞,10,"User attacks last, but ignores Accuracy and Evasiveness."
+Whirlpool,water,special,35,85,15,"Traps opponent, damaging them for 4-5 turns."
+Zap Cannon,electric,special,120,50,5,Paralyzes opponent.

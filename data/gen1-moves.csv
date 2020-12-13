@@ -1,166 +1,166 @@
 name,type,catagory,power,accuracy,pp,effect
-Absorb,Grass,special,20,100,25,User recovers half the HP inflicted on opponent.
-Acid,Poison,special,40,100,30,May lower opponent's Special Defense.
-Acid Armor,Poison,status,none,none,20,Sharply raises user's Defense.
-Agility,Psychic,status,none,none,30,Sharply raises user's Speed.
-Amnesia,Psychic,status,none,none,20,Sharply raises user's Special Defense.
-Aurora Beam,Ice,special,65,100,20,May lower opponent's Attack.
-Barrage,Normal,physical,15,85,20,Hits 2-5 times in one turn.
-Barrier,Psychic,status,none,none,20,Sharply raises user's Defense.
-Bide,Normal,physical,none,none,10,User takes damage for two turns then strikes back double.
-Bind,Normal,physical,15,85,20,"Traps opponent, damaging them for 4-5 turns."
-Bite,Dark,physical,60,100,25,May cause flinching.
-Blizzard,Ice,special,110,70,5,May freeze opponent.
-Body Slam,Normal,physical,85,100,15,May paralyze opponent.
-Bone Club,Ground,physical,65,85,20,May cause flinching.
-Bonemerang,Ground,physical,50,90,10,Hits twice in one turn.
-Bubble,Water,special,40,100,30,May lower opponent's Speed.
-Bubble Beam,Water,special,65,100,20,May lower opponent's Speed.
-Clamp,Water,physical,35,85,15,"Traps opponent, damaging them for 4-5 turns."
-Comet Punch,Normal,physical,18,85,15,Hits 2-5 times in one turn.
-Confuse Ray,Ghost,status,none,100,10,Confuses opponent.
-Confusion,Psychic,special,50,100,25,May confuse opponent.
-Constrict,Normal,physical,10,100,35,May lower opponent's Speed by one stage.
-Conversion,Normal,status,none,none,30,Changes user's type to that of its first move.
-Counter,Fighting,physical,none,100,20,"When hit by a Physical Attack, user strikes back with 2x power."
-Crabhammer,Water,physical,100,90,10,High critical hit ratio.
-Cut,Normal,physical,50,95,30,none
-Defense Curl,Normal,status,none,none,40,Raises user's Defense.
-Dig,Ground,physical,80,100,10,"Digs underground on first turn, attacks on second. Can also escape from caves."
-Disable,Normal,status,none,100,20,Opponent can't use its last attack for a few turns.
-Dizzy Punch,Normal,physical,70,100,10,May confuse opponent.
-Double Kick,Fighting,physical,30,100,30,Hits twice in one turn.
-Double Slap,Normal,physical,15,85,10,Hits 2-5 times in one turn.
-Double Team,Normal,status,none,none,15,Raises user's Evasiveness.
-Double-Edge,Normal,physical,120,100,15,User receives recoil damage.
-Dragon Rage,Dragon,special,none,100,10,Always inflicts 40 HP.
-Dream Eater,Psychic,special,100,100,15,User recovers half the HP inflicted on a sleeping opponent.
-Drill Peck,Flying,physical,80,100,20,none
-Earthquake,Ground,physical,100,100,10,Power is doubled if opponent is underground from using Dig.
-Egg Bomb,Normal,physical,100,75,10,none
-Ember,Fire,special,40,100,25,May burn opponent.
-Explosion,Normal,physical,250,100,5,User faints.
-Fire Blast,Fire,special,110,85,5,May burn opponent.
-Fire Punch,Fire,physical,75,100,15,May burn opponent.
-Fire Spin,Fire,special,35,85,15,"Traps opponent, damaging them for 4-5 turns."
-Fissure,Ground,physical,none,30,5,"One-Hit-KO, if it hits."
-Flamethrower,Fire,special,90,100,15,May burn opponent.
-Flash,Normal,status,none,100,20,Lowers opponent's Accuracy.
-Fly,Flying,physical,90,95,15,"Flies up on first turn, attacks on second turn."
-Focus Energy,Normal,status,none,none,30,Increases critical hit ratio.
-Fury Attack,Normal,physical,15,85,20,Hits 2-5 times in one turn.
-Fury Swipes,Normal,physical,18,80,15,Hits 2-5 times in one turn.
-Glare,Normal,status,none,100,30,Paralyzes opponent.
-Growl,Normal,status,none,100,40,Lowers opponent's Attack.
-Growth,Normal,status,none,none,20,Raises user's Attack and Special Attack.
-Guillotine,Normal,physical,none,30,5,"One-Hit-KO, if it hits."
-Gust,Flying,special,40,100,35,Hits Pokémon using Fly/Bounce with double power.
-Harden,Normal,status,none,none,30,Raises user's Defense.
-Haze,Ice,status,none,none,30,Resets all stat changes.
-Headbutt,Normal,physical,70,100,15,May cause flinching.
-High Jump Kick,Fighting,physical,130,90,10,"If it misses, the user loses half their HP."
-Horn Attack,Normal,physical,65,100,25,none
-Horn Drill,Normal,physical,none,30,5,"One-Hit-KO, if it hits."
-Hydro Pump,Water,special,110,80,5,none
-Hyper Beam,Normal,special,150,90,5,User must recharge next turn.
-Hyper Fang,Normal,physical,80,90,15,May cause flinching.
-Hypnosis,Psychic,status,none,60,20,Puts opponent to sleep.
-Ice Beam,Ice,special,90,100,10,May freeze opponent.
-Ice Punch,Ice,physical,75,100,15,May freeze opponent.
-Jump Kick,Fighting,physical,100,95,10,"If it misses, the user loses half their HP."
-Karate Chop,Fighting,physical,50,100,25,High critical hit ratio.
-Kinesis,Psychic,status,none,80,15,Lowers opponent's Accuracy.
-Leech Life,Bug,physical,80,100,10,User recovers half the HP inflicted on opponent.
-Leech Seed,Grass,status,none,90,10,Drains HP from opponent each turn.
-Leer,Normal,status,none,100,30,Lowers opponent's Defense.
-Lick,Ghost,physical,30,100,30,May paralyze opponent.
-Light Screen,Psychic,status,none,none,30,Halves damage from Special attacks for 5 turns.
-Lovely Kiss,Normal,status,none,75,10,Puts opponent to sleep.
-Low Kick,Fighting,physical,none,100,20,"The heavier the opponent, the stronger the attack."
-Meditate,Psychic,status,none,none,40,Raises user's Attack.
-Mega Drain,Grass,special,40,100,15,User recovers half the HP inflicted on opponent.
-Mega Kick,Normal,physical,120,75,5,none
-Mega Punch,Normal,physical,80,85,20,none
-Metronome,Normal,status,none,none,10,User performs almost any move in the game at random.
-Mimic,Normal,status,none,none,10,Copies the opponent's last move.
-Minimize,Normal,status,none,none,10,Sharply raises user's Evasiveness.
-Mirror Move,Flying,status,none,none,20,User performs the opponent's last move.
-Mist,Ice,status,none,none,30,User's stats cannot be changed for a period of time.
-Night Shade,Ghost,special,none,100,15,Inflicts damage equal to user's level.
-Pay Day,Normal,physical,40,100,20,A small amount of money is gained after the battle resolves.
-Peck,Flying,physical,35,100,35,none
-Petal Dance,Grass,special,120,100,10,User attacks for 2-3 turns but then becomes confused.
-Pin Missile,Bug,physical,25,95,20,Hits 2-5 times in one turn.
-Poison Gas,Poison,status,none,90,40,Poisons opponent.
-Poison Powder,Poison,status,none,75,35,Poisons opponent.
-Poison Sting,Poison,physical,15,100,35,May poison the opponent.
-Pound,Normal,physical,40,100,35,none
-Psybeam,Psychic,special,65,100,20,May confuse opponent.
-Psychic,Psychic,special,90,100,10,May lower opponent's Special Defense.
-Psywave,Psychic,special,none,100,15,Inflicts damage 50-150% of user's level.
-Quick Attack,Normal,physical,40,100,30,User attacks first.
-Rage,Normal,physical,20,100,20,Raises user's Attack when hit.
-Razor Leaf,Grass,physical,55,95,25,High critical hit ratio.
-Razor Wind,Normal,special,80,100,10,"Charges on first turn, attacks on second. High critical hit ratio."
-Recover,Normal,status,none,none,10,User recovers half its max HP.
-Reflect,Psychic,status,none,none,20,Halves damage from Physical attacks for 5 turns.
-Rest,Psychic,status,none,none,10,"User sleeps for 2 turns, but user is fully healed."
-Roar,Normal,status,none,none,20,"In battles, the opponent switches. In the wild, the Pokémon runs."
-Rock Slide,Rock,physical,75,90,10,May cause flinching.
-Rock Throw,Rock,physical,50,90,15,none
-Rolling Kick,Fighting,physical,60,85,15,May cause flinching.
-Sand Attack,Ground,status,none,100,15,Lowers opponent's Accuracy.
-Scratch,Normal,physical,40,100,35,none
-Screech,Normal,status,none,85,40,Sharply lowers opponent's Defense.
-Seismic Toss,Fighting,physical,none,100,20,Inflicts damage equal to user's level.
-Self-Destruct,Normal,physical,200,100,5,User faints.
-Sharpen,Normal,status,none,none,30,Raises user's Attack.
-Sing,Normal,status,none,55,15,Puts opponent to sleep.
-Skull Bash,Normal,physical,130,100,10,"Raises Defense on first turn, attacks on second."
-Sky Attack,Flying,physical,140,90,5,"Charges on first turn, attacks on second. May cause flinching. High critical hit ratio."
-Slam,Normal,physical,80,75,20,none
-Slash,Normal,physical,70,100,20,High critical hit ratio.
-Sleep Powder,Grass,status,none,75,15,Puts opponent to sleep.
-Sludge,Poison,special,65,100,20,May poison opponent.
-Smog,Poison,special,30,70,20,May poison opponent.
-Smokescreen,Normal,status,none,100,20,Lowers opponent's Accuracy.
-Soft-Boiled,Normal,status,none,none,10,User recovers half its max HP.
-Solar Beam,Grass,special,120,100,10,"Charges on first turn, attacks on second."
-Sonic Boom,Normal,special,none,90,20,Always inflicts 20 HP.
-Spike Cannon,Normal,physical,20,100,15,Hits 2-5 times in one turn.
-Splash,Normal,status,none,none,40,Doesn't do ANYTHING.
-Spore,Grass,status,none,100,15,Puts opponent to sleep.
-Stomp,Normal,physical,65,100,20,May cause flinching.
-Strength,Normal,physical,80,100,15,none
-String Shot,Bug,status,none,95,40,Sharply lowers opponent's Speed.
-Struggle,Normal,physical,50,none,none,Only usable when all PP are gone. Hurts the user.
-Stun Spore,Grass,status,none,75,30,Paralyzes opponent.
-Submission,Fighting,physical,80,80,20,User receives recoil damage.
-Substitute,Normal,status,none,none,10,Uses HP to creates a decoy that takes hits.
-Super Fang,Normal,physical,none,90,10,Always takes off half of the opponent's HP.
-Supersonic,Normal,status,none,55,20,Confuses opponent.
-Surf,Water,special,90,100,15,Hits all adjacent Pokémon.
-Swift,Normal,special,60,∞,20,Ignores Accuracy and Evasiveness.
-Swords Dance,Normal,status,none,none,20,Sharply raises user's Attack.
-Tackle,Normal,physical,40,100,35,none
-Tail Whip,Normal,status,none,100,30,Lowers opponent's Defense.
-Take Down,Normal,physical,90,85,20,User receives recoil damage.
-Teleport,Psychic,status,none,none,20,Allows user to flee wild battles; also warps player to last PokéCenter.
-Thrash,Normal,physical,120,100,10,User attacks for 2-3 turns but then becomes confused.
-Thunder,Electric,special,110,70,10,May paralyze opponent.
-Thunder Punch,Electric,physical,75,100,15,May paralyze opponent.
-Thunder Shock,Electric,special,40,100,30,May paralyze opponent.
-Thunder Wave,Electric,status,none,90,20,Paralyzes opponent.
-Thunderbolt,Electric,special,90,100,15,May paralyze opponent.
-Toxic,Poison,status,none,90,10,Badly poisons opponent.
-Transform,Normal,status,none,none,10,User takes on the form and attacks of the opponent.
-Tri Attack,Normal,special,80,100,10,"May paralyze, burn or freeze opponent."
-Twineedle,Bug,physical,25,100,20,Hits twice in one turn. May poison opponent.
-Vine Whip,Grass,physical,45,100,25,none
-Vise Grip,Normal,physical,55,100,30,none
-Water Gun,Water,special,40,100,25,none
-Waterfall,Water,physical,80,100,15,May cause flinching.
-Whirlwind,Normal,status,none,none,20,"In battles, the opponent switches. In the wild, the Pokémon runs."
-Wing Attack,Flying,physical,60,100,35,none
-Withdraw,Water,status,none,none,40,Raises user's Defense.
-Wrap,Normal,physical,15,90,20,"Traps opponent, damaging them for 4-5 turns."
+Absorb,grass,special,20,100,25,User recovers half the HP inflicted on opponent.
+Acid,poison,special,40,100,30,May lower opponent's Special Defense.
+Acid Armor,poison,status,none,none,20,Sharply raises user's Defense.
+Agility,psychic,status,none,none,30,Sharply raises user's Speed.
+Amnesia,psychic,status,none,none,20,Sharply raises user's Special Defense.
+Aurora Beam,ice,special,65,100,20,May lower opponent's Attack.
+Barrage,normal,physical,15,85,20,Hits 2-5 times in one turn.
+Barrier,psychic,status,none,none,20,Sharply raises user's Defense.
+Bide,normal,physical,none,none,10,User takes damage for two turns then strikes back double.
+Bind,normal,physical,15,85,20,"Traps opponent, damaging them for 4-5 turns."
+Bite,dark,physical,60,100,25,May cause flinching.
+Blizzard,ice,special,110,70,5,May freeze opponent.
+Body Slam,normal,physical,85,100,15,May paralyze opponent.
+Bone Club,ground,physical,65,85,20,May cause flinching.
+Bonemerang,ground,physical,50,90,10,Hits twice in one turn.
+Bubble,water,special,40,100,30,May lower opponent's Speed.
+Bubble Beam,water,special,65,100,20,May lower opponent's Speed.
+Clamp,water,physical,35,85,15,"Traps opponent, damaging them for 4-5 turns."
+Comet Punch,normal,physical,18,85,15,Hits 2-5 times in one turn.
+Confuse Ray,ghost,status,none,100,10,Confuses opponent.
+Confusion,psychic,special,50,100,25,May confuse opponent.
+Constrict,normal,physical,10,100,35,May lower opponent's Speed by one stage.
+Conversion,normal,status,none,none,30,Changes user's type to that of its first move.
+Counter,fighting,physical,none,100,20,"When hit by a Physical Attack, user strikes back with 2x power."
+Crabhammer,water,physical,100,90,10,High critical hit ratio.
+Cut,normal,physical,50,95,30,none
+Defense Curl,normal,status,none,none,40,Raises user's Defense.
+Dig,ground,physical,80,100,10,"Digs underground on first turn, attacks on second. Can also escape from caves."
+Disable,normal,status,none,100,20,Opponent can't use its last attack for a few turns.
+Dizzy Punch,normal,physical,70,100,10,May confuse opponent.
+Double Kick,fighting,physical,30,100,30,Hits twice in one turn.
+Double Slap,normal,physical,15,85,10,Hits 2-5 times in one turn.
+Double Team,normal,status,none,none,15,Raises user's Evasiveness.
+Double-Edge,normal,physical,120,100,15,User receives recoil damage.
+Dragon Rage,dragon,special,none,100,10,Always inflicts 40 HP.
+Dream Eater,psychic,special,100,100,15,User recovers half the HP inflicted on a sleeping opponent.
+Drill Peck,flying,physical,80,100,20,none
+Earthquake,ground,physical,100,100,10,Power is doubled if opponent is underground from using Dig.
+Egg Bomb,normal,physical,100,75,10,none
+Ember,fire,special,40,100,25,May burn opponent.
+Explosion,normal,physical,250,100,5,User faints.
+Fire Blast,fire,special,110,85,5,May burn opponent.
+Fire Punch,fire,physical,75,100,15,May burn opponent.
+Fire Spin,fire,special,35,85,15,"Traps opponent, damaging them for 4-5 turns."
+Fissure,ground,physical,none,30,5,"One-Hit-KO, if it hits."
+Flamethrower,fire,special,90,100,15,May burn opponent.
+Flash,normal,status,none,100,20,Lowers opponent's Accuracy.
+Fly,flying,physical,90,95,15,"Flies up on first turn, attacks on second turn."
+Focus Energy,normal,status,none,none,30,Increases critical hit ratio.
+Fury Attack,normal,physical,15,85,20,Hits 2-5 times in one turn.
+Fury Swipes,normal,physical,18,80,15,Hits 2-5 times in one turn.
+Glare,normal,status,none,100,30,Paralyzes opponent.
+Growl,normal,status,none,100,40,Lowers opponent's Attack.
+Growth,normal,status,none,none,20,Raises user's Attack and Special Attack.
+Guillotine,normal,physical,none,30,5,"One-Hit-KO, if it hits."
+Gust,flying,special,40,100,35,Hits Pokémon using Fly/Bounce with double power.
+Harden,normal,status,none,none,30,Raises user's Defense.
+Haze,ice,status,none,none,30,Resets all stat changes.
+Headbutt,normal,physical,70,100,15,May cause flinching.
+High Jump Kick,fighting,physical,130,90,10,"If it misses, the user loses half their HP."
+Horn Attack,normal,physical,65,100,25,none
+Horn Drill,normal,physical,none,30,5,"One-Hit-KO, if it hits."
+Hydro Pump,water,special,110,80,5,none
+Hyper Beam,normal,special,150,90,5,User must recharge next turn.
+Hyper Fang,normal,physical,80,90,15,May cause flinching.
+Hypnosis,psychic,status,none,60,20,Puts opponent to sleep.
+Ice Beam,ice,special,90,100,10,May freeze opponent.
+Ice Punch,ice,physical,75,100,15,May freeze opponent.
+Jump Kick,fighting,physical,100,95,10,"If it misses, the user loses half their HP."
+Karate Chop,fighting,physical,50,100,25,High critical hit ratio.
+Kinesis,psychic,status,none,80,15,Lowers opponent's Accuracy.
+Leech Life,bug,physical,80,100,10,User recovers half the HP inflicted on opponent.
+Leech Seed,grass,status,none,90,10,Drains HP from opponent each turn.
+Leer,normal,status,none,100,30,Lowers opponent's Defense.
+Lick,ghost,physical,30,100,30,May paralyze opponent.
+Light Screen,psychic,status,none,none,30,Halves damage from Special attacks for 5 turns.
+Lovely Kiss,normal,status,none,75,10,Puts opponent to sleep.
+Low Kick,fighting,physical,none,100,20,"The heavier the opponent, the stronger the attack."
+Meditate,psychic,status,none,none,40,Raises user's Attack.
+Mega Drain,grass,special,40,100,15,User recovers half the HP inflicted on opponent.
+Mega Kick,normal,physical,120,75,5,none
+Mega Punch,normal,physical,80,85,20,none
+Metronome,normal,status,none,none,10,User performs almost any move in the game at random.
+Mimic,normal,status,none,none,10,Copies the opponent's last move.
+Minimize,normal,status,none,none,10,Sharply raises user's Evasiveness.
+Mirror Move,flying,status,none,none,20,User performs the opponent's last move.
+Mist,ice,status,none,none,30,User's stats cannot be changed for a period of time.
+Night Shade,ghost,special,none,100,15,Inflicts damage equal to user's level.
+Pay Day,normal,physical,40,100,20,A small amount of money is gained after the battle resolves.
+Peck,flying,physical,35,100,35,none
+Petal Dance,grass,special,120,100,10,User attacks for 2-3 turns but then becomes confused.
+Pin Missile,bug,physical,25,95,20,Hits 2-5 times in one turn.
+Poison Gas,poison,status,none,90,40,Poisons opponent.
+Poison Powder,poison,status,none,75,35,Poisons opponent.
+Poison Sting,poison,physical,15,100,35,May poison the opponent.
+Pound,normal,physical,40,100,35,none
+Psybeam,psychic,special,65,100,20,May confuse opponent.
+Psychic,psychic,special,90,100,10,May lower opponent's Special Defense.
+Psywave,psychic,special,none,100,15,Inflicts damage 50-150% of user's level.
+Quick Attack,normal,physical,40,100,30,User attacks first.
+Rage,normal,physical,20,100,20,Raises user's Attack when hit.
+Razor Leaf,grass,physical,55,95,25,High critical hit ratio.
+Razor Wind,normal,special,80,100,10,"Charges on first turn, attacks on second. High critical hit ratio."
+Recover,normal,status,none,none,10,User recovers half its max HP.
+Reflect,psychic,status,none,none,20,Halves damage from Physical attacks for 5 turns.
+Rest,psychic,status,none,none,10,"User sleeps for 2 turns, but user is fully healed."
+Roar,normal,status,none,none,20,"In battles, the opponent switches. In the wild, the Pokémon runs."
+Rock Slide,rock,physical,75,90,10,May cause flinching.
+Rock Throw,rock,physical,50,90,15,none
+Rolling Kick,fighting,physical,60,85,15,May cause flinching.
+Sand Attack,ground,status,none,100,15,Lowers opponent's Accuracy.
+Scratch,normal,physical,40,100,35,none
+Screech,normal,status,none,85,40,Sharply lowers opponent's Defense.
+Seismic Toss,fighting,physical,none,100,20,Inflicts damage equal to user's level.
+Self-Destruct,normal,physical,200,100,5,User faints.
+Sharpen,normal,status,none,none,30,Raises user's Attack.
+Sing,normal,status,none,55,15,Puts opponent to sleep.
+Skull Bash,normal,physical,130,100,10,"Raises Defense on first turn, attacks on second."
+Sky Attack,flying,physical,140,90,5,"Charges on first turn, attacks on second. May cause flinching. High critical hit ratio."
+Slam,normal,physical,80,75,20,none
+Slash,normal,physical,70,100,20,High critical hit ratio.
+Sleep Powder,grass,status,none,75,15,Puts opponent to sleep.
+Sludge,poison,special,65,100,20,May poison opponent.
+Smog,poison,special,30,70,20,May poison opponent.
+Smokescreen,normal,status,none,100,20,Lowers opponent's Accuracy.
+Soft-Boiled,normal,status,none,none,10,User recovers half its max HP.
+Solar Beam,grass,special,120,100,10,"Charges on first turn, attacks on second."
+Sonic Boom,normal,special,none,90,20,Always inflicts 20 HP.
+Spike Cannon,normal,physical,20,100,15,Hits 2-5 times in one turn.
+Splash,normal,status,none,none,40,Doesn't do ANYTHING.
+Spore,grass,status,none,100,15,Puts opponent to sleep.
+Stomp,normal,physical,65,100,20,May cause flinching.
+Strength,normal,physical,80,100,15,none
+String Shot,bug,status,none,95,40,Sharply lowers opponent's Speed.
+Struggle,normal,physical,50,none,none,Only usable when all PP are gone. Hurts the user.
+Stun Spore,grass,status,none,75,30,Paralyzes opponent.
+Submission,fighting,physical,80,80,20,User receives recoil damage.
+Substitute,normal,status,none,none,10,Uses HP to creates a decoy that takes hits.
+Super Fang,normal,physical,none,90,10,Always takes off half of the opponent's HP.
+Supersonic,normal,status,none,55,20,Confuses opponent.
+Surf,water,special,90,100,15,Hits all adjacent Pokémon.
+Swift,normal,special,60,∞,20,Ignores Accuracy and Evasiveness.
+Swords Dance,normal,status,none,none,20,Sharply raises user's Attack.
+Tackle,normal,physical,40,100,35,none
+Tail Whip,normal,status,none,100,30,Lowers opponent's Defense.
+Take Down,normal,physical,90,85,20,User receives recoil damage.
+Teleport,psychic,status,none,none,20,Allows user to flee wild battles; also warps player to last PokéCenter.
+Thrash,normal,physical,120,100,10,User attacks for 2-3 turns but then becomes confused.
+Thunder,electric,special,110,70,10,May paralyze opponent.
+Thunder Punch,electric,physical,75,100,15,May paralyze opponent.
+Thunder Shock,electric,special,40,100,30,May paralyze opponent.
+Thunder Wave,electric,status,none,90,20,Paralyzes opponent.
+Thunderbolt,electric,special,90,100,15,May paralyze opponent.
+Toxic,poison,status,none,90,10,Badly poisons opponent.
+Transform,normal,status,none,none,10,User takes on the form and attacks of the opponent.
+Tri Attack,normal,special,80,100,10,"May paralyze, burn or freeze opponent."
+Twineedle,bug,physical,25,100,20,Hits twice in one turn. May poison opponent.
+Vine Whip,grass,physical,45,100,25,none
+Vise Grip,normal,physical,55,100,30,none
+Water Gun,water,special,40,100,25,none
+Waterfall,water,physical,80,100,15,May cause flinching.
+Whirlwind,normal,status,none,none,20,"In battles, the opponent switches. In the wild, the Pokémon runs."
+Wing Attack,flying,physical,60,100,35,none
+Withdraw,water,status,none,none,40,Raises user's Defense.
+Wrap,normal,physical,15,90,20,"Traps opponent, damaging them for 4-5 turns."

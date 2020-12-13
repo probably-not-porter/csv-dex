@@ -32,7 +32,7 @@ def scrape_list(url, filename):
                 move_info = []
                 if len(list(stats)) > 7:
                     m_name = (stats[0].getText()) # name
-                    m_type = (stats[1].getText()) # type
+                    m_type = (stats[1].getText().lower()) # type
                     m_cat = (stats[2]['data-sort-value']) # catagory
                     m_power = (stats[3].getText()) # power
                     m_acc = (stats[4].getText()) # accuracy
@@ -43,7 +43,7 @@ def scrape_list(url, filename):
                     ]
                 else:
                     m_name = (stats[0].getText()) # name
-                    m_type = (stats[1].getText()) # type
+                    m_type = (stats[1].getText().lower()) # type
                     m_cat = (stats[2]['data-sort-value']) # catagory
                     m_power = (stats[3].getText()) # power
                     m_acc = (stats[4].getText()) # accuracy
