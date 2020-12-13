@@ -1,0 +1,64 @@
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError
+from urllib.error import URLError
+from bs4 import BeautifulSoup
+import csv
+
+"""
+    Scrapes move from PokemonDB
+"""
+
+def main(filename):
+    url = "https://pokemondb.net/move/all"
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+
+    data = [
+        ["name", "type", "catagory", "power", "accuracy", "pp", "TM number", "effect", "effect probability"]
+    ]
+
+    try:
+        html = urlopen(req)
+    except HTTPError as e:
+        print(e)
+    except URLError:
+        print("ERR")
+    else:
+        print("--> Copying HTML from " + url)
+        res = BeautifulSoup(html.read(),"html5lib")
+        tags = res.findAll("table", {"id": "moves"})
+        for tag in tags:
+            inf = tag.findAll("tr")
+            for i in range(1, 2): #len(inf)
+                stats = inf[i].findAll("td")
+
+                m_name = (stats[0].getText()) # name
+                m_type = (stats[1].getText()) # type
+                m_cat = (stats[2]['data-sort-value']) # catagory
+                m_power = (stats[3].getText()) # power
+                m_acc = (stats[4].getText()) # accuracy
+                m_pp = (stats[5].getText()) # PP
+                m_tm = (stats[6].getText()) # TM
+                m_effect = (stats[7].getText()) # effect
+                m_prob = (stats[8].getText()) # prob
+
+                move_info = [
+                    m_name, m_type, m_cat, m_power, m_acc, m_pp, m_tm, m_effect, m_prob
+                ]
+                for j in range(len(move_info)):
+                    print(move_info[j])
+                    if move_info[j] == "" or move_info[j] == "—":
+                        move_info[j] = "none"
+
+                data.append(move_info)
+
+    # create datafile
+    myFile = open(filename, 'w')
+    with myFile:
+        writer = csv.writer(myFile)
+        writer.writerows(data)
+
+    print('Done!')
+
+
+# test version
+main("test.csv")
