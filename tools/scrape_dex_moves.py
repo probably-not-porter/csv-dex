@@ -97,7 +97,7 @@ def amend_file(input_csv):
 
 ### MAIN PROGRAM 
 def main():
-    print("Dex Moves Scraping tool v0.1\n")
+    print("Dex Moves Scraping tool v0.2\n")
     print("--> Starting Web Scraper...")
 
     amend_file("../data/all.csv")

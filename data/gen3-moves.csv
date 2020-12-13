@@ -1,0 +1,104 @@
+name,type,catagory,power,accuracy,pp,effect
+Aerial Ace,Flying,physical,60,∞,20,Ignores Accuracy and Evasiveness.
+Air Cutter,Flying,special,60,95,25,High critical hit ratio.
+Arm Thrust,Fighting,physical,15,100,20,Hits 2-5 times in one turn.
+Aromatherapy,Grass,status,none,none,5,Cures all status problems in your party.
+Assist,Normal,status,none,none,20,User performs a move known by its allies at random.
+Astonish,Ghost,physical,30,100,15,May cause flinching.
+Blast Burn,Fire,special,150,90,5,User must recharge next turn.
+Blaze Kick,Fire,physical,85,90,10,High critical hit ratio. May burn opponent.
+Block,Normal,status,none,none,5,Opponent cannot flee or switch.
+Bounce,Flying,physical,85,85,5,"Springs up on first turn, attacks on second. May paralyze opponent."
+Brick Break,Fighting,physical,75,100,15,Breaks through Reflect and Light Screen barriers.
+Bulk Up,Fighting,status,none,none,20,Raises user's Attack and Defense.
+Bullet Seed,Grass,physical,25,100,30,Hits 2-5 times in one turn.
+Calm Mind,Psychic,status,none,none,20,Raises user's Special Attack and Special Defense.
+Camouflage,Normal,status,none,none,20,Changes user's type according to the location.
+Charge,Electric,status,none,none,20,Raises user's Special Defense and next Electric move's power increases.
+Cosmic Power,Psychic,status,none,none,20,Raises user's Defense and Special Defense.
+Covet,Normal,physical,60,100,25,Opponent's item is stolen by the user.
+Crush Claw,Normal,physical,75,95,10,May lower opponent's Defense.
+Dive,Water,physical,80,100,10,"Dives underwater on first turn, attacks on second turn."
+Doom Desire,Steel,special,140,100,5,Damage occurs 2 turns later.
+Dragon Claw,Dragon,physical,80,100,15,none
+Dragon Dance,Dragon,status,none,none,20,Raises user's Attack and Speed.
+Endeavor,Normal,physical,none,100,5,Reduces opponent's HP to same as user's.
+Eruption,Fire,special,150,100,5,Stronger when the user's HP is higher.
+Extrasensory,Psychic,special,80,100,20,May cause flinching.
+Facade,Normal,physical,70,100,20,"Power doubles if user is burned, poisoned, or paralyzed."
+Fake Out,Normal,physical,40,100,10,"User attacks first, foe flinches. Only usable on first turn."
+Fake Tears,Dark,status,none,100,20,Sharply lowers opponent's Special Defense.
+Feather Dance,Flying,status,none,100,15,Sharply lowers opponent's Attack.
+Flatter,Dark,status,none,100,15,"Confuses opponent, but raises its Special Attack by two stages."
+Focus Punch,Fighting,physical,150,100,20,"If the user is hit before attacking, it flinches instead."
+Follow Me,Normal,status,none,none,20,"In Double Battle, the user takes all the attacks."
+Frenzy Plant,Grass,special,150,90,5,User must recharge next turn.
+Grass Whistle,Grass,status,none,55,15,Puts opponent to sleep.
+Grudge,Ghost,status,none,none,5,"If the users faints after using this move, the PP for the opponent's last move is depleted."
+Hail,Ice,status,none,none,10,Non-Ice types are damaged for 5 turns.
+Heat Wave,Fire,special,95,90,10,May burn opponent.
+Helping Hand,Normal,status,none,none,20,"In Double Battles, boosts the power of the partner's move."
+Howl,Normal,status,none,none,40,Raises Attack of allies.
+Hydro Cannon,Water,special,150,90,5,User must recharge next turn.
+Hyper Voice,Normal,special,90,100,10,none
+Ice Ball,Ice,physical,30,90,20,Doubles in power each turn for 5 turns.
+Icicle Spear,Ice,physical,25,100,30,Hits 2-5 times in one turn.
+Imprison,Psychic,status,none,none,10,Opponent is unable to use moves that the user also knows.
+Ingrain,Grass,status,none,none,20,User restores HP each turn. User cannot escape/switch.
+Iron Defense,Steel,status,none,none,15,Sharply raises user's Defense.
+Knock Off,Dark,physical,65,100,20,Removes opponent's held item for the rest of the battle.
+Leaf Blade,Grass,physical,90,100,15,High critical hit ratio.
+Luster Purge,Psychic,special,70,100,5,May lower opponent's Special Defense.
+Magic Coat,Psychic,status,none,none,15,Reflects moves that cause status conditions back to the attacker.
+Magical Leaf,Grass,special,60,∞,20,Ignores Accuracy and Evasiveness.
+Memento,Dark,status,none,100,10,"User faints, sharply lowers opponent's Attack and Special Attack."
+Metal Sound,Steel,status,none,85,40,Sharply lowers opponent's Special Defense.
+Meteor Mash,Steel,physical,90,90,10,May raise user's Attack.
+Mist Ball,Psychic,special,70,100,5,May lower opponent's Special Attack.
+Mud Shot,Ground,special,55,95,15,Lowers opponent's Speed.
+Mud Sport,Ground,status,none,none,15,Weakens the power of Electric-type moves.
+Muddy Water,Water,special,90,85,10,May lower opponent's Accuracy.
+Nature Power,Normal,status,none,none,20,Uses a certain move based on the current terrain.
+Needle Arm,Grass,physical,60,100,15,May cause flinching.
+Odor Sleuth,Normal,status,none,none,40,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
+Overheat,Fire,special,130,90,5,Sharply lowers user's Special Attack.
+Poison Fang,Poison,physical,50,100,15,May badly poison opponent.
+Poison Tail,Poison,physical,50,100,25,High critical hit ratio. May poison opponent.
+Psycho Boost,Psychic,special,140,90,5,Sharply lowers user's Special Attack.
+Recycle,Normal,status,none,none,10,User's used hold item is restored.
+Refresh,Normal,status,none,none,20,"Cures paralysis, poison, and burns."
+Revenge,Fighting,physical,60,100,10,Power increases if user was hit first.
+Rock Blast,Rock,physical,25,90,10,Hits 2-5 times in one turn.
+Rock Tomb,Rock,physical,60,95,15,Lowers opponent's Speed.
+Role Play,Psychic,status,none,none,10,User copies the opponent's Ability.
+Sand Tomb,Ground,physical,35,85,15,"Traps opponent, damaging them for 4-5 turns."
+Secret Power,Normal,physical,70,100,20,Effects of the attack vary with the location.
+Shadow Punch,Ghost,physical,60,∞,20,Ignores Accuracy and Evasiveness.
+Sheer Cold,Ice,special,none,30,5,"One-Hit-KO, if it hits."
+Shock Wave,Electric,special,60,∞,20,Ignores Accuracy and Evasiveness.
+Signal Beam,Bug,special,75,100,15,May confuse opponent.
+Silver Wind,Bug,special,60,100,5,May raise all stats of user at once.
+Skill Swap,Psychic,status,none,none,10,The user swaps Abilities with the opponent.
+Sky Uppercut,Fighting,physical,85,90,15,"Hits the opponent, even during Fly."
+Slack Off,Normal,status,none,none,10,User recovers half its max HP.
+Smelling Salts,Normal,physical,70,100,10,"Power doubles if opponent is paralyzed, but cures it."
+Snatch,Dark,status,none,none,10,Steals the effects of the opponent's next move.
+Spit Up,Normal,special,none,100,10,Power depends on how many times the user performed Stockpile.
+Stockpile,Normal,status,none,none,20,Stores energy for use with Spit Up and Swallow.
+Superpower,Fighting,physical,120,100,5,Lowers user's Attack and Defense.
+Swallow,Normal,status,none,none,10,"The more times the user has performed Stockpile, the more HP is recovered."
+Tail Glow,Bug,status,none,none,20,Drastically raises user's Special Attack.
+Taunt,Dark,status,none,100,20,Opponent can only use moves that attack.
+Teeter Dance,Normal,status,none,100,20,Confuses all Pokémon.
+Tickle,Normal,status,none,100,20,Lowers opponent's Attack and Defense.
+Torment,Dark,status,none,100,15,Opponent cannot use the same move in a row.
+Trick,Psychic,status,none,100,10,Swaps held items with the opponent.
+Uproar,Normal,special,90,100,10,User attacks for 3 turns and prevents sleep.
+Volt Tackle,Electric,physical,120,100,15,User receives recoil damage. May paralyze opponent.
+Water Pulse,Water,special,60,100,20,May confuse opponent.
+Water Sport,Water,status,none,none,15,Weakens the power of Fire-type moves.
+Water Spout,Water,special,150,100,5,"The higher the user's HP, the higher the damage caused."
+Weather Ball,Normal,special,50,100,10,Move's power and type changes with the weather.
+Will-O-Wisp,Fire,status,none,85,15,Burns opponent.
+Wish,Normal,status,none,none,10,The user recovers HP in the following turn.
+Yawn,Normal,status,none,none,10,Puts opponent to sleep in the next turn.

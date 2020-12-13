@@ -1,0 +1,104 @@
+name,type,catagory,power,accuracy,pp,effect
+"10,000,000 Volt Thunderbolt",Electric,special,195,none,1,Pikachu-exclusive Z-Move. High critical hit ratio.
+Accelerock,Rock,physical,40,100,20,User attacks first.
+Acid Downpour,Poison,none,none,none,1,Poison type Z-Move.
+All-Out Pummeling,Fighting,none,none,none,1,Fighting type Z-Move.
+Anchor Shot,Steel,physical,80,100,20,The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.
+Aurora Veil,Ice,status,none,none,20,Halves damage from Physical and Special attacks for five turns.
+Baddy Bad,Dark,special,90,100,15,Reduces damage from Physical attacks.
+Baneful Bunker,Poison,status,none,none,10,Protects the user and poisons opponent on contact.
+Beak Blast,Flying,physical,100,100,15,"The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it's heating up its beak results in a burn."
+Black Hole Eclipse,Dark,none,none,none,1,Dark type Z-Move.
+Bloom Doom,Grass,none,none,none,1,Grass type Z-Move.
+Bouncy Bubble,Water,special,90,100,15,User recovers half the HP inflicted on opponent.
+Breakneck Blitz,Normal,none,none,none,1,Normal type Z-Move.
+Brutal Swing,Dark,physical,60,100,20,The user swings its body around violently to inflict damage on everything in its vicinity.
+Burn Up,Fire,special,130,100,5,"To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type."
+Buzzy Buzz,Electric,special,90,100,15,Paralyzes the opponent.
+Catastropika,Electric,physical,210,none,1,Pikachu-exclusive Z-Move.
+Clanging Scales,Dragon,special,110,100,5,Lowers user's Defense.
+Clangorous Soulblaze,Dragon,special,185,none,1,Kommo-o exclusive Z-Move.
+Continental Crush,Rock,none,none,none,1,Rock type Z-Move.
+Core Enforcer,Dragon,special,100,100,10,Scorches a 'Z' pattern on the ground.
+Corkscrew Crash,Steel,none,none,none,1,Steel type Z-Move.
+Darkest Lariat,Dark,physical,85,100,10,Ignores opponent's stat changes.
+Devastating Drake,Dragon,none,none,none,1,Dragon type Z-Move.
+Double Iron Bash,Steel,physical,60,100,5,Hits twice in one turn; may cause flinching.
+Dragon Hammer,Dragon,physical,90,100,15,The user uses its body like a hammer to attack the target and inflict damage.
+Extreme Evoboost,Normal,status,none,none,1,Eevee-exclusive Z-Move. Sharply raises all stats.
+Fire Lash,Fire,physical,80,100,15,The user strikes the target with a burning lash. This also lowers the target's Defense stat.
+First Impression,Bug,physical,90,100,10,"Although this move has great power, it only works the first turn the user is in battle."
+Fleur Cannon,Fairy,special,130,90,5,Sharply lowers user's Special Attack.
+Floaty Fall,Flying,physical,90,95,15,May cause flinching.
+Floral Healing,Fairy,status,none,none,10,The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass.
+Freezy Frost,Ice,special,90,100,15,Resets all stat changes.
+Gear Up,Steel,status,none,none,20,The user engages its gears to raise the Attack and Sp. Atk stats of ally Pokémon with the Plus or Minus Ability.
+Genesis Supernova,Psychic,special,185,none,1,Mew-exclusive Z-Move.
+Gigavolt Havoc,Electric,none,none,none,1,Electric type Z-Move.
+Glitzy Glow,Psychic,special,90,100,15,Reduces damage from Special attacks.
+Guardian of Alola,Fairy,special,none,none,1,Tapu-exclusive Z-move. Cuts opponent's HP by 75%.
+High Horsepower,Ground,physical,95,95,10,The user fiercely attacks the target using its entire body.
+Hydro Vortex,Water,none,none,none,1,Water type Z-Move.
+Ice Hammer,Ice,physical,100,90,10,"The user swings and hits with its strong, heavy fist. It lowers the user's Speed, however."
+Inferno Overdrive,Fire,none,none,none,1,Fire type Z-Move.
+Instruct,Psychic,status,none,none,15,Allows an ally to use a move instead.
+Laser Focus,Normal,status,none,none,30,User's next attack is guaranteed to result in a critical hit.
+Leafage,Grass,physical,40,100,40,Strikes opponent with leaves.
+Let's Snuggle Forever,Fairy,physical,190,none,1,Mimikyu-exclusive Z-Move.
+Light That Burns the Sky,Psychic,special,200,none,1,Ultra Necrozma-exclusive Z-Move. Ignores target's ability; uses highest Attack stat.
+Liquidation,Water,physical,85,100,10,May lower opponent's Defense.
+Lunge,Bug,physical,80,100,15,"The user makes a lunge at the target, attacking with full force. This also lowers the target's Attack stat."
+Malicious Moonsault,Dark,physical,180,none,1,Incineroar-exclusive Z-Move.
+Menacing Moonraze Maelstrom,Ghost,special,200,none,1,Lunala-exclusive Z-Move.
+Mind Blown,Fire,special,150,100,5,User receives recoil damage.
+Moongeist Beam,Ghost,special,100,100,5,Ignores the target's ability.
+Multi-Attack,Normal,physical,120,100,10,Type matches Memory item held.
+Nature's Madness,Fairy,special,none,90,10,Halves the foe's HP.
+Never-Ending Nightmare,Ghost,none,none,none,1,Ghost type Z-Move.
+Oceanic Operetta,Water,special,195,none,1,Primarina-exclusive Z-Move.
+Photon Geyser,Psychic,special,100,100,5,"Uses Attack or Special Attack stat, whichever is higher."
+Pika Papow,Electric,special,none,∞,20,Power increases when player's bond is stronger.
+Plasma Fists,Electric,physical,100,100,15,Changes Normal-type moves to Electric-type moves.
+Pollen Puff,Bug,special,90,100,15,Deals damage to opponent or restores HP of teammate.
+Power Trip,Dark,physical,20,100,10,"The user boasts its strength and attacks the target. The more the user's stats are raised, the greater the move's power."
+Prismatic Laser,Psychic,special,160,100,10,The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.
+Psychic Fangs,Psychic,physical,85,100,10,The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect.
+Psychic Terrain,Psychic,status,none,none,10,Prevents priority moves from being used for 5 turns.
+Pulverizing Pancake,Normal,physical,210,none,1,Snorlax-exclusive Normal type Z-Move.
+Purify,Poison,status,none,none,20,"The user heals the target's status condition. If the move succeeds, it also restores the user's own HP."
+Revelation Dance,Normal,special,90,100,15,Type changes based on Oricorio's form.
+Sappy Seed,Grass,physical,90,100,15,Drains HP from opponent each turn.
+Savage Spin-Out,Bug,none,none,none,1,Bug type Z-Move.
+Searing Sunraze Smash,Steel,physical,200,none,1,Solgaleo-exclusive Z-Move.
+Shadow Bone,Ghost,physical,85,100,10,May lower opponent's Defense.
+Shattered Psyche,Psychic,none,none,none,1,Psychic type Z-Move.
+Shell Trap,Fire,special,150,100,5,Deals more damage to opponent if hit by a Physical move.
+Shore Up,Ground,status,none,none,10,The user regains up to half of its max HP. It restores more HP in a sandstorm.
+Sinister Arrow Raid,Ghost,physical,180,none,1,Decidueye-exclusive Z-Move.
+Sizzly Slide,Fire,physical,90,100,15,Burns the opponent.
+Smart Strike,Steel,physical,70,none,10,The user stabs the target with a sharp horn. This attack never misses.
+Solar Blade,Grass,physical,125,100,10,"Charges on first turn, attacks on second."
+Soul-Stealing 7-Star Strike,Ghost,physical,195,none,1,Marshadow-exclusive Z-Move.
+Sparkling Aria,Water,special,90,100,10,Heals the burns of its target.
+Sparkly Swirl,Fairy,special,90,100,15,Cures all status problems in the party Pokémon.
+Spectral Thief,Ghost,physical,90,100,10,"The user hides in the target's shadow, steals the target's stat boosts, and then attacks."
+Speed Swap,Psychic,status,none,none,10,The user exchanges Speed stats with the target.
+Spirit Shackle,Ghost,physical,80,100,10,Prevents the opponent from switching out.
+Splintered Stormshards,Rock,physical,190,none,1,Lycanroc-exclusive Z-Move.
+Splishy Splash,Water,special,90,100,15,May paralyze opponent.
+Spotlight,Normal,status,none,none,15,The user shines a spotlight on the target so that only the target will be attacked during the turn.
+Stoked Sparksurfer,Electric,special,175,none,1,Alolan Raichu-exclusive Electric type Z-Move.
+Stomping Tantrum,Ground,physical,75,100,10,"Driven by frustration, the user attacks the target. If the user's previous move has failed, the power of this move doubles."
+Strength Sap,Grass,status,none,100,10,The user restores its HP by the same amount as the target's Attack stat. It also lowers the target's Attack stat.
+Subzero Slammer,Ice,none,none,none,1,Ice type Z-Move.
+Sunsteel Strike,Steel,physical,100,100,5,Ignores the target's ability.
+Supersonic Skystrike,Flying,none,none,none,1,Flying type Z-Move.
+Tearful Look,Normal,status,none,none,20,The user gets teary eyed to make the target lose its combative spirit. This lowers the target's Attack and Sp. Atk stats.
+Tectonic Rage,Ground,none,none,none,1,Ground type Z-Move.
+Throat Chop,Dark,physical,80,100,15,Prevents use of sound moves for two turns.
+Toxic Thread,Poison,status,none,100,20,Lowers target's Speed.
+Trop Kick,Grass,physical,70,100,15,Lowers opponent's Attack.
+Twinkle Tackle,Fairy,none,none,none,1,Fairy type Z-Move.
+Veevee Volley,Normal,physical,none,∞,20,Power increases when player's bond is stronger.
+Zing Zap,Electric,physical,80,100,10,May cause flinching.
+Zippy Zap,Electric,physical,50,100,15,Always results in a critical hit.
