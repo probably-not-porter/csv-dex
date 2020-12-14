@@ -1,4 +1,8 @@
 # ![img](static/master.png) Dex 0.5.3
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django)
+![GitHub repo size](https://img.shields.io/github/repo-size/probably-not-porter/dex)
+![Website](https://img.shields.io/website?url=http%3A%2F%2Fcombat-dex.herokuapp.com%2F)
+
 Porter Libby, 2020
 
 I have collected this data in CSV format so that it can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
