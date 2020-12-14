@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #chartdiv {
+              width: 100%;
+              height: 100%;
+            }
+        </style>
+        <title>Combat Dex - Vis Tool</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='master.png') }}">
+    </head>
+    <body>
+        <div id="chartdiv">loading...</div>
+
+        
+
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+        <script>
+            am4core.ready(function() {
+                // Themes begin
+                am4core.useTheme(am4themes_animated);
+                // Themes end
+                
+                var chart = am4core.create("chartdiv", am4charts.ChordDiagram);
+                let link = chart.links.template;
+
+                chart.hiddenState.properties.opacity = 0;
+                
+                chart.data = [
+                    {% for k1, v1 in data[0].items() %}
+                        { "from": "{{k1}}", "nodeColor": "{{ data[1].get(k1) }}" },
+                    {% endfor %}
+                    {% for k1, v1 in data[0].items() %}
+                        {% for k2, v2 in v1.items() %}
+                            {% if v2 != 0 %}
+                                { from: "{{k1}}", to: "{{k2}}", value: "{{ v2 }}" },
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                ];
+                
+                chart.dataFields.fromName = "from";
+                chart.dataFields.toName = "to";
+                chart.dataFields.value = "value";
+                chart.dataFields.color = "nodeColor";
+                chart.innerRadius = am4core.percent(90);
+                chart.nodePadding = 0.5;
+
+                link.colorMode = "gradient";
+                link.fillOpacity = 0.5;
+                link.propertyFields.fill = "linkColor";
+                link.propertyFields.fillOpacity = "linkOpacity";
+                
+                // make nodes draggable
+                var nodeTemplate = chart.nodes.template;
+                nodeTemplate.readerTitle = "Click to show/hide or drag to rearrange";
+                nodeTemplate.showSystemTooltip = true;
+                nodeTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer
+            
+            }); // end am4core.ready()
+        </script>
+    </body> 
+</html>
