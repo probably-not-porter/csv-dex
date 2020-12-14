@@ -1,6 +1,13 @@
-# Dex v0.5.1
+# ![img](static/master.png) Dex 0.5.3
 Porter Libby, 2020
-# CSV Data
+
+I have collected this data in CSV format so that it can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
+
+It should also be understood that this is NOT my data. It is data created by Nintendo and Game Freak, and collected/harvested by Serebii and PokemonDB.
+
+Please send me links to anything cool to make with this data; I'd love to see it.
+
+# ![img](static/master.png) CSV Data
 
 ## Full International Dex
 ![img](static/regular/darkrai.png) [Full International Dex (898) (CSV)](data/all.csv)
@@ -47,7 +54,7 @@ Porter Libby, 2020
 ![img](static/regular/kyogre.png)[Type Badges](data/type_badges.md) 
 
 
-# Tools
+# ![img](static/master.png) Tools
 ![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
 ![img](static/regular/mewtwo.png) [CSV Dex Move Ammender (py)](tools/scrape_dex_moves.py)
 
@@ -59,29 +66,35 @@ Porter Libby, 2020
 ![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
 ![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
 
-# Usage
+# ![img](static/master.png) Dex
+
+- http://combat-dex.herokuapp.com/
+
+Dex is my personal project using this data. Written in Flask with Python, I used this data to create a different kind of pokedex which could be used quickly and efficiently while in combat in a game. This is the main time that I use a pokedex, and typically it takes me a lot of time to find the exact information I'm looking for. With online play and battle timers, I needed something to fit my needs, so I made it.
+
+I will also be hosting several small tools I create here; diagrams and charts and different interactive bits that I like. I will attempt to keep track of them here:
+
+- http://combat-dex.herokuapp.com/vis
+
+# ![img](static/master.png) Usage
 ## Installation 
 1. Use `pip` to install the project dependencies. Make sure you are using the `python3` environment.
 2. Clone this project to your local machine
 
-# Web App 
-www.combat-dex.herokuapp.com/
 
-`python3 app.py` will start a Flask server running a web app version of the CSV data generated.
-
-# Dependencies
+## Dependencies
 - BeautifulSoup4 (4.8.1)
 - Flask (1.0.3)
   
 (full dependencies can be found in `requirements.txt`)
 
 
-# References/Sources
+# ![img](static/master.png) References/Sources
 - https://github.com/msikma/pokesprite
 - https://www.serebii.net/
 - https://pokemondb.net/
 
-# Liscenses
+# ![img](static/master.png) Licenses
 The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Everything else, and usage of the programming code, is governed by the MIT license.
