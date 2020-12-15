@@ -9,6 +9,10 @@
         <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </head>
     <body>
+        <div id='loading'>
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br><span>Catching em' all...</span>
+        </div>
         <div class="container">
             <div class="component">
                 <div id='header'>
@@ -162,29 +166,33 @@
             </div>
         </div>
         <script>
-        function myFunction() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("search");
+            window.addEventListener('load', function () {
+                document.getElementById("loading").style.display = "none";
+                document.body.style.overflow = "auto";
+            });
+            function myFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("search");
 
-            filter = input.value.toUpperCase();
-            table = document.getElementById("t");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("t");
 
-            tr = table.getElementsByTagName("tr");
+                tr = table.getElementsByTagName("tr");
 
-            for (i = 1; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
+                for (i = 1; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
 
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
 
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }       
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }       
+                }
             }
-        }
         </script>
     </body>
 </html>
