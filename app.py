@@ -377,19 +377,49 @@ colors = {
     "dark": "#705746",
     "fairy": "#D685AD"
 }
+type_totals = {
+    "normal": 0,
+    "fighting": 0,
+    "flying": 0,
+    "poison": 0,
+    "ground": 0,
+    "rock": 0,
+    "bug": 0,
+    "ghost": 0,
+    "steel": 0,
+    "fire": 0,
+    "water": 0,
+    "grass": 0,
+    "electric": 0,
+    "psychic": 0,
+    "ice": 0,
+    "dragon": 0,
+    "dark": 0,
+    "fairy": 0
+}
+
 for x in results:
     types = x[2].replace("[", "").replace("]", "").replace("'", "").replace(" ", "").split(",")
     types.sort()
-    if len(types) == 2:
-        chart_data[types[0]][types[1]] += 1
+    if "Type" not in types:
+        for y in range(len(types)):
+            type_totals[types[y]] += 1
+
+        if len(types) == 2:
+            chart_data[types[0]][types[1]] += 1
+
 
 @app.route("/")
 def index():
-    return render_template("index.html", message="Hello Flask!", data=results);   
+    return render_template("index.html", message="Home", data=results);   
 
-@app.route("/vis")
-def test():
-    return render_template("vis.html", message="Hello Flask!", data=[chart_data, colors]); 
+@app.route("/vis1")
+def vis1():
+    return render_template("vis1.html", message="Vis 1", data=[chart_data, colors]); 
+
+@app.route("/vis2")
+def vis2():
+    return render_template("vis2.html", message="Vis 2", data=[type_totals, colors]); 
 
 
 if __name__ == "__main__":
