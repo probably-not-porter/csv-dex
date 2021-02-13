@@ -1,7 +1,5 @@
 # ![img](static/master.png) Dex 0.5.3
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django)
 ![GitHub repo size](https://img.shields.io/github/repo-size/probably-not-porter/dex)
-![Website](https://img.shields.io/website?url=http%3A%2F%2Fcombat-dex.herokuapp.com%2F)
 
 Porter Libby, 2020
 
@@ -70,15 +68,6 @@ Please send me links to anything cool to make with this data; I'd love to see it
 ![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
 ![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
 
-# ![img](static/master.png) Dex
-
-- http://combat-dex.herokuapp.com/
-
-Dex is my personal project using this data. Written in Flask with Python, I used this data to create a different kind of pokedex which could be used quickly and efficiently while in combat in a game. This is the main time that I use a pokedex, and typically it takes me a lot of time to find the exact information I'm looking for. With online play and battle timers, I needed something to fit my needs, so I made it.
-
-I will also be hosting several small tools I create here; diagrams and charts and different interactive bits that I like. I will attempt to keep track of them here:
-
-- http://combat-dex.herokuapp.com/vis
 
 # ![img](static/master.png) Usage
 ## Installation 
