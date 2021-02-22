@@ -176,139 +176,434 @@ def genTypeArray(imgs): # create an array of types out of the type data from dex
     return types
 
 def genWeaknessResistance(types):
-    matchup_dictionary = {
-        'normal': [
-            [],
-            ['rock','ghost','steel'],
-            ['ghost'],
-            ['fighting']
-        ],
-        'fighting': [
-            ['normal', 'rock', 'steel', 'ice', 'dark'],
-            ['flying', 'poison', 'psychic', 'bug', 'ghost', 'fairy'],
-            ['rock', 'bug', 'ghost'],
-            ['flying', 'psychic', 'fairy']
-        ],
-        'flying': [
-            ['fighting', 'bug', 'grass'],
-            ['rock', 'steel', 'electric'],
-            ['fighting', 'ground','bug','grass'],
-            ['rock', 'electric', 'ice']
-        ],
-        'poison': [
-            ['grass', 'fairy'],
-            ['poison', 'ground', 'rock', 'steel', 'ghost'],
-            ['fighting', 'poison', 'grass', 'fairy', 'bug'],
-            ['ground', 'psychic']
-        ],
-        'ground': [
-            ['poison', 'rock', 'steel', 'fire', 'electric'],
-            ['flying', 'bug', 'grass'],
-            ['poison', 'rock', 'electric'],
-            ['water', 'ice', 'grass']
-        ],
-        'rock': [
-            ['flying', 'bug', 'fire', 'ice'],
-            ['fighting', 'ground', 'steel'],
-            ['normal', 'flying', 'poison', 'fire'],
-            ['fighting', 'ground', 'steel', 'water', 'grass']
-        ],
-        'bug': [
-            ['grass', 'psychic', 'dark'],
-            ['fighting', 'flying', 'poison', 'ghost', 'steel', 'fire', 'fairy'],
-            ['fighting', 'ground', 'grass'],
-            ['flying', 'rock', 'fire']
-        ],
-        'ghost': [
-            ['ghost', 'psychic'],
-            ['normal', 'dark'],
-            ['normal', 'fighting', 'poison', 'bug'],
-            ['ghost', 'dark']
-        ],
-        'steel': [
-            ['rock', 'ice', 'fairy'],
-            ['steel', 'fire', 'water', 'electric'],
-            ['normal', 'flying', 'poison', 'rock', 'bug', 'steel', 'grass', 'psychic', 'ice', 'dragon', 'fairy'],
-            ['fighting', 'ground', 'fire']
-        ],
-        'fire': [
-            ['bug', 'steel', 'grass', 'ice'],
-            ['rock', 'fire', 'water', 'dragon'],
-            ['bug', 'steel', 'fire', 'grass', 'ice'],
-            ['ground', 'rock', 'water']
-        ],
-        'water': [
-            ['ground', 'rock', 'fire'],
-            ['water', 'grass', 'dragon'],
-            ['steel', 'fire', 'water', 'ice'],
-            ['grass', 'electric']
-        ],
-        'grass': [
-            ['ground', 'rock', 'water'],
-            ['flying', 'poison', 'bug', 'steel', 'fire', 'grass', 'dragon'],
-            ['ground', 'water', 'grass', 'electric'],
-            ['flying', 'poison', 'bug', 'fire', 'ice']
-        ],
-        'electric': [
-            ['flying', 'water'],
-            ['ground', 'grass', 'electric', 'dragon'],
-            ['flying', 'steel', 'electric'],
-            ['ground']
-        ],
-        'psychic': [
-            ['fighting', 'poison'],
-            ['steel', 'dark', 'psychic'],
-            ['fighting', 'psychic'],
-            ['bug', 'ghost', 'dark']
-        ],
-        'ice': [
-            ['flying', 'ground', 'grass', 'dragon'],
-            ['steel', 'fire', 'water', 'ice'],
-            ['ice'],
-            ['fighting', 'rock', 'steel', 'fire']
-        ],
-        'dragon': [
-            ['dragon'],
-            ['steel', 'fairy'],
-            ['fire', 'water', 'grass', 'electric'],
-            ['ice', 'dragon', 'fairy']
-        ],
-        'fairy': [
-            ['fighting', 'dragon', 'dark'],
-            ['poison', 'steel', 'fire'],
-            ['fighting', 'bug', 'dragon', 'dark'],
-            ['poison', 'steel']
-        ],
-        'dark': [
-            ['ghost', 'psychic'],
-            ['fighting', 'dark', 'fairy'],
-            ['ghost', 'psychic', 'dark'],
-            ['fighting', 'bug', 'fairy']
-        ]
+    type_dictionary = ['normal','fighting','flying','poison','ground','rock','bug','ghost','steel','fire','water','grass','electric','psychic','ice','dragon','fairy','dark']
+    output = {
+        'defensive': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0
+        },
+        'offensive': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0
+        }
     }
-    if len(types) == 1:
-        return matchup_dictionary[types[0]] # simple as dat
-    elif len(types) == 2:
-        new_matchup = [
-            list(dict.fromkeys(matchup_dictionary[types[0]][0] + matchup_dictionary[types[1]][0])),
-            list(dict.fromkeys(matchup_dictionary[types[0]][1] + matchup_dictionary[types[1]][1])),
-            list(dict.fromkeys(matchup_dictionary[types[0]][2] + matchup_dictionary[types[1]][2])),
-            list(dict.fromkeys(matchup_dictionary[types[0]][3] + matchup_dictionary[types[1]][3])),
-        ]
+    matchup_dictionary = {
+        'normal': {
+            'normal': 1.0,
+            'fighting': 2.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 0.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'fighting': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 2.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 0.5,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 2.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 2.0,
+            'dark': 0.5,
+        },
+        'flying': {
+            'normal': 1.0,
+            'fighting': 0.5,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 0.0,
+            'rock': 2.0,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 0.5,
+            'electric': 2.0,
+            'psychic': 1.0,
+            'ice': 2.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'poison': {
+            'normal': 1.0,
+            'fighting': 0.5,
+            'flying': 1.0,
+            'poison': 0.5,
+            'ground': 2.0,
+            'rock': 1.0,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 0.5,
+            'electric': 1.0,
+            'psychic': 2.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 0.5,
+            'dark': 1.0,
+        },
+        'ground': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 0.5,
+            'ground': 1.0,
+            'rock': 0.5,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 2.0,
+            'grass': 2.0,
+            'electric': 0.0,
+            'psychic': 1.0,
+            'ice': 2.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'rock': {
+            'normal': 0.5,
+            'fighting': 2.0,
+            'flying': 0.5,
+            'poison': 0.5,
+            'ground': 2.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 2.0,
+            'fire': 0.5,
+            'water': 2.0,
+            'grass': 2.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'bug': {
+            'normal': 1.0,
+            'fighting': 0.5,
+            'flying': 2.0,
+            'poison': 1.0,
+            'ground': 0.5,
+            'rock': 2.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 2.0,
+            'water': 1.0,
+            'grass': 0.5,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'ghost': {
+            'normal': 0.0,
+            'fighting': 0.0,
+            'flying': 1.0,
+            'poison': 0.5,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 0.5,
+            'ghost': 2.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 2.0,
+        },
+        'steel': {
+            'normal': 0.5,
+            'fighting': 2.0,
+            'flying': 0.5,
+            'poison': 0.0,
+            'ground': 2.0,
+            'rock': 0.5,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 0.5,
+            'fire': 2.0,
+            'water': 1.0,
+            'grass': 0.5,
+            'electric': 1.0,
+            'psychic': 0.5,
+            'ice': 0.5,
+            'dragon': 0.5,
+            'fairy': 0.5,
+            'dark': 1.0,
+        },
+        'fire': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 2.0,
+            'rock': 2.0,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 0.5,
+            'fire': 0.5,
+            'water': 2.0,
+            'grass': 0.5,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 0.5,
+            'dragon': 1.0,
+            'fairy': 0.5,
+            'dark': 1.0,
+        },
+        'water': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 0.5,
+            'fire': 0.5,
+            'water': 0.5,
+            'grass': 2.0,
+            'electric': 2.0,
+            'psychic': 1.0,
+            'ice': 0.5,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'grass': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 2.0,
+            'poison': 2.0,
+            'ground': 0.5,
+            'rock': 1.0,
+            'bug': 2.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 2.0,
+            'water': 0.5,
+            'grass': 0.5,
+            'electric': 0.5,
+            'psychic': 1.0,
+            'ice': 2.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'electric': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 0.5,
+            'poison': 1.0,
+            'ground': 2.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 0.5,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 0.5,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'psychic': {
+            'normal': 1.0,
+            'fighting': 0.5,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 2.0,
+            'ghost': 2.0,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 0.5,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 2.0,
+        },
+        'ice': {
+            'normal': 1.0,
+            'fighting': 2.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 2.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 2.0,
+            'fire': 2.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 0.5,
+            'dragon': 1.0,
+            'fairy': 1.0,
+            'dark': 1.0,
+        },
+        'dragon': {
+            'normal': 1.0,
+            'fighting': 1.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 1.0,
+            'ghost': 1.0,
+            'steel': 1.0,
+            'fire': 0.5,
+            'water': 0.5,
+            'grass': 0.5,
+            'electric': 0.5,
+            'psychic': 1.0,
+            'ice': 2.0,
+            'dragon': 2.0,
+            'fairy': 2.0,
+            'dark': 1.0,
+        },
+        'fairy': {
+            'normal': 1.0,
+            'fighting': 0.5,
+            'flying': 1.0,
+            'poison': 2.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 0.5,
+            'ghost': 1.0,
+            'steel': 2.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 1.0,
+            'ice': 1.0,
+            'dragon': 0.0,
+            'fairy': 1.0,
+            'dark': 0.5,
+        },
+        'dark': {
+            'normal': 1.0,
+            'fighting': 2.0,
+            'flying': 1.0,
+            'poison': 1.0,
+            'ground': 1.0,
+            'rock': 1.0,
+            'bug': 2.0,
+            'ghost': 0.5,
+            'steel': 1.0,
+            'fire': 1.0,
+            'water': 1.0,
+            'grass': 1.0,
+            'electric': 1.0,
+            'psychic': 0.0,
+            'ice': 1.0,
+            'dragon': 1.0,
+            'fairy': 2.0,
+            'dark': 0.5,
+        }
+    }
+    for x in types:
+        for y in type_dictionary:
+            output['defensive'][y] *= matchup_dictionary[x][y]
+            output['offensive'][y] *= matchup_dictionary[y][x]
 
-        for t in new_matchup[0]:
-            if t in new_matchup[1]:
-                new_matchup[0].remove(t)
-                new_matchup[1].remove(t)
+    out_str = [
+        [], # strong against
+        [], # weak against
+        [], # resistant to
+        []  # vulnerable to
+    ]
+    for x in type_dictionary:
+        if output['offensive'][x] > 1.0: #strong against
+            out_str[0].append(x)
+        elif output['offensive'][x] < 1.0: # weak against
+            out_str[1].append(x)
 
-        for t in new_matchup[2]:
-            if t in new_matchup[3]:
-                new_matchup[2].remove(t)
-                new_matchup[3].remove(t)
-
-        return new_matchup
-    else:
-        print("ERR: invalid type array")
+        if output['defensive'][x] < 1.0: # resistant to
+            out_str[2].append(x)
+        elif output['defensive'][x] > 1.0: # vulnerable to
+            out_str[3].append(x)
+    return out_str
+        
 
 def remove_non_ascii(s):
     return str(filter(lambda x: x in ascii, s))
@@ -394,3 +689,5 @@ def main(): # do all the things in the order
     buildDex(["https://www.serebii.net/swordshield/pokemonnotindex.shtml"], "../data/sword_shield_non_indexed.csv")
 
 main() #run when file is run
+
+
