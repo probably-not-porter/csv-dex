@@ -1,4 +1,4 @@
-# ![img](static/master.png) Dex 0.5.3
+# ![img](static/master.png) Dex 0.6.0
 ![GitHub repo size](https://img.shields.io/github/repo-size/probably-not-porter/dex)
 
 
@@ -50,14 +50,11 @@ Please send me links to anything cool to make with this data; I'd love to see it
 
 
 ## Dependencies
-- BeautifulSoup4 (4.8.1)
-- Flask (1.0.3)
-  
-(full dependencies can be found in `requirements.txt`)
+- BeautifulSoup4
+- tqdm
 
 
 # ![img](static/master.png) References/Sources
-- https://github.com/msikma/pokesprite
 - https://www.serebii.net/
 - https://pokemondb.net/
 
