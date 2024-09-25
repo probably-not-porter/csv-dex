@@ -1,4 +1,8 @@
 #!/bin/bash
+# Icons for README
+
+# Ditto
+curl https://img.pokemondb.net/sprites/scarlet-violet/icon/porygon.png --output porygon.png
 
 # Birds
 for x in articuno zapdos moltres; do

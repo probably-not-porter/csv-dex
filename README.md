@@ -1,5 +1,9 @@
-# ![img](static/master.png) Dex 0.6.0
-![GitHub repo size](https://img.shields.io/github/repo-size/probably-not-porter/dex)
+# <img src='icon/porygon.png' width=48> CSV Dex
+![GitHub code size](https://img.shields.io/github/languages/code-size/probably-not-porter/csv-dex
+)
+![Git repo size](https://img.shields.io/github/repo-size/probably-not-porter/csv-dex
+)
+![Version](https://img.shields.io/badge/Version-0.6.0-green)
 
 
 I made these webscraping tools so that Pokemon data can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
@@ -8,8 +12,8 @@ It should also be understood that this is NOT my data. It is data created by Nin
 
 Please send me links to anything cool to make with this data; I'd love to see it.
 
-# ![img](static/master.png) CSV Data
-## Pokedex CSVs
+# <img src='icon/porygon.png' width=48> CSV Data
+### Pokedex CSVs
 <img src='icon/moltres.png' width=48> **[Full Gen 1-9 Pokedex CSV](data/all.csv)**
 
 <img src='icon/charizard.png' width=48> [Generation 1 Pokedex CSV](data/gen1.csv)
@@ -26,7 +30,7 @@ Please send me links to anything cool to make with this data; I'd love to see it
 
 <img src='icon/skeledirge.png' width=48> [Generation 9 Pokedex CSV](data/gen9.csv)
 
-## Movedex CSVs
+### Movedex CSVs
 <img src='icon/articuno.png' width=48> **[Full Gen 1-9 Movedex CSV](data/all_moves.csv)**
 
 <img src='icon/blastoise.png' width=48> [Generation 1 Movedex CSV](data/gen1-moves.csv)
@@ -43,22 +47,23 @@ Please send me links to anything cool to make with this data; I'd love to see it
 
 <img src='icon/quaquaval.png' width=48> [Generation 9 Movedex CSV](data/gen9-moves.csv)
 
-# ![img](static/master.png) Usage
-## Installation 
+# <img src='icon/porygon.png' width=48> Usage
+### Installation 
 1. Use `pip` to install the project dependencies. Make sure you are using the `python3` environment.
-2. Clone this project to your local machine
+2. Clone this project to your local machine.
+3. `python3 csvdex.py`
 
 
-## Dependencies
+### Dependencies
 - BeautifulSoup4
 - tqdm
 
 
-# ![img](static/master.png) References/Sources
+# <img src='icon/porygon.png' width=48> References/Sources
 - https://www.serebii.net/
 - https://pokemondb.net/
 
-# ![img](static/master.png) Licenses
+# <img src='icon/porygon.png' width=48> Licenses
 Images and Pokemon are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Everything else, and usage of the programming code, is governed by the MIT license.
