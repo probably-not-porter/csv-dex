@@ -29,7 +29,7 @@ Facade,normal,physical,70,100,20,"Power doubles if user is burned, poisoned, or 
 Fake Out,normal,physical,40,100,10,"User attacks first, foe flinches. Only usable on first turn."
 Fake Tears,dark,status,none,100,20,Sharply lowers opponent's Special Defense.
 Feather Dance,flying,status,none,100,15,Sharply lowers opponent's Attack.
-Flatter,dark,status,none,100,15,"Confuses opponent, but raises its Special Attack by two stages."
+Flatter,dark,status,none,100,15,"Confuses opponent, but raises its Special Attack."
 Focus Punch,fighting,physical,150,100,20,"If the user is hit before attacking, it flinches instead."
 Follow Me,normal,status,none,none,20,"In Double Battle, the user takes all the attacks."
 Frenzy Plant,grass,special,150,90,5,User must recharge next turn.
@@ -48,19 +48,19 @@ Ingrain,grass,status,none,none,20,User restores HP each turn. User cannot escape
 Iron Defense,steel,status,none,none,15,Sharply raises user's Defense.
 Knock Off,dark,physical,65,100,20,Removes opponent's held item for the rest of the battle.
 Leaf Blade,grass,physical,90,100,15,High critical hit ratio.
-Luster Purge,psychic,special,70,100,5,May lower opponent's Special Defense.
+Luster Purge,psychic,special,95,100,5,May lower opponent's Special Defense.
 Magic Coat,psychic,status,none,none,15,Reflects moves that cause status conditions back to the attacker.
 Magical Leaf,grass,special,60,∞,20,Ignores Accuracy and Evasiveness.
 Memento,dark,status,none,100,10,"User faints, sharply lowers opponent's Attack and Special Attack."
 Metal Sound,steel,status,none,85,40,Sharply lowers opponent's Special Defense.
 Meteor Mash,steel,physical,90,90,10,May raise user's Attack.
-Mist Ball,psychic,special,70,100,5,May lower opponent's Special Attack.
+Mist Ball,psychic,special,95,100,5,May lower opponent's Special Attack.
 Mud Shot,ground,special,55,95,15,Lowers opponent's Speed.
 Mud Sport,ground,status,none,none,15,Weakens the power of Electric-type moves.
 Muddy Water,water,special,90,85,10,May lower opponent's Accuracy.
 Nature Power,normal,status,none,none,20,Uses a certain move based on the current terrain.
 Needle Arm,grass,physical,60,100,15,May cause flinching.
-Odor Sleuth,normal,status,none,none,40,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
+Odor Sleuth,normal,status,none,none,40,"Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts."
 Overheat,fire,special,130,90,5,Sharply lowers user's Special Attack.
 Poison Fang,poison,physical,50,100,15,May badly poison opponent.
 Poison Tail,poison,physical,50,100,25,High critical hit ratio. May poison opponent.
@@ -80,7 +80,7 @@ Signal Beam,bug,special,75,100,15,May confuse opponent.
 Silver Wind,bug,special,60,100,5,May raise all stats of user at once.
 Skill Swap,psychic,status,none,none,10,The user swaps Abilities with the opponent.
 Sky Uppercut,fighting,physical,85,90,15,"Hits the opponent, even during Fly."
-Slack Off,normal,status,none,none,10,User recovers half its max HP.
+Slack Off,normal,status,none,none,5,User recovers half its max HP.
 Smelling Salts,normal,physical,70,100,10,"Power doubles if opponent is paralyzed, but cures it."
 Snatch,dark,status,none,none,10,Steals the effects of the opponent's next move.
 Spit Up,normal,special,none,100,10,Power depends on how many times the user performed Stockpile.

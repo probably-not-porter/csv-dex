@@ -7,6 +7,7 @@ import numpy as np
 import csv
 import string
 import re
+from tqdm import tqdm
 
 ascii = set(string.printable)  
 
@@ -31,19 +32,17 @@ def buildDex(url_ls, filename):
         except URLError:
             print("ERR: Server down or incorrect domain")
         else:
-            print("--> Server connected!")
-            print("--> Copying HTML from " + url)
-
             res = BeautifulSoup(html.read(),"html5lib")
             tags = res.findAll("table", {"class": "dextable"})
             if (tags == []):
                 tags = res.findAll("table", {"class": "tab"})
-                
-            print("--> Done!")
-            print("--> Filtering...")
+            
             for tag in tags:
+                
                 inf = tag.findAll("tr")
+                pbar = tqdm(total=len(inf)-2, desc=filename)
                 for i in range(2, len(inf)): # This step is iterating over the length of the pokedex, basically. (call this pokemon N)
+                    pbar.update(1)
                     duplicate = False
                     stats = inf[i].findAll("td", {"class": "fooinfo"})
 
@@ -119,8 +118,6 @@ def buildDex(url_ls, filename):
 
                         # append row
                         data.append(data_item)
-    print("--> Done!")
-    print("--> creating CSV...")
 
     # create datafile
     myFile = open(filename, 'w')
@@ -128,7 +125,6 @@ def buildDex(url_ls, filename):
         writer = csv.writer(myFile)
         writer.writerows(data)
 
-    print('Done!')
 
 ### UTIL
 def genTypeArray(imgs): # create an array of types out of the type data from dex info
@@ -669,25 +665,24 @@ def numToType (num):
     "dragon", "dark", "steel", "fairy"]
     return types[num]
  
-### MAIN PROGRAM 
-def main(): # do all the things in the order
-    print("Dex Data Scraping tool v0.3\n")
-    print("--> Starting Web Scraper...")
+### MAIN PROGRAM ###
+def scrape_dex_csv(location):
+    print("=== Scraping Pokemon dex CSVs ===")
 
-    buildDex(["https://www.serebii.net/pokemon/nationalpokedex.shtml"], "../data/all.csv") 
-    buildDex(["https://www.serebii.net/pokemon/gen1pokemon.shtml"], "../data/gen1.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen2pokemon.shtml"], "../data/gen2.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen3pokemon.shtml"], "../data/gen3.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen4pokemon.shtml"], "../data/gen4.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen5pokemon.shtml"], "../data/gen5.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen6pokemon.shtml"], "../data/gen6.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen7pokemon.shtml"], "../data/gen7.csv")
-    buildDex(["https://www.serebii.net/pokemon/gen8pokemon.shtml"], "../data/gen8.csv")
-    buildDex(["https://www.serebii.net/swordshield/galarpokedex.shtml"], "../data/sword_shield.csv")
-    buildDex(["https://www.serebii.net/swordshield/isleofarmordex.shtml"], "../data/isle_of_armor.csv")
-    buildDex(["https://www.serebii.net/swordshield/thecrowntundradex.shtml"], "../data/crown_tundra.csv")
-    buildDex(["https://www.serebii.net/swordshield/pokemonnotindex.shtml"], "../data/sword_shield_non_indexed.csv")
+    # ALL
+    buildDex(["https://www.serebii.net/pokemon/nationalpokedex.shtml"], location +"/all.csv") 
 
-main() #run when file is run
+    # Dex by generation
+    buildDex(["https://www.serebii.net/pokemon/gen1pokemon.shtml"], location +"/gen1.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen2pokemon.shtml"], location +"/gen2.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen3pokemon.shtml"], location +"/gen3.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen4pokemon.shtml"], location +"/gen4.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen5pokemon.shtml"], location +"/gen5.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen6pokemon.shtml"], location +"/gen6.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen7pokemon.shtml"], location +"/gen7.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen8pokemon.shtml"], location +"/gen8.csv")
+    buildDex(["https://www.serebii.net/pokemon/gen9pokemon.shtml"], location +"/gen9.csv")
+    
+    print("Done!\n")
 
 

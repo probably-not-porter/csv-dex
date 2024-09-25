@@ -3,7 +3,7 @@ Aeroblast,flying,special,100,95,5,High critical hit ratio.
 Ancient Power,rock,special,60,100,5,May raise all user's stats at once.
 Attract,normal,status,none,100,15,"If opponent is the opposite gender, it's less likely to attack."
 Baton Pass,normal,status,none,none,40,User switches out and gives stat changes to the incoming Pokémon.
-Beat Up,dark,physical,none,100,10,Each Pokémon in your party attacks.
+Beat Up,dark,physical,none,100,10,Each Pokémon in user's party attacks.
 Belly Drum,normal,status,none,none,10,"User loses 50% of its max HP, but Attack raises to maximum."
 Bone Rush,ground,physical,25,90,10,Hits 2-5 times in one turn.
 Charm,fairy,status,none,100,20,Sharply lowers opponent's Attack.
@@ -23,7 +23,7 @@ False Swipe,normal,physical,40,100,40,Always leaves opponent with at least 1 HP.
 Feint Attack,dark,physical,60,∞,20,Ignores Accuracy and Evasiveness.
 Flail,normal,physical,none,100,15,"The lower the user's HP, the higher the power."
 Flame Wheel,fire,physical,60,100,25,May burn opponent.
-Foresight,normal,status,none,none,40,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal."
+Foresight,normal,status,none,none,40,"Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts."
 Frustration,normal,physical,none,100,20,Power decreases with higher Friendship.
 Fury Cutter,bug,physical,40,95,20,Power increases each turn.
 Future Sight,psychic,special,120,100,10,Damage occurs 2 turns later.
@@ -38,7 +38,7 @@ Magnitude,ground,physical,none,100,30,Hits with random power.
 Mean Look,normal,status,none,none,5,Opponent cannot flee or switch.
 Megahorn,bug,physical,120,85,10,none
 Metal Claw,steel,physical,50,95,35,May raise user's Attack.
-Milk Drink,normal,status,none,none,10,User recovers half its max HP.
+Milk Drink,normal,status,none,none,5,User recovers half its max HP.
 Mind Reader,normal,status,none,none,5,User's next attack is guaranteed to hit.
 Mirror Coat,psychic,special,none,100,20,"When hit by a Special Attack, user strikes back with 2x power."
 Moonlight,fairy,status,none,none,5,User recovers HP. Amount varies with the weather.
@@ -71,11 +71,11 @@ Sludge Bomb,poison,special,90,100,10,May poison opponent.
 Snore,normal,special,50,100,15,Can only be used if asleep. May cause flinching.
 Spark,electric,physical,65,100,20,May paralyze opponent.
 Spider Web,bug,status,none,none,10,Opponent cannot escape/switch.
-Spikes,ground,status,none,none,20,Hurts opponents when they switch into battle.
+Spikes,ground,status,none,none,20,Damages opponents switching into battle.
 Spite,ghost,status,none,100,10,The opponent's last move loses 2-5 PP.
 Steel Wing,steel,physical,70,90,25,May raise user's Defense.
 Sunny Day,fire,status,none,none,5,Makes it sunny for 5 turns.
-Swagger,normal,status,none,85,15,"Opponent becomes confused, but its Attack is sharply raised."
+Swagger,normal,status,none,85,15,"Confuses opponent, but sharply raises its Attack."
 Sweet Kiss,fairy,status,none,75,10,Confuses opponent.
 Sweet Scent,normal,status,none,100,20,Lowers opponent's Evasiveness.
 Synthesis,grass,status,none,none,5,User recovers HP. Amount varies with the weather.

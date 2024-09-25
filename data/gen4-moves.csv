@@ -88,20 +88,20 @@ Roar of Time,dragon,special,150,90,5,User must recharge next turn.
 Rock Climb,normal,physical,90,85,20,May confuse opponent.
 Rock Polish,rock,status,none,none,20,Sharply raises user's Speed.
 Rock Wrecker,rock,physical,150,90,5,User must recharge next turn.
-Roost,flying,status,none,none,10,User recovers half of its max HP and loses the Flying type temporarily.
+Roost,flying,status,none,none,5,User recovers half of its max HP and loses the Flying type temporarily.
 Seed Bomb,grass,physical,80,100,15,none
 Seed Flare,grass,special,120,85,5,May lower opponent's Special Defense.
 Shadow Claw,ghost,physical,70,100,15,High critical hit ratio.
 Shadow Force,ghost,physical,120,100,5,"Disappears on first turn, attacks on second. Can strike through Protect/Detect."
 Shadow Sneak,ghost,physical,40,100,30,User attacks first.
 Spacial Rend,dragon,special,100,95,5,High critical hit ratio.
-Stealth Rock,rock,status,none,none,20,Damages opponent switching into battle.
+Stealth Rock,rock,status,none,none,20,Damages opponents switching into battle.
 Stone Edge,rock,physical,100,80,5,High critical hit ratio.
 Sucker Punch,dark,physical,70,100,5,"User attacks first, but only works if opponent is readying an attack."
 Switcheroo,dark,status,none,100,10,Swaps held items with the opponent.
 Tailwind,flying,status,none,none,15,Doubles Speed for 4 turns.
 Thunder Fang,electric,physical,65,95,15,May cause flinching and/or paralyze opponent.
-Toxic Spikes,poison,status,none,none,20,Poisons opponents when they switch into battle.
+Toxic Spikes,poison,status,none,none,20,Poisons opponents switching into battle.
 Trick Room,psychic,status,none,none,5,Slower Pokémon move first in the turn for 5 turns.
 Trump Card,normal,special,none,∞,5,"The lower the PP, the higher the power."
 U-turn,bug,physical,70,100,20,User switches out immediately after attacking.

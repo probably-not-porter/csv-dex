@@ -3,7 +3,7 @@ from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 import csv
-
+from tqdm import tqdm
 """
     Scrapes move from PokemonDB
 """
@@ -22,10 +22,12 @@ def scrape_list(url, filename):
     except URLError:
         print("ERR")
     else:
-        print("--> Copying HTML from " + url)
+        #print("--> Copying HTML from " + url)
         res = BeautifulSoup(html.read(),"html5lib")
         tags = res.findAll("table", {"id": "moves"})
+        pbar = tqdm(total=len(tags), desc=filename)
         for tag in tags:
+            pbar.update(1)
             inf = tag.findAll("tr")
             for i in range(1, len(inf)): 
                 stats = inf[i].findAll("td")
@@ -58,7 +60,7 @@ def scrape_list(url, filename):
                         move_info[j] = "none"
 
                 data.append(move_info)
-                print(m_name)
+                #print(m_name)
 
     # create datafile
     myFile = open(filename, 'w')
@@ -66,21 +68,21 @@ def scrape_list(url, filename):
         writer = csv.writer(myFile)
         writer.writerows(data)
 
-    print('Done!')
+    #print('Done!')
 
 ### MAIN PROGRAM 
-def main():
-    print("Moves List Scraping tool v0.1\n")
-    print("--> Starting Web Scraper...")
+def scrape_move_list(location):
+    print("=== Scraping Pokemon move CSVs ===")
 
-    scrape_list("https://pokemondb.net/move/all", "../data/all_moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/1", "../data/gen1-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/2", "../data/gen2-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/3", "../data/gen3-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/4", "../data/gen4-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/5", "../data/gen5-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/6", "../data/gen6-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/7", "../data/gen7-moves.csv")
-    scrape_list("https://pokemondb.net/move/generation/8", "../data/gen8-moves.csv")
+    scrape_list("https://pokemondb.net/move/all", location + "/all_moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/1", location + "/gen1-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/2", location + "/gen2-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/3", location + "/gen3-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/4", location + "/gen4-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/5", location + "/gen5-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/6", location + "/gen6-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/7", location + "/gen7-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/8", location + "/gen8-moves.csv")
+    scrape_list("https://pokemondb.net/move/generation/9", location + "/gen9-moves.csv")
     
-main() #run when file is run
+    print("Done!\n")

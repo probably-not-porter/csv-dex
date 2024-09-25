@@ -54,7 +54,7 @@ Glare,normal,status,none,100,30,Paralyzes opponent.
 Growl,normal,status,none,100,40,Lowers opponent's Attack.
 Growth,normal,status,none,none,20,Raises user's Attack and Special Attack.
 Guillotine,normal,physical,none,30,5,"One-Hit-KO, if it hits."
-Gust,flying,special,40,100,35,Hits Pokémon using Fly/Bounce with double power.
+Gust,flying,special,40,100,35,Hits Pokémon using Fly/Bounce/Sky Drop with double power.
 Harden,normal,status,none,none,30,Raises user's Defense.
 Haze,ice,status,none,none,30,Resets all stat changes.
 Headbutt,normal,physical,70,100,15,May cause flinching.
@@ -87,7 +87,7 @@ Minimize,normal,status,none,none,10,Sharply raises user's Evasiveness.
 Mirror Move,flying,status,none,none,20,User performs the opponent's last move.
 Mist,ice,status,none,none,30,User's stats cannot be changed for a period of time.
 Night Shade,ghost,special,none,100,15,Inflicts damage equal to user's level.
-Pay Day,normal,physical,40,100,20,A small amount of money is gained after the battle resolves.
+Pay Day,normal,physical,40,100,20,Money is earned after the battle.
 Peck,flying,physical,35,100,35,none
 Petal Dance,grass,special,120,100,10,User attacks for 2-3 turns but then becomes confused.
 Pin Missile,bug,physical,25,95,20,Hits 2-5 times in one turn.
@@ -102,9 +102,9 @@ Quick Attack,normal,physical,40,100,30,User attacks first.
 Rage,normal,physical,20,100,20,Raises user's Attack when hit.
 Razor Leaf,grass,physical,55,95,25,High critical hit ratio.
 Razor Wind,normal,special,80,100,10,"Charges on first turn, attacks on second. High critical hit ratio."
-Recover,normal,status,none,none,10,User recovers half its max HP.
+Recover,normal,status,none,none,5,User recovers half its max HP.
 Reflect,psychic,status,none,none,20,Halves damage from Physical attacks for 5 turns.
-Rest,psychic,status,none,none,10,"User sleeps for 2 turns, but user is fully healed."
+Rest,psychic,status,none,none,5,"User sleeps for 2 turns, but user is fully healed."
 Roar,normal,status,none,none,20,"In battles, the opponent switches. In the wild, the Pokémon runs."
 Rock Slide,rock,physical,75,90,10,May cause flinching.
 Rock Throw,rock,physical,50,90,15,none
@@ -124,7 +124,7 @@ Sleep Powder,grass,status,none,75,15,Puts opponent to sleep.
 Sludge,poison,special,65,100,20,May poison opponent.
 Smog,poison,special,30,70,20,May poison opponent.
 Smokescreen,normal,status,none,100,20,Lowers opponent's Accuracy.
-Soft-Boiled,normal,status,none,none,10,User recovers half its max HP.
+Soft-Boiled,normal,status,none,none,5,User recovers half its max HP.
 Solar Beam,grass,special,120,100,10,"Charges on first turn, attacks on second."
 Sonic Boom,normal,special,none,90,20,Always inflicts 20 HP.
 Spike Cannon,normal,physical,20,100,15,Hits 2-5 times in one turn.

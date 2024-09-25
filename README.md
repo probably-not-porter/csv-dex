@@ -1,9 +1,8 @@
 # ![img](static/master.png) Dex 0.5.3
 ![GitHub repo size](https://img.shields.io/github/repo-size/probably-not-porter/dex)
 
-Porter Libby, 2020
 
-I have collected this data in CSV format so that it can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
+I made these webscraping tools so that Pokemon data can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
 
 It should also be understood that this is NOT my data. It is data created by Nintendo and Game Freak, and collected/harvested by Serebii and PokemonDB.
 
@@ -27,12 +26,6 @@ Please send me links to anything cool to make with this data; I'd love to see it
 ![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
 ![img](static/shiny/cinderace.png) [Generation 8 Dex (89) (CSV)](data/gen8.csv)
 
-## Dex by Game
-![img](static/regular/eternatus.png) [Sword / Shield (400) (CSV)](data/sword_shield.csv)
-![img](static/regular/urshifu.png) [Isle of Armor (211) (CSV)](data/isle_of_armor.csv)
-
-![img](static/regular/calyrex.png) [Crown Tundra (210) (CSV)](data/crown_tundra.csv)
-![img](static/regular/arceus.png) [Sw / Sh Non-Indexed (68) (CSV)](data/sword_shield_non_indexed.csv)
 
 ## Full Move List
 ![img](static/regular/cresselia.png) [Full Move List (CSV)](data/all_moves.csv)
@@ -56,18 +49,6 @@ Please send me links to anything cool to make with this data; I'd love to see it
 ![img](static/regular/kyogre.png)[Type Badges](data/type_badges.md) 
 
 
-# ![img](static/master.png) Tools
-![img](static/regular/lugia.png) [CSV Dex Scraping Tool (py)](tools/scrape_dex_csv.py)
-![img](static/regular/mewtwo.png) [CSV Dex Move Ammender (py)](tools/scrape_dex_moves.py)
-
-![img](static/regular/suicune.png) [CSV Move Scraping Tool (py)](tools/scrape_move_list.py)
-
-![img](static/regular/ho-oh.png) [Dex Data Visualizer (py) (WIP)](tools/vis_dex_data.py)
-![img](static/regular/mew.png) [Stat Anylsis Tool (py) (WIP)](tools/analysis.py)
-
-![img](static/regular/moltres.png) [Weakness/Resistance Chart (py)](tools/wr_chart.py)
-![img](static/regular/zapdos.png) [Image Markdown Dex Tool (py)](tools/gen_sprite_md.py)
-
 
 # ![img](static/master.png) Usage
 ## Installation 
@@ -88,6 +69,6 @@ Please send me links to anything cool to make with this data; I'd love to see it
 - https://pokemondb.net/
 
 # ![img](static/master.png) Licenses
-The source icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
+Images and Pokemon are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Everything else, and usage of the programming code, is governed by the MIT license.

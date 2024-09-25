@@ -2,24 +2,31 @@ name,type,catagory,power,accuracy,pp,effect
 Apple Acid,grass,special,80,100,10,Lowers target's Special Defense.
 Astral Barrage,ghost,special,120,100,5,The user attacks by sending a frightful amount of small ghosts at opposing Pokémon.
 Aura Wheel,electric,physical,110,100,10,Changes type based on Morpeko's Mode.
-Behemoth Bash,steel,physical,100,100,5,Damage doubles if user is Dynamaxed.
-Behemoth Blade,steel,physical,100,100,5,Damage doubles if user is Dynamaxed.
+Barb Barrage,poison,physical,60,100,10,May poison opponent; inflicts double damage if the target is already poisoned.
+Behemoth Bash,steel,physical,100,100,5,Damage doubles if target is Dynamaxed.
+Behemoth Blade,steel,physical,100,100,5,Damage doubles if target is Dynamaxed.
+Bitter Malice,ghost,special,75,100,10,Lowers opponent's Attack.
+Bleakwind Storm,flying,special,100,80,10,May lower opponent's Speed.
 Body Press,fighting,physical,80,100,10,"The higher the user's Defense, the stronger the attack."
 Bolt Beak,electric,physical,85,100,10,"If the user attacks before the target, the power of this move is doubled."
 Branch Poke,grass,physical,40,100,40,none
 Breaking Swipe,dragon,physical,60,100,15,Hits multiple opponents and lowers their attack.
 Burning Jealousy,fire,special,70,100,5,"Hits all opponents, and burns any that have had their stats boosted."
+Ceaseless Edge,dark,physical,65,90,15,Sets up Spikes.
+Chloroblast,grass,special,150,95,5,User receives recoil damage.
 Clangorous Soul,dragon,status,none,100,5,Raises all user's stats but loses HP.
 Coaching,fighting,status,none,none,10,Boosts Attack and Defense of a teammate.
 Corrosive Gas,poison,status,none,100,40,Removes opponent's items.
 Court Change,normal,status,none,100,10,Swaps the effects on either side of the field.
 Decorate,fairy,status,none,none,15,Sharply raises target's Attack and Special Attack.
+Dire Claw,poison,physical,80,100,15,"May poison, paralyze or put the opponent to sleep."
 Dragon Darts,dragon,physical,50,100,10,User attacks twice.
 Dragon Energy,dragon,special,150,100,5,"The higher the user's HP, the higher the power."
 Drum Beating,grass,physical,80,100,10,Lowers opponent's Speed.
 Dual Wingbeat,flying,physical,40,90,10,The user slams the target with its wings. The target is hit twice in a row.
 Dynamax Cannon,dragon,special,100,100,5,Damage doubles if opponent is Dynamaxed.
 Eerie Spell,psychic,special,80,100,5,Deals damage and reduces opponent's PP.
+Esper Wing,psychic,special,80,100,10,High critical hit ratio. Raises user's Speed.
 Eternabeam,dragon,special,160,90,5,User can't move on the next turn.
 Expanding Force,psychic,special,80,100,10,Increases power and hits all opponents on Psychic Terrain.
 False Surrender,dark,physical,80,∞,10,Ignores Accuracy and Evasiveness.
@@ -27,46 +34,49 @@ Fiery Wrath,dark,special,90,100,10,May cause flinching.
 Fishious Rend,water,physical,85,100,10,"If the user attacks before the target, the power of this move is doubled."
 Flip Turn,water,physical,60,100,20,"After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
 Freezing Glare,psychic,special,90,100,10,May freeze opponent.
-G-Max Befuddle,bug,physical,none,∞,5,"Butterfree-exclusive G-Max Move. Poisons, paralyzes, or puts opponent to sleep."
-G-Max Cannonade,water,physical,none,∞,10,Blastoise-exclusive G-Max Move. Damages non-Water types for 4 turns.
-G-Max Centiferno,fire,physical,none,∞,5,Centiskorch-exclusive G-Max Move. Traps opponents for 4-5 turns.
-G-Max Chi Strike,fighting,physical,none,∞,5,Machamp-exclusive G-Max Move. Increases critical hit ratio.
-G-Max Cuddle,normal,physical,none,∞,5,Eevee-exclusive G-Max Move. Infatuates opponents.
-G-Max Depletion,dragon,physical,none,∞,5,Duraludon-exclusive G-Max Move. Reduces opponent's PP.
-G-Max Drum Solo,grass,physical,none,∞,5,Rillaboom-exclusive G-Max Move. Ignores target's ability.
-G-Max Finale,fairy,physical,none,∞,5,Alcremie-exclusive G-Max Move. Heals the user's team.
-G-Max Fireball,fire,physical,none,∞,5,Cinderace-exclusive G-Max Move. Ignores target's ability.
-G-Max Foam Burst,water,physical,none,∞,5,Kingler-exclusive G-Max Move. Harshly lowers opponents' Speed.
-G-Max Gold Rush,normal,physical,none,∞,5,Meowth-exclusive G-Max Move. Confuses opponents and earns more money.
-G-Max Gravitas,psychic,physical,none,∞,5,Orbeetle-exclusive G-Max Move. Summons Gravity for 5 turns.
-G-Max Hydrosnipe,water,physical,none,∞,5,Inteleon-exclusive G-Max Move. Ignores target's ability.
-G-Max Malodor,poison,physical,none,∞,5,Garbodor-exclusive G-Max Move. Poisons opponents.
-G-Max Meltdown,steel,physical,none,∞,5,Melmetal-exclusive G-Max Move. Prevents opponents using the same move twice in a row.
-G-Max One Blow,dark,physical,none,∞,5,Urshifu Single-Strike Style-exclusive G-Max Move. Strikes through Max Guard and Protect.
-G-Max Rapid Flow,water,physical,none,∞,5,Urshifu Rapid-Strike Style-exclusive G-Max Move. Strikes through Max Guard and Protect.
-G-Max Replenish,normal,physical,none,∞,5,Snorlax-exclusive G-Max Move. Recycles Berries.
-G-Max Resonance,ice,physical,none,∞,5,Lapras-exclusive G-Max Move. Reduces damage for 5 turns.
-G-Max Sandblast,ground,physical,none,∞,5,Sandaconda-exclusive G-Max Move. Traps opponents for 4-5 turns.
-G-Max Smite,fairy,physical,none,∞,5,Hatterene-exclusive G-Max Move. Confuses opponents.
-G-Max Snooze,dark,physical,none,∞,5,Grimmsnarl-exclusive G-Max Move. Makes opponents drowsy.
-G-Max Steelsurge,steel,physical,none,∞,5,Copperajah-exclusive G-Max Move. Sets up Spikes on the field.
-G-Max Stonesurge,water,physical,none,∞,5,Drednaw-exclusive G-Max Move. Sets up Stealth Rock.
-G-Max Stun Shock,electric,physical,none,∞,10,Toxtricity-exclusive G-Max Move. Poisons or paralyzes opponents.
-G-Max Sweetness,grass,physical,none,∞,10,Appletun-exclusive G-Max Move. Heals status conditions of user's team.
-G-Max Tartness,grass,physical,none,∞,10,Flapple-exclusive G-Max Move. Reduces opponents' evasiveness.
-G-Max Terror,ghost,physical,none,∞,10,Gengar-exclusive G-Max Move. Prevents opponent from switching out.
-G-Max Vine Lash,grass,physical,none,∞,10,Venusaur-exclusive G-Max Move. Damages non-Grass types for 4 turns.
-G-Max Volcalith,rock,physical,none,∞,10,Coalossal-exclusive G-Max Move. Deals damage for 4 turns.
-G-Max Volt Crash,electric,physical,none,∞,10,Pikachu-exclusive G-Max Move. Paralyzes opponents.
-G-Max Wildfire,fire,physical,none,∞,10,Charizard-exclusive G-Max Move. Damages non-Fire types for 4 turns.
-G-Max Wind Rage,flying,physical,none,∞,10,Corviknight-exclusive G-Max Move. Removes battlefield hazards.
-Glacial Lance,ice,physical,130,100,5,The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon.
-Grassy Glide,grass,physical,70,100,20,High priority during Grassy Terrain.
+G-Max Befuddle,bug,none,none,∞,5,"Butterfree-exclusive G-Max Move. Poisons, paralyzes, or puts opponent to sleep."
+G-Max Cannonade,water,none,none,∞,10,Blastoise-exclusive G-Max Move. Damages non-Water types for 4 turns.
+G-Max Centiferno,fire,none,none,∞,5,Centiskorch-exclusive G-Max Move. Traps opponents for 4-5 turns.
+G-Max Chi Strike,fighting,none,none,∞,5,Machamp-exclusive G-Max Move. Increases critical hit ratio.
+G-Max Cuddle,normal,none,none,∞,5,Eevee-exclusive G-Max Move. Infatuates opponents.
+G-Max Depletion,dragon,none,none,∞,5,Duraludon-exclusive G-Max Move. Reduces opponent's PP.
+G-Max Drum Solo,grass,none,160,∞,5,Rillaboom-exclusive G-Max Move. Ignores target's ability.
+G-Max Finale,fairy,none,none,∞,5,Alcremie-exclusive G-Max Move. Heals the user's team.
+G-Max Fireball,fire,none,160,∞,5,Cinderace-exclusive G-Max Move. Ignores target's ability.
+G-Max Foam Burst,water,none,none,∞,5,Kingler-exclusive G-Max Move. Harshly lowers opponents' Speed.
+G-Max Gold Rush,normal,none,none,∞,5,Meowth-exclusive G-Max Move. Confuses opponents and earns more money.
+G-Max Gravitas,psychic,none,none,∞,5,Orbeetle-exclusive G-Max Move. Summons Gravity for 5 turns.
+G-Max Hydrosnipe,water,none,160,∞,5,Inteleon-exclusive G-Max Move. Ignores target's ability.
+G-Max Malodor,poison,none,none,∞,5,Garbodor-exclusive G-Max Move. Poisons opponents.
+G-Max Meltdown,steel,none,none,∞,5,Melmetal-exclusive G-Max Move. Prevents opponents using the same move twice in a row.
+G-Max One Blow,dark,none,none,∞,5,Urshifu Single-Strike Style-exclusive G-Max Move. Strikes through Max Guard and Protect.
+G-Max Rapid Flow,water,none,none,∞,5,Urshifu Rapid-Strike Style-exclusive G-Max Move. Strikes through Max Guard and Protect.
+G-Max Replenish,normal,none,none,∞,5,Snorlax-exclusive G-Max Move. Recycles Berries.
+G-Max Resonance,ice,none,none,∞,5,Lapras-exclusive G-Max Move. Reduces damage for 5 turns.
+G-Max Sandblast,ground,none,none,∞,5,Sandaconda-exclusive G-Max Move. Traps opponents for 4-5 turns.
+G-Max Smite,fairy,none,none,∞,5,Hatterene-exclusive G-Max Move. Confuses opponents.
+G-Max Snooze,dark,none,none,∞,5,Grimmsnarl-exclusive G-Max Move. Makes opponents drowsy.
+G-Max Steelsurge,steel,none,none,∞,5,Copperajah-exclusive G-Max Move. Sets up Spikes on the field.
+G-Max Stonesurge,water,none,none,∞,5,Drednaw-exclusive G-Max Move. Sets up Stealth Rock.
+G-Max Stun Shock,electric,none,none,∞,10,Toxtricity-exclusive G-Max Move. Poisons or paralyzes opponents.
+G-Max Sweetness,grass,none,none,∞,10,Appletun-exclusive G-Max Move. Heals status conditions of user's team.
+G-Max Tartness,grass,none,none,∞,10,Flapple-exclusive G-Max Move. Reduces opponents' evasiveness.
+G-Max Terror,ghost,none,none,∞,10,Gengar-exclusive G-Max Move. Prevents opponent from switching out.
+G-Max Vine Lash,grass,none,none,∞,10,Venusaur-exclusive G-Max Move. Damages non-Grass types for 4 turns.
+G-Max Volcalith,rock,none,none,∞,10,Coalossal-exclusive G-Max Move. Deals damage for 4 turns.
+G-Max Volt Crash,electric,none,none,∞,10,Pikachu-exclusive G-Max Move. Paralyzes opponents.
+G-Max Wildfire,fire,none,none,∞,10,Charizard-exclusive G-Max Move. Damages non-Fire types for 4 turns.
+G-Max Wind Rage,flying,none,none,∞,10,Corviknight-exclusive G-Max Move. Removes battlefield hazards.
+Glacial Lance,ice,physical,120,100,5,The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon.
+Grassy Glide,grass,physical,55,100,20,High priority during Grassy Terrain.
 Grav Apple,grass,physical,80,100,10,Lowers the opponent's Defense stat.
+Headlong Rush,ground,physical,120,100,5,Lowers user's Defense.
+Infernal Parade,ghost,special,60,100,15,Inflicts double damage if the target has a status condition.
 Jaw Lock,dark,physical,80,100,10,Prevents user and opponent from switching out.
 Jungle Healing,grass,status,none,none,10,Restores team's HP and cures status conditions.
 Lash Out,dark,physical,75,100,5,Double power if stats were lowered during the turn.
 Life Dew,water,status,none,none,10,User and teammates recover HP.
+Lunar Blessing,psychic,status,none,none,5,Heals user's status conditions and recovers HP.
 Magic Powder,psychic,status,none,100,20,Changes target's type to Psychic.
 Max Airstream,flying,none,none,none,none,Flying type Dynamax move. Raises the team's Speed.
 Max Darkness,dark,none,none,none,none,Dark type Dynamax move. Lowers the target's Special Defense.
@@ -90,29 +100,43 @@ Max Wyrmwind,dragon,none,none,none,none,Dragon type Dynamax move. Lowers the tar
 Meteor Assault,fighting,physical,150,100,5,User must recharge next turn.
 Meteor Beam,rock,special,120,90,10,"User gathers space power and boosts its Sp. Atk stat, then attacks the target on the next turn."
 Misty Explosion,fairy,special,100,100,5,Power increases on Misty Terrain.
+Mountain Gale,ice,physical,100,85,10,Lowers user's Speed.
+Mystical Power,psychic,special,70,90,10,Raises user's Special Attack.
 No Retreat,fighting,status,none,none,5,Raises all stats but user cannot switch out.
 Obstruct,dark,status,none,100,10,Protects the user and sharply lowers Defence on contact.
 Octolock,fighting,status,none,100,15,"Lowers opponent's Defense and Special Defense every turn, and they cannot flee or switch out."
-Overdrive,electric,special,80,100,10,none
+Overdrive,electric,special,80,100,10,Hits all adjacent opponents.
 Poltergeist,ghost,physical,110,90,5,Fails if the target doesn’t have an item.
+Power Shift,normal,status,none,none,10,Switches Attack and Defense stats.
+Psyshield Bash,psychic,physical,70,90,10,Raises user's Defense and Special Defense.
 Pyro Ball,fire,physical,120,90,5,May burn opponent.
+Raging Fury,fire,physical,120,100,10,User attacks for 2-3 turns but then becomes confused.
 Rising Voltage,electric,special,70,100,20,Power doubles on Electric Terrain.
+Sandsear Storm,ground,special,100,80,10,May burn target.
 Scale Shot,dragon,physical,25,90,20,Hits 2-5 times in one turn. Boosts user's Speed but lowers its Defense.
 Scorching Sands,ground,special,70,100,10,May burn the target.
 Shell Side Arm,poison,special,90,100,10,"May poison opponent. Inflicts either Special or Physical damage, whichever is better."
+Shelter,steel,status,none,none,10,Raises user's Defense.
 Skitter Smack,bug,physical,70,90,10,Lowers opponent's Sp. Attack.
 Snap Trap,grass,physical,35,100,15,"Traps opponent, damaging them for 4-5 turns."
 Snipe Shot,water,special,80,100,15,Ignores moves and abilities that draw in moves. High critical hit ratio.
 Spirit Break,fairy,physical,75,100,15,Lowers opponent's Special Attack.
+Springtide Storm,fairy,special,100,80,5,"Boosts user's stats in Incarnate Forme, or lowers opponent's stats in Therian Forme."
 Steel Beam,steel,special,140,95,5,User loses 50% of its HP.
 Steel Roller,steel,physical,130,100,5,Fails if no Terrain in effect.
+Stone Axe,rock,physical,65,90,15,Sets up Stealth Rock.
 Strange Steam,fairy,special,90,95,10,May confuse opponent.
 Stuff Cheeks,normal,status,none,none,10,"The user eats its held Berry, then sharply raises its Defense stat."
 Surging Strikes,water,physical,25,100,5,Always results in a critical hit and ignores stat changes.
+Take Heart,psychic,status,none,none,10,Heals user's status conditions and raises its stats.
 Tar Shot,rock,status,none,100,15,Lowers the opponent's Speed and makes them weaker to Fire-type moves.
 Teatime,normal,status,none,none,10,Forces all Pokémon on the field to eat their berries.
 Terrain Pulse,normal,special,50,100,10,Type and power change depending on the Terrain in effect.
 Thunder Cage,electric,special,80,90,15,"Deals damage and traps opponent, damaging them for 4-5 turns."
 Thunderous Kick,fighting,physical,90,100,10,Lowers opponent's Defense.
+Triple Arrows,fighting,physical,90,100,10,High critical hit ratio. May lower opponent's Defense or cause them to flinch.
 Triple Axel,ice,physical,20,90,10,Attacks thrice with more power each time.
-Wicked Blow,dark,physical,80,100,5,Always results in a critical hit and ignores stat changes.
+Victory Dance,fighting,status,none,none,10,Raises Attack and Defense.
+Wave Crash,water,physical,120,100,10,User receives recoil damage.
+Wicked Blow,dark,physical,75,100,5,Always results in a critical hit and ignores stat changes.
+Wildbolt Storm,electric,special,100,80,10,May paralyze target.

@@ -19,7 +19,7 @@ Catastropika,electric,physical,210,none,1,Pikachu-exclusive Z-Move.
 Clanging Scales,dragon,special,110,100,5,Lowers user's Defense.
 Clangorous Soulblaze,dragon,special,185,none,1,Kommo-o exclusive Z-Move.
 Continental Crush,rock,none,none,none,1,Rock type Z-Move.
-Core Enforcer,dragon,special,100,100,10,Scorches a 'Z' pattern on the ground.
+Core Enforcer,dragon,special,100,100,10,Suppresses the target's ability if the target has already moved.
 Corkscrew Crash,steel,none,none,none,1,Steel type Z-Move.
 Darkest Lariat,dark,physical,85,100,10,Ignores opponent's stat changes.
 Devastating Drake,dragon,none,none,none,1,Dragon type Z-Move.
@@ -73,7 +73,7 @@ Searing Sunraze Smash,steel,physical,200,none,1,Solgaleo-exclusive Z-Move.
 Shadow Bone,ghost,physical,85,100,10,May lower opponent's Defense.
 Shattered Psyche,psychic,none,none,none,1,Psychic type Z-Move.
 Shell Trap,fire,special,150,100,5,Deals more damage to opponent if hit by a Physical move.
-Shore Up,ground,status,none,none,10,The user regains up to half of its max HP. It restores more HP in a sandstorm.
+Shore Up,ground,status,none,none,5,The user regains up to half of its max HP. It restores more HP in a sandstorm.
 Sinister Arrow Raid,ghost,physical,180,none,1,Decidueye-exclusive Z-Move.
 Sizzly Slide,fire,physical,90,100,15,Burns the opponent.
 Smart Strike,steel,physical,70,none,10,The user stabs the target with a sharp horn. This attack never misses.
@@ -96,7 +96,7 @@ Supersonic Skystrike,flying,none,none,none,1,Flying type Z-Move.
 Tearful Look,normal,status,none,none,20,The user gets teary eyed to make the target lose its combative spirit. This lowers the target's Attack and Sp. Atk stats.
 Tectonic Rage,ground,none,none,none,1,Ground type Z-Move.
 Throat Chop,dark,physical,80,100,15,Prevents use of sound moves for two turns.
-Toxic Thread,poison,status,none,100,20,Lowers target's Speed.
+Toxic Thread,poison,status,none,100,20,Poisons opponent and lowers its Speed.
 Trop Kick,grass,physical,70,100,15,Lowers opponent's Attack.
 Twinkle Tackle,fairy,none,none,none,1,Fairy type Z-Move.
 Veevee Volley,normal,physical,none,∞,20,Power increases when player's bond is stronger.

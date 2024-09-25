@@ -1,0 +1,70 @@
+name,type,catagory,power,accuracy,pp,effect
+Alluring Voice,fairy,special,80,100,10,none
+Aqua Cutter,water,physical,70,100,20,High critical hit ratio.
+Aqua Step,water,physical,80,100,10,Raises user's Speed.
+Armor Cannon,fire,special,120,100,5,Lowers user's Defense and Special Defense.
+Axe Kick,fighting,physical,120,90,10,"May confuse opponent. If it misses, the user loses HP."
+Bitter Blade,fire,physical,90,100,10,User recovers half the HP inflicted on opponent.
+Blazing Torque,fire,physical,80,100,10,May burn the opponent.
+Blood Moon,normal,special,140,100,5,Cannot be used twice in a row.
+Burning Bulwark,fire,status,none,∞,10,none
+Chilling Water,water,special,50,100,20,Lowers opponent's Attack.
+Chilly Reception,ice,status,none,none,10,Switches out and summons a snowstorm lasting 5 turns.
+Collision Course,fighting,physical,100,100,5,Boosted even more if it's super-effective.
+Combat Torque,fighting,physical,100,100,10,May paralyze the opponent.
+Comeuppance,dark,physical,none,100,10,Deals more damage to the opponent that last inflicted damage on it.
+Doodle,normal,status,none,100,10,Changes the abilities of the user and its teammates to that of the target.
+Double Shock,electric,physical,120,100,5,"After using this move, the user will no longer be Electric type."
+Dragon Cheer,dragon,status,none,∞,15,none
+Electro Drift,electric,special,100,100,5,Boosted even more if it's super-effective.
+Electro Shot,electric,special,130,100,10,"Charges on first turn, attacks on second."
+Fickle Beam,dragon,special,80,100,5,May deal double damage.
+Fillet Away,normal,status,none,none,10,"Lowers HP but sharply boosts Attack, Special Attack, and Speed."
+Flower Trick,grass,physical,70,∞,10,Never misses; always results in a critical hit.
+Gigaton Hammer,steel,physical,160,100,5,Cannot be used twice in a row.
+Glaive Rush,dragon,physical,120,100,5,Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage.
+Hard Press,steel,physical,none,100,10,none
+Hydro Steam,water,special,80,100,15,Power increases in harsh sunlight.
+Hyper Drill,normal,physical,100,100,5,Can strike through Protect/Detect.
+Ice Spinner,ice,physical,80,100,15,Removes effects of Terrain.
+Ivy Cudgel,grass,physical,100,none,none,High critical hit ratio. Type changes based on form.
+Jet Punch,water,physical,60,100,15,Always goes first.
+Kowtow Cleave,dark,physical,85,∞,10,Always hits.
+Last Respects,ghost,physical,50,100,10,Damages increases the more party Pokémon have been defeated.
+Lumina Crash,psychic,special,80,100,10,Harshly lowers target’s Special Defense.
+Magical Torque,fairy,physical,100,100,10,May confuse the opponent.
+Make It Rain,steel,special,120,100,5,Lowers user's Special Attack. Money is earned after the battle.
+Malignant Chain,poison,special,100,100,5,May poison the opponent.
+Matcha Gotcha,grass,special,80,90,15,"Deals damage, restores HP, may burn opponent."
+Mighty Cleave,rock,physical,95,100,5,none
+Mortal Spin,poison,physical,30,100,15,"Removes entry hazards and trap move effects, and poisons opposing Pokémon."
+Noxious Torque,poison,physical,100,100,10,May poison the opponent.
+Order Up,dragon,physical,80,100,10,Boosts Attack/Defense/Speed depending on ally Tatsugiri.
+Population Bomb,normal,physical,20,90,10,Hits 1-10 times in a row.
+Pounce,bug,physical,50,100,20,Lowers opponent's Speed.
+Psyblade,psychic,physical,80,100,15,Power increases on Electric Terrain.
+Psychic Noise,psychic,special,75,100,10,Deals damage and prevents target from healing.
+Rage Fist,ghost,physical,50,100,10,"The more times the user has been hit by attacks, the greater the move's power."
+Raging Bull,normal,physical,90,100,10,Type depends on the user’s form. Breaks through Reflect and Light Screen barriers.
+Revival Blessing,normal,status,none,none,1,Revives a fainted party Pokémon to half HP.
+Ruination,dark,special,none,90,10,Halves the opponent's HP.
+Salt Cure,rock,physical,40,100,15,Deals damage each turn; Steel and Water types are more affected.
+Shed Tail,normal,status,none,none,10,"Creates a substitute, then swaps places with a party Pokémon in waiting."
+Silk Trap,bug,status,none,none,10,Protects the user and lowers opponent's Speed on contact.
+Snowscape,ice,status,none,none,10,Raises Defense of Ice types for 5 turns.
+Spicy Extract,grass,status,none,∞,15,Harshly lowers the opponent's Defense and sharply raises their Attack.
+Spin Out,steel,physical,100,100,5,Harshly lowers user’s Speed.
+Supercell Slam,electric,physical,100,95,15,none
+Syrup Bomb,grass,special,60,85,10,Lowers opponent's Speed each turn for 3 turns.
+Tachyon Cutter,steel,special,50,∞,10,Guaranteed to hit twice in a row.
+Temper Flare,fire,physical,75,100,10,none
+Tera Blast,normal,special,80,100,10,Changes type when the user has Terastallized.
+Tera Starstorm,normal,special,120,100,5,none
+Thunderclap,electric,special,70,100,5,Strikes before a target's move.
+Tidy Up,normal,status,none,none,10,"Removes the effects of entry hazards and Substitute, and boosts user’s Attack and Speed."
+Torch Song,fire,special,80,100,10,Raises user's Special Attack.
+Trailblaze,grass,physical,50,100,20,Raises user's Speed.
+Triple Dive,water,physical,30,95,10,Hits 3 times in a row.
+Twin Beam,psychic,special,40,100,10,Hits twice in one turn.
+Upper Hand,fighting,physical,65,100,15,Strikes before a target's priority move.
+Wicked Torque,dark,physical,80,100,10,May put opponent to sleep.
