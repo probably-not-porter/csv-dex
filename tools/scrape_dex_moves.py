@@ -32,20 +32,12 @@ def exceptions(name):
         return "type-null"
     elif name.lower() == "flabébé":
         return "flabebe"
-    elif name.lower() == "tapu koko":
-        return "tapu-koko"
-    elif name.lower() == "tapu lele":
-        return "tapu-lele"
-    elif name.lower() == "tapu bulu":
-        return "tapu-bulu"
-    elif name.lower() == "tapu fini":
-        return "tapu-fini"
     else:
         return name
 
 def getMoves(poke_name):
     poke_name = exceptions(poke_name)
-    url = "https://pokemondb.net/pokedex/"+poke_name.lower()
+    url = "https://pokemondb.net/pokedex/"+poke_name.lower().replace(" ", "-")
     req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     moves = []
 
