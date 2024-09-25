@@ -9,46 +9,39 @@ It should also be understood that this is NOT my data. It is data created by Nin
 Please send me links to anything cool to make with this data; I'd love to see it.
 
 # ![img](static/master.png) CSV Data
+## Pokedex CSVs
+<img src='icon/moltres.png' width=48> **[Full Gen 1-9 Pokedex CSV](data/all.csv)**
 
-## Full International Dex
-![img](static/regular/darkrai.png) [Full International Dex (898) (CSV)](data/all.csv)
+<img src='icon/charizard.png' width=48> [Generation 1 Pokedex CSV](data/gen1.csv)
+<img src='icon/typhlosion.png' width=48> [Generation 2 Pokedex CSV](data/gen2.csv)
 
-## Dex by Generation
-![img](static/regular/charizard.png) [Generation 1 Dex (151) (CSV)](data/gen1.csv)
-![img](static/regular/typhlosion.png) [Generation 2 Dex (100) (CSV)](data/gen2.csv)
+<img src='icon/blaziken.png' width=48> [Generation 3 Pokedex CSV](data/gen3.csv)
+<img src='icon/infernape.png' width=48> [Generation 4 Pokedex CSV](data/gen4.csv)
 
-![img](static/regular/blaziken.png) [Generation 3 Dex (136) (CSV)](data/gen3.csv)
-![img](static/regular/infernape.png) [Generation 4 Dex (107) (CSV)](data/gen4.csv)
+<img src='icon/emboar.png' width=48> [Generation 5 Pokedex CSV](data/gen5.csv)
+<img src='icon/delphox.png' width=48> [Generation 6 Pokedex CSV](data/gen6.csv)
 
-![img](static/regular/emboar.png) [Generation 5 Dex (156) (CSV)](data/gen5.csv)
-![img](static/regular/delphox.png) [Generation 6 Dex (72) (CSV)](data/gen6.csv)
+<img src='icon/incineroar.png' width=48> [Generation 7 Pokedex CSV](data/gen7.csv)
+<img src='icon/cinderace.png' width=48> [Generation 8 Pokedex CSV](data/gen8.csv)
 
-![img](static/regular/incineroar.png) [Generation 7 Dex (88) (CSV)](data/gen7.csv)
-![img](static/shiny/cinderace.png) [Generation 8 Dex (89) (CSV)](data/gen8.csv)
+<img src='icon/skeledirge.png' width=48> [Generation 9 Pokedex CSV](data/gen9.csv)
 
+## Movedex CSVs
+<img src='icon/articuno.png' width=48> **[Full Gen 1-9 Movedex CSV](data/all_moves.csv)**
 
-## Full Move List
-![img](static/regular/cresselia.png) [Full Move List (CSV)](data/all_moves.csv)
+<img src='icon/blastoise.png' width=48> [Generation 1 Movedex CSV](data/gen1-moves.csv)
+<img src='icon/feraligatr.png' width=48> [Generation 2 Movedex CSV](data/gen2-moves.csv)
 
-## Moves by Generation
-![img](static/regular/blastoise.png) [Generation 1 Moves (CSV)](data/gen1-moves.csv)
-![img](static/regular/feraligatr.png) [Generation 2 Moves (CSV)](data/gen2-moves.csv)
+<img src='icon/swampert.png' width=48> [Generation 3 Movedex CSV](data/gen3-moves.csv)
+<img src='icon/empoleon.png' width=48> [Generation 4 Movedex CSV](data/gen4-moves.csv)
 
-![img](static/regular/swampert.png) [Generation 3 Moves (CSV)](data/gen3-moves.csv)
-![img](static/regular/empoleon.png) [Generation 4 Moves (CSV)](data/gen4-moves.csv)
+<img src='icon/samurott.png' width=48> [Generation 5 Movedex CSV](data/gen5-moves.csv)
+<img src='icon/greninja.png' width=48> [Generation 6 Movedex CSV](data/gen6-moves.csv)
 
-![img](static/regular/samurott.png) [Generation 5 Moves (CSV)](data/gen5-moves.csv)
-![img](static/regular/greninja.png) [Generation 6 Moves (CSV)](data/gen6-moves.csv)
+<img src='icon/primarina.png' width=48> [Generation 7 Movedex CSV](data/gen7-moves.csv)
+<img src='icon/inteleon.png' width=48> [Generation 8 Movedex CSV](data/gen8-moves.csv)
 
-![img](static/regular/primarina.png) [Generation 7 Moves (CSV)](data/gen7-moves.csv)
-![img](static/shiny/inteleon.png) [Generation 8 Moves (CSV)](data/gen8-moves.csv)
-
-## Sprite Catalogues
-![img](static/regular/rayquaza.png)[Regular Sprites](data/normal_sprites.md) 
-![img](static/shiny/rayquaza.png)[Shiny Sprites](data/shiny_sprites.md) 
-![img](static/regular/kyogre.png)[Type Badges](data/type_badges.md) 
-
-
+<img src='icon/quaquaval.png' width=48> [Generation 9 Movedex CSV](data/gen9-moves.csv)
 
 # ![img](static/master.png) Usage
 ## Installation 
