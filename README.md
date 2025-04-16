@@ -6,9 +6,7 @@
 ![Version](https://img.shields.io/badge/Version-0.6.0-green)
 
 
-I made these webscraping tools so that Pokemon data can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. 
-
-It should also be understood that this is NOT my data. It is data created by Nintendo and Game Freak, and collected/harvested by Serebii and PokemonDB.
+I made these webscraping tools so that Pokemon data can be used for small projects and useful tools. This information is not to be used for profit, but it is available to anyone and everyone who wishes to make something neat under the MIT license. It should also be understood that this is NOT my data. It is data created by Nintendo and Game Freak, and collected/harvested by Serebii and PokemonDB.
 
 Please send me links to anything cool to make with this data; I'd love to see it.
 
@@ -58,12 +56,16 @@ Please send me links to anything cool to make with this data; I'd love to see it
 - BeautifulSoup4
 - tqdm
 
-
-# <img src='icon/porygon.png' width=48> References/Sources
-- https://www.serebii.net/
-- https://pokemondb.net/
-
 # <img src='icon/porygon.png' width=48> Attribution
-Images and Pokemon are © Nintendo/Creatures Inc./GAME FREAK Inc.
+## Attribution
+This project uses information sourced from the following fan sites:
 
-Everything else, and usage of the programming code, is governed by the MIT license.
+- [Serebii.net](https://www.serebii.net/)
+- [Pokémon Database](https://pokemondb.net/)
+
+All content from these sites is the intellectual property of their respective owners. This project is not affiliated with, endorsed by, or sponsored by Serebii.net, Pokémon Database, Nintendo, Game Freak, or The Pokémon Company.
+
+This project is for non-commercial, educational, or personal use only. If you are the owner of any referenced content and would like it removed or altered, please contact us via [GitHub Issues](https://github.com/YOUR_HANDLE/YOUR_PROJECT/issues).
+
+The source code for this project is licensed under the [MIT License](LICENSE).
+
