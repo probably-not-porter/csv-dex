@@ -65,7 +65,7 @@ This project uses information sourced from the following fan sites:
 
 All content from these sites is the intellectual property of their respective owners. This project is not affiliated with, endorsed by, or sponsored by Serebii.net, Pokémon Database, Nintendo, Game Freak, or The Pokémon Company.
 
-This project is for non-commercial, educational, or personal use only. If you are the owner of any referenced content and would like it removed or altered, please contact us via [GitHub Issues](https://github.com/YOUR_HANDLE/YOUR_PROJECT/issues).
+This project is for non-commercial, educational, or personal use only. If you are the owner of any referenced content and would like it removed or altered, please contact us via [GitHub Issues](https://github.com/probably-not-porter/csv-dex/issues).
 
 The source code for this project is licensed under the [MIT License](LICENSE).
 
