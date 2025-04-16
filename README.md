@@ -57,7 +57,6 @@ Please send me links to anything cool to make with this data; I'd love to see it
 - tqdm
 
 # <img src='icon/porygon.png' width=48> Attribution
-## Attribution
 This project uses information sourced from the following fan sites:
 
 - [Serebii.net](https://www.serebii.net/)
