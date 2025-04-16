@@ -63,7 +63,7 @@ Please send me links to anything cool to make with this data; I'd love to see it
 - https://www.serebii.net/
 - https://pokemondb.net/
 
-# <img src='icon/porygon.png' width=48> Licenses
+# <img src='icon/porygon.png' width=48> Attribution
 Images and Pokemon are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
 Everything else, and usage of the programming code, is governed by the MIT license.
